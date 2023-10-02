@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageMemberForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_addmember = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView_user = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,10 +61,18 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Firebrick;
+            this.panel1.Controls.Add(this.button_addmember);
             this.panel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // button_addmember
+            // 
+            resources.ApplyResources(this.button_addmember, "button_addmember");
+            this.button_addmember.Name = "button_addmember";
+            this.button_addmember.UseVisualStyleBackColor = true;
+            this.button_addmember.Click += new System.EventHandler(this.button_addmember_Click);
             // 
             // label1
             // 
@@ -73,8 +82,8 @@
             // 
             // dataGridView_user
             // 
-            resources.ApplyResources(this.dataGridView_user, "dataGridView_user");
             this.dataGridView_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView_user, "dataGridView_user");
             this.dataGridView_user.Name = "dataGridView_user";
             this.dataGridView_user.Click += new System.EventHandler(this.DataGridView_user_Click);
             // 
@@ -130,13 +139,13 @@
             // 
             // comboBox_gender
             // 
-            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
             this.comboBox_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_gender.FormattingEnabled = true;
             this.comboBox_gender.Items.AddRange(new object[] {
             resources.GetString("comboBox_gender.Items"),
             resources.GetString("comboBox_gender.Items1"),
             resources.GetString("comboBox_gender.Items2")});
+            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
             this.comboBox_gender.Name = "comboBox_gender";
             // 
             // label5
@@ -161,12 +170,12 @@
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
             resources.GetString("comboBox1.Items1")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             // 
             // label9
@@ -176,31 +185,31 @@
             // 
             // comboBox_type
             // 
-            resources.ApplyResources(this.comboBox_type, "comboBox_type");
             this.comboBox_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_type.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox_type, "comboBox_type");
             this.comboBox_type.Name = "comboBox_type";
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button_update
             // 
-            resources.ApplyResources(this.button_update, "button_update");
             this.button_update.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.button_update, "button_update");
             this.button_update.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button_update.Name = "button_update";
             this.button_update.UseVisualStyleBackColor = false;
             // 
             // pictureBox_user
             // 
-            resources.ApplyResources(this.pictureBox_user, "pictureBox_user");
             this.pictureBox_user.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.pictureBox_user, "pictureBox_user");
             this.pictureBox_user.Name = "pictureBox_user";
             this.pictureBox_user.TabStop = false;
             // 
@@ -268,5 +277,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_addmember;
     }
 }

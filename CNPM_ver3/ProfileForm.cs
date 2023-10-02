@@ -12,8 +12,10 @@ using System.Windows.Forms;
 
 namespace CNPM_ver3
 {
+
     public partial class ProfileForm : Form
     {
+        OverwriteForm ovf = new OverwriteForm();
         public ProfileForm()
         {
             InitializeComponent();
@@ -50,6 +52,11 @@ namespace CNPM_ver3
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void button_changePass_Click(object sender, EventArgs e)
+        {
+            ovf.openChildForm(new ResetPassword(), ref panel_main);
         }
     }
 }

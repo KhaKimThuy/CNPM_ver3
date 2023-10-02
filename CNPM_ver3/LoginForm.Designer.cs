@@ -93,6 +93,7 @@
             resources.ApplyResources(this.button_forget, "button_forget");
             this.button_forget.Name = "button_forget";
             this.button_forget.UseVisualStyleBackColor = true;
+            this.button_forget.Click += new System.EventHandler(this.button_forget_Click);
             // 
             // label5
             // 

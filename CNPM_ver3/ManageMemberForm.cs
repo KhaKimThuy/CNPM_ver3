@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BLLL;
+using DTOO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,7 @@ namespace CNPM_ver3
 
             // Show image
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns[5];
+            imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns[7];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
@@ -53,7 +54,7 @@ namespace CNPM_ver3
             textBox1.Text = dataGridView_user.CurrentRow.Cells[3].Value.ToString();
             textBox_cccd.Text = dataGridView_user.CurrentRow.Cells[4].Value.ToString();
 
-            byte[] img = (byte[])dataGridView_user.CurrentRow.Cells[5].Value;
+            byte[] img = (byte[])dataGridView_user.CurrentRow.Cells[7].Value;
             MemoryStream ms = new MemoryStream(img);
             pictureBox_user.Image = Image.FromStream(ms);
 
@@ -62,6 +63,11 @@ namespace CNPM_ver3
             textBox_pass.Text = dataGridView_user.CurrentRow.Cells[8].Value.ToString();
             comboBox_type.Text = dataGridView_user.CurrentRow.Cells[9].Value.ToString();
             comboBox1.Text = dataGridView_user.CurrentRow.Cells[10].Value.ToString();
+
+        }
+
+        private void button_addmember_Click(object sender, EventArgs e)
+        {
 
         }
     }

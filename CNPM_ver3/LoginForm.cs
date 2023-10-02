@@ -10,11 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Reflection;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace CNPM_ver3
 {
     public partial class LoginForm : Form
     {
+        UserBLL ul = new UserBLL();
+
         public LoginForm()
         {
             InitializeComponent();
@@ -24,11 +27,8 @@ namespace CNPM_ver3
         {
 
         }
-        //ResourceManager _rm = new ResourceManager("LoginForm", Assembly.GetExecutingAssembly());
-
         private void button_login_Click(object sender, EventArgs e)
         {
-            UserBLL ul = new UserBLL();
 
             string username = textBox_userid.Text;
             string password = textBox_pass.Text;
@@ -81,6 +81,67 @@ namespace CNPM_ver3
                 ChangeLanguageClass.UpdateLanguage("language", "vi-VN");
             }
             Application.Restart();
+        }
+
+        private void button_forget_Click(object sender, EventArgs e)
+        {
+            string value = "";
+            if (InputBox(Properties.Resources.get_password, Properties.Resources.ask_email, ref value) == DialogResult.OK)
+            {
+                if (ul.IsValidEmail(value))
+                {
+                    string[] id_pass = ul.GetAccountByEmail(value);
+                    string id = id_pass[0];
+                    string pass = id_pass[1];
+                    string message = String.Format("Your USER ID: {0}\nYour PASSWORD: {1}", id, pass);
+                    string title = "Your SK account have just been created";
+                    ul.verifyEmail(value, title, message);
+
+                    MessageBox.Show(Properties.Resources.check_email_4_ac, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(Properties.Resources.login_notexist, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        public static DialogResult InputBox(string title, string promptText, ref string value)
+        {
+            Form form = new Form();
+            Label label = new Label();
+            TextBox textBox = new TextBox();
+            Button buttonOk = new Button();
+            Button buttonCancel = new Button();
+
+            form.Text = title;
+            label.Text = promptText;
+
+            buttonOk.Text = "OK";
+            buttonCancel.Text = "Cancel";
+            buttonOk.DialogResult = DialogResult.OK;
+            buttonCancel.DialogResult = DialogResult.Cancel;
+
+            label.SetBounds(36, 36, 372, 13);
+            textBox.SetBounds(36, 86, 700, 20);
+            buttonOk.SetBounds(228, 160, 160, 60);
+            buttonCancel.SetBounds(400, 160, 160, 60);
+
+            label.AutoSize = true;
+            form.ClientSize = new Size(796, 307);
+            form.FormBorderStyle = FormBorderStyle.FixedDialog;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.MinimizeBox = false;
+            form.MaximizeBox = false;
+
+            form.Controls.AddRange(new Control[] { label, textBox, buttonOk, buttonCancel });
+            form.AcceptButton = buttonOk;
+            form.CancelButton = buttonCancel;
+
+            DialogResult dialogResult = form.ShowDialog();
+
+            value = textBox.Text;
+            return dialogResult;
         }
     }
 }

@@ -61,6 +61,60 @@ namespace CNPM_ver3.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fail to add member.
+        /// </summary>
+        internal static string add_mem_2_pj_fail {
+            get {
+                return ResourceManager.GetString("add_mem_2_pj_fail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add member successfully.
+        /// </summary>
+        internal static string add_mem_2_pj_success {
+            get {
+                return ResourceManager.GetString("add_mem_2_pj_success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fail to add project, try again.
+        /// </summary>
+        internal static string add_pj_fail {
+            get {
+                return ResourceManager.GetString("add_pj_fail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project is added successfully.
+        /// </summary>
+        internal static string add_pj_success {
+            get {
+                return ResourceManager.GetString("add_pj_success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill your email address below.
+        /// </summary>
+        internal static string ask_email {
+            get {
+                return ResourceManager.GetString("ask_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check your email.
+        /// </summary>
+        internal static string check_email_4_ac {
+            get {
+                return ResourceManager.GetString("check_email_4_ac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Empty field is not allowed.
         /// </summary>
         internal static string empty_field {
@@ -76,6 +130,15 @@ namespace CNPM_ver3.Properties {
             get {
                 object obj = ResourceManager.GetObject("eye1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forget password.
+        /// </summary>
+        internal static string get_password {
+            get {
+                return ResourceManager.GetString("get_password", resourceCulture);
             }
         }
         
@@ -142,6 +205,33 @@ namespace CNPM_ver3.Properties {
         internal static string login_success_title {
             get {
                 return ResourceManager.GetString("login_success_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string title_fail {
+            get {
+                return ResourceManager.GetString("title_fail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string title_success {
+            get {
+                return ResourceManager.GetString("title_success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email is not exist.
+        /// </summary>
+        internal static string wrong_email {
+            get {
+                return ResourceManager.GetString("wrong_email", resourceCulture);
             }
         }
     }

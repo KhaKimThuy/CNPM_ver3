@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMember2Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember2Project.Designer.cs">
+      <DependentUpon>AddMember2Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProjectForm.Designer.cs">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,12 +72,25 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageJoinedProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageJoinedProjectForm.Designer.cs">
+      <DependentUpon>ManageJoinedProjectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageMemberForm.Designer.cs">
       <DependentUpon>ManageMemberForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProjectForm.Designer.cs">
+      <DependentUpon>ManageProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwriteForm.cs" />
     <Compile Include="ProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,7 +98,25 @@
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDetailForm.Designer.cs">
+      <DependentUpon>ProjectDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm.Designer.cs">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassForm.Designer.cs">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TxtBox1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,6 +126,12 @@
     <Compile Include="UserHomeForm.Designer.cs">
       <DependentUpon>UserHomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddMember2Project.resx">
+      <DependentUpon>AddMember2Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProjectForm.resx">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,17 +141,26 @@
     <EmbeddedResource Include="LoginForm.vi-VN.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageJoinedProjectForm.resx">
+      <DependentUpon>ManageJoinedProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageMemberForm.resx">
       <DependentUpon>ManageMemberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageMemberForm.vi-VN.resx">
       <DependentUpon>ManageMemberForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageProjectForm.resx">
+      <DependentUpon>ManageProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.vi-VN.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDetailForm.resx">
+      <DependentUpon>ProjectDetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.vi-VN.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ResetPassForm.resx">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserHomeForm.resx">
       <DependentUpon>UserHomeForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,40 +14,32 @@ namespace CNPM_ver3
 {
     public partial class UserHomeForm : Form
     {
+
+        OverwriteForm ovf = new OverwriteForm();
+
         public UserHomeForm()
         {
             InitializeComponent();
         }
 
-        private Form activeform = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeform != null)
-                activeform.Close();
-            activeform = childForm;
-
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            panel_main.Controls.Add(childForm);
-
-            panel_main.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
         private void UserHomeForm_Load(object sender, EventArgs e)
         {
             if (Users.VT_NAME=="Intern")
             {
                 panel_tool.BackColor = Color.FromArgb(14, 33, 160);
                 panel_header.BackColor = Color.FromArgb(14, 33, 160);
-                button_manageMenber.Visible = false;
+                button_manageMember.Visible = false;
                 button_addMember.Visible = false;
                 button_assign.Visible = false;
+                button_manageProject.Visible = false;
                 button_profile.BackColor = Color.FromArgb(77, 45, 183);
-                button_3.BackColor = Color.FromArgb(77, 45, 183);
+                button_myJProject.BackColor = Color.FromArgb(77, 45, 183);
+                button_manageRequest.BackColor = Color.FromArgb(77, 45, 183);
                 button_4.BackColor = Color.FromArgb(77, 45, 183);
+            }
+            else
+            {
+                button_myJProject.Visible = false;
             }
 
             try
@@ -83,26 +75,38 @@ namespace CNPM_ver3
 
         private void button_manageMenber_Click(object sender, EventArgs e)
         {
-            openChildForm(new ManageMemberForm());
+            ovf.openChildForm(new ManageMemberForm(), ref panel_main);
         }
 
         private void button_addMember_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new AddUserForm());
+            ovf.openChildForm(new AddUserForm(), ref panel_main);
         }
 
         private void button_profile_Click(object sender, EventArgs e)
         {
-            openChildForm(new ProfileForm());
+            ovf.openChildForm(new ProfileForm(), ref panel_main);
         }
 
         private void button_home_Click(object sender, EventArgs e)
         {
-            if (activeform != null)
-                activeform.Close();
-            panel_main.Controls.Add(panel_cover);
+            ovf.HomeForm(ref panel_main, ref panel_cover);
         }
 
+        private void button_addProject_Click(object sender, EventArgs e)
+        {
+            ovf.openChildForm(new ManageProjectForm(), ref panel_main);
+        }
+
+        private void button_myJProject_Click(object sender, EventArgs e)
+        {
+            ovf.openChildForm(new ManageJoinedProjectForm(), ref panel_main);
+        }
+
+        private void button_manageRequest_Click(object sender, EventArgs e)
+        {
+            ovf.openChildForm(new RequestForm(), ref panel_main);
+        }
 
     }
 }

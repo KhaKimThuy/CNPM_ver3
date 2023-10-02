@@ -31,34 +31,39 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.panel_header = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox_type = new System.Windows.Forms.ComboBox();
-            this.comboBox_enable = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox_pass = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox_gender = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox_email = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel_main = new System.Windows.Forms.Panel();
+            this.panel_cover = new System.Windows.Forms.Panel();
+            this.button_changePass = new System.Windows.Forms.Button();
             this.textBox_cccd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox_address = new System.Windows.Forms.TextBox();
-            this.label_address = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker_birthdate = new System.Windows.Forms.DateTimePicker();
+            this.comboBox_type = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox_enable = new System.Windows.Forms.ComboBox();
             this.textBox_username = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker_birthdate = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox_pass = new System.Windows.Forms.TextBox();
+            this.label_address = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox_address = new System.Windows.Forms.TextBox();
+            this.comboBox_gender = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox_user = new System.Windows.Forms.PictureBox();
+            this.textBox_email = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel_header.SuspendLayout();
+            this.panel_main.SuspendLayout();
+            this.panel_cover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_header
             // 
-            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.BackColor = System.Drawing.Color.Firebrick;
             this.panel_header.Controls.Add(this.label8);
+            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.Name = "panel_header";
             // 
             // label8
@@ -67,147 +72,176 @@
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Name = "label8";
             // 
+            // panel_main
+            // 
+            this.panel_main.Controls.Add(this.panel_cover);
+            resources.ApplyResources(this.panel_main, "panel_main");
+            this.panel_main.Name = "panel_main";
+            // 
+            // panel_cover
+            // 
+            this.panel_cover.Controls.Add(this.button_changePass);
+            this.panel_cover.Controls.Add(this.textBox_cccd);
+            this.panel_cover.Controls.Add(this.comboBox_type);
+            this.panel_cover.Controls.Add(this.label4);
+            this.panel_cover.Controls.Add(this.comboBox_enable);
+            this.panel_cover.Controls.Add(this.textBox_username);
+            this.panel_cover.Controls.Add(this.label9);
+            this.panel_cover.Controls.Add(this.dateTimePicker_birthdate);
+            this.panel_cover.Controls.Add(this.label5);
+            this.panel_cover.Controls.Add(this.label6);
+            this.panel_cover.Controls.Add(this.textBox_pass);
+            this.panel_cover.Controls.Add(this.label_address);
+            this.panel_cover.Controls.Add(this.label7);
+            this.panel_cover.Controls.Add(this.textBox_address);
+            this.panel_cover.Controls.Add(this.comboBox_gender);
+            this.panel_cover.Controls.Add(this.label1);
+            this.panel_cover.Controls.Add(this.label10);
+            this.panel_cover.Controls.Add(this.pictureBox_user);
+            this.panel_cover.Controls.Add(this.textBox_email);
+            this.panel_cover.Controls.Add(this.label11);
+            resources.ApplyResources(this.panel_cover, "panel_cover");
+            this.panel_cover.Name = "panel_cover";
+            // 
+            // button_changePass
+            // 
+            this.button_changePass.BackColor = System.Drawing.Color.IndianRed;
+            this.button_changePass.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            resources.ApplyResources(this.button_changePass, "button_changePass");
+            this.button_changePass.Name = "button_changePass";
+            this.button_changePass.UseVisualStyleBackColor = false;
+            this.button_changePass.Click += new System.EventHandler(this.button_changePass_Click);
+            // 
+            // textBox_cccd
+            // 
+            resources.ApplyResources(this.textBox_cccd, "textBox_cccd");
+            this.textBox_cccd.Name = "textBox_cccd";
+            this.textBox_cccd.ReadOnly = true;
+            // 
             // comboBox_type
             // 
-            resources.ApplyResources(this.comboBox_type, "comboBox_type");
             this.comboBox_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_type.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox_type, "comboBox_type");
             this.comboBox_type.Name = "comboBox_type";
-            // 
-            // comboBox_enable
-            // 
-            resources.ApplyResources(this.comboBox_enable, "comboBox_enable");
-            this.comboBox_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enable.FormattingEnabled = true;
-            this.comboBox_enable.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enable.Items"),
-            resources.GetString("comboBox_enable.Items1")});
-            this.comboBox_enable.Name = "comboBox_enable";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // textBox_pass
-            // 
-            resources.ApplyResources(this.textBox_pass, "textBox_pass");
-            this.textBox_pass.Name = "textBox_pass";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // comboBox_gender
-            // 
-            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
-            this.comboBox_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_gender.FormattingEnabled = true;
-            this.comboBox_gender.Items.AddRange(new object[] {
-            resources.GetString("comboBox_gender.Items"),
-            resources.GetString("comboBox_gender.Items1"),
-            resources.GetString("comboBox_gender.Items2")});
-            this.comboBox_gender.Name = "comboBox_gender";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // textBox_email
-            // 
-            resources.ApplyResources(this.textBox_email, "textBox_email");
-            this.textBox_email.Name = "textBox_email";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // textBox_cccd
+            // comboBox_enable
             // 
-            resources.ApplyResources(this.textBox_cccd, "textBox_cccd");
-            this.textBox_cccd.Name = "textBox_cccd";
+            this.comboBox_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_enable.FormattingEnabled = true;
+            this.comboBox_enable.Items.AddRange(new object[] {
+            resources.GetString("comboBox_enable.Items"),
+            resources.GetString("comboBox_enable.Items1")});
+            resources.ApplyResources(this.comboBox_enable, "comboBox_enable");
+            this.comboBox_enable.Name = "comboBox_enable";
             // 
-            // label3
+            // textBox_username
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.textBox_username, "textBox_username");
+            this.textBox_username.Name = "textBox_username";
+            this.textBox_username.ReadOnly = true;
             // 
-            // textBox_address
+            // label9
             // 
-            resources.ApplyResources(this.textBox_address, "textBox_address");
-            this.textBox_address.Name = "textBox_address";
-            // 
-            // label_address
-            // 
-            resources.ApplyResources(this.label_address, "label_address");
-            this.label_address.Name = "label_address";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
             // 
             // dateTimePicker_birthdate
             // 
             resources.ApplyResources(this.dateTimePicker_birthdate, "dateTimePicker_birthdate");
             this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
             // 
-            // textBox_username
+            // label5
             // 
-            resources.ApplyResources(this.textBox_username, "textBox_username");
-            this.textBox_username.Name = "textBox_username";
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
-            // label2
+            // label6
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // textBox_pass
+            // 
+            resources.ApplyResources(this.textBox_pass, "textBox_pass");
+            this.textBox_pass.Name = "textBox_pass";
+            this.textBox_pass.ReadOnly = true;
+            // 
+            // label_address
+            // 
+            resources.ApplyResources(this.label_address, "label_address");
+            this.label_address.Name = "label_address";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // textBox_address
+            // 
+            resources.ApplyResources(this.textBox_address, "textBox_address");
+            this.textBox_address.Name = "textBox_address";
+            this.textBox_address.ReadOnly = true;
+            // 
+            // comboBox_gender
+            // 
+            this.comboBox_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_gender.FormattingEnabled = true;
+            this.comboBox_gender.Items.AddRange(new object[] {
+            resources.GetString("comboBox_gender.Items"),
+            resources.GetString("comboBox_gender.Items1"),
+            resources.GetString("comboBox_gender.Items2")});
+            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
+            this.comboBox_gender.Name = "comboBox_gender";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
             // 
             // pictureBox_user
             // 
-            resources.ApplyResources(this.pictureBox_user, "pictureBox_user");
             this.pictureBox_user.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.pictureBox_user, "pictureBox_user");
             this.pictureBox_user.Name = "pictureBox_user";
             this.pictureBox_user.TabStop = false;
+            // 
+            // textBox_email
+            // 
+            resources.ApplyResources(this.textBox_email, "textBox_email");
+            this.textBox_email.Name = "textBox_email";
+            this.textBox_email.ReadOnly = true;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
             // 
             // ProfileForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_header);
-            this.Controls.Add(this.textBox_cccd);
-            this.Controls.Add(this.comboBox_type);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox_enable);
-            this.Controls.Add(this.textBox_username);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker_birthdate);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox_pass);
-            this.Controls.Add(this.label_address);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox_address);
-            this.Controls.Add(this.comboBox_gender);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox_user);
-            this.Controls.Add(this.textBox_email);
-            this.Controls.Add(this.label4);
             this.Name = "ProfileForm";
             this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
+            this.panel_main.ResumeLayout(false);
+            this.panel_cover.ResumeLayout(false);
+            this.panel_cover.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -215,24 +249,27 @@
 
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox_type;
-        private System.Windows.Forms.ComboBox comboBox_enable;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_pass;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox_gender;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox_email;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox_user;
+        private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Panel panel_cover;
+        private System.Windows.Forms.Button button_changePass;
         private System.Windows.Forms.TextBox textBox_cccd;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox_address;
-        private System.Windows.Forms.Label label_address;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_birthdate;
+        private System.Windows.Forms.ComboBox comboBox_type;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox_enable;
         private System.Windows.Forms.TextBox textBox_username;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_birthdate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox_pass;
+        private System.Windows.Forms.Label label_address;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox_address;
+        private System.Windows.Forms.ComboBox comboBox_gender;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox_user;
+        private System.Windows.Forms.TextBox textBox_email;
+        private System.Windows.Forms.Label label11;
     }
 }

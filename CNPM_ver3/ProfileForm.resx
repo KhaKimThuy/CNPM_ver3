@@ -117,577 +117,736 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>656, 446</value>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_address.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 21</value>
-  </data>
-  <data name="comboBox_gender.Items" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="&gt;&gt;panel_header.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="comboBox_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="textBox_username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 20</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBox_cccd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 20</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Name" xml:space="preserve">
-    <value>textBox_username</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 114</value>
-  </data>
-  <data name="comboBox_gender.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 225</value>
-  </data>
-  <data name="&gt;&gt;comboBox_gender.Name" xml:space="preserve">
-    <value>comboBox_gender</value>
-  </data>
-  <data name="comboBox_enable.Items" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_header.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="comboBox_gender.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Profile</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label_address.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 287</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="label_address.Text" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 231</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_birthdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>panel_header</value>
   </data>
-  <data name="&gt;&gt;comboBox_gender.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;textBox_cccd.ZOrder" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel_header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_header.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="panel_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 88</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel_header.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Name" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 10</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox_email.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ProfileForm</value>
-  </data>
-  <data name="&gt;&gt;label_address.Name" xml:space="preserve">
-    <value>label_address</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Enable</value>
-  </data>
-  <data name="&gt;&gt;comboBox_type.Name" xml:space="preserve">
-    <value>comboBox_type</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="comboBox_gender.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 21</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;textBox_cccd.Name" xml:space="preserve">
-    <value>textBox_cccd</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
-  </data>
-  <data name="textBox_address.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 230</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>CCCD</value>
-  </data>
-  <data name="&gt;&gt;textBox_address.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="textBox_address.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 272</value>
-  </data>
-  <data name="&gt;&gt;comboBox_gender.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_address.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;textBox_address.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
-  <data name="textBox_address.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 15</value>
   </data>
-  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="pictureBox_user.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>74</value>
-  </data>
-  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 171</value>
-  </data>
-  <data name="comboBox_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox_type.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enable.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox_email.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>ProfileForm</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 172</value>
-  </data>
-  <data name="dateTimePicker_birthdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 110</value>
-  </data>
-  <data name="textBox_email.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 20</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox_cccd.TabIndex" type="System.Int32, mscorlib">
-    <value>75</value>
-  </data>
-  <data name="&gt;&gt;comboBox_type.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="textBox_email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 284</value>
-  </data>
-  <data name="&gt;&gt;textBox_cccd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_user.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox_gender.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_email.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 55</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="label8.Text" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_changePass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_changePass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>697, 461</value>
+  </data>
+  <data name="button_changePass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 56</value>
+  </data>
+  <data name="button_changePass.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="button_changePass.Text" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="&gt;&gt;button_changePass.Name" xml:space="preserve">
+    <value>button_changePass</value>
+  </data>
+  <data name="&gt;&gt;button_changePass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_changePass.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;button_changePass.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox_cccd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 260</value>
+  </data>
+  <data name="textBox_cccd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="textBox_cccd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 26</value>
+  </data>
+  <data name="textBox_cccd.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;textBox_cccd.Name" xml:space="preserve">
+    <value>textBox_cccd</value>
+  </data>
+  <data name="&gt;&gt;textBox_cccd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_cccd.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;textBox_cccd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 175</value>
+  </data>
+  <data name="comboBox_type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 28</value>
+  </data>
+  <data name="comboBox_type.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Name" xml:space="preserve">
+    <value>comboBox_type</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;comboBox_type.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 89</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_enable.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox_enable.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 261</value>
+  </data>
+  <data name="comboBox_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="comboBox_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="comboBox_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enable.Name" xml:space="preserve">
+    <value>comboBox_enable</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enable.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;comboBox_enable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox_username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 83</value>
+  </data>
+  <data name="textBox_username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="textBox_username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 26</value>
+  </data>
+  <data name="textBox_username.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Name" xml:space="preserve">
+    <value>textBox_username</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 267</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dateTimePicker_birthdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 81</value>
+  </data>
+  <data name="dateTimePicker_birthdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="dateTimePicker_birthdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 26</value>
+  </data>
+  <data name="dateTimePicker_birthdate.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_birthdate.Name" xml:space="preserve">
+    <value>dateTimePicker_birthdate</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_birthdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_birthdate.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker_birthdate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 181</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;pictureBox_user.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="dateTimePicker_birthdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 87</value>
   </data>
-  <data name="&gt;&gt;comboBox_type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 287</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
   </data>
-  <data name="&gt;&gt;panel_header.Name" xml:space="preserve">
-    <value>panel_header</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="panel_header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel_header.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="comboBox_type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBox_enable.Items1" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 176</value>
-  </data>
-  <data name="&gt;&gt;textBox_email.Name" xml:space="preserve">
-    <value>textBox_email</value>
-  </data>
-  <data name="textBox_username.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox_gender.Items2" xml:space="preserve">
-    <value>Other</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 175</value>
-  </data>
-  <data name="&gt;&gt;label_address.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox_pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 20</value>
-  </data>
-  <data name="comboBox_gender.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 115</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 229</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel_header.Size" type="System.Drawing.Size, System.Drawing">
-    <value>656, 57</value>
-  </data>
-  <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 13</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_birthdate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox_cccd.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox_address.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 56</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_birthdate.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="comboBox_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label_address.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker_birthdate.Name" xml:space="preserve">
-    <value>dateTimePicker_birthdate</value>
-  </data>
-  <data name="comboBox_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 227</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Date of birth</value>
   </data>
-  <data name="textBox_pass.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Name" xml:space="preserve">
-    <value>textBox_pass</value>
-  </data>
-  <data name="pictureBox_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 121</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label_address.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="comboBox_type.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="pictureBox_user.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="dateTimePicker_birthdate.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
-  </data>
-  <data name="pictureBox_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 146</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Gender</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_user.Name" xml:space="preserve">
-    <value>pictureBox_user</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="textBox_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 111</value>
-  </data>
-  <data name="dateTimePicker_birthdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 20</value>
-  </data>
-  <data name="&gt;&gt;textBox_address.Name" xml:space="preserve">
-    <value>textBox_address</value>
-  </data>
-  <data name="textBox_cccd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 226</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox_gender.Items1" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_user.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;textBox_address.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enable.Name" xml:space="preserve">
-    <value>comboBox_enable</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel_cover</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 37</value>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 177</value>
+  </data>
+  <data name="textBox_pass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="textBox_pass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 26</value>
+  </data>
+  <data name="textBox_pass.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Name" xml:space="preserve">
+    <value>textBox_pass</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_address.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_address.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 354</value>
+  </data>
+  <data name="label_address.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label_address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="label_address.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="label_address.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;label_address.Name" xml:space="preserve">
+    <value>label_address</value>
+  </data>
+  <data name="&gt;&gt;label_address.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_address.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label_address.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 183</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox_address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 330</value>
+  </data>
+  <data name="textBox_address.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="textBox_address.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 84</value>
+  </data>
+  <data name="textBox_address.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;textBox_address.Name" xml:space="preserve">
+    <value>textBox_address</value>
+  </data>
+  <data name="&gt;&gt;textBox_address.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_address.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;textBox_address.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_gender.Items" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="comboBox_gender.Items1" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="comboBox_gender.Items2" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="comboBox_gender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 258</value>
+  </data>
+  <data name="comboBox_gender.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="comboBox_gender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 28</value>
+  </data>
+  <data name="comboBox_gender.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gender.Name" xml:space="preserve">
+    <value>comboBox_gender</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gender.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;comboBox_gender.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 266</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>CCCD</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 264</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="pictureBox_user.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_user.Location" type="System.Drawing.Point, System.Drawing">
+    <value>769, 137</value>
+  </data>
+  <data name="pictureBox_user.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="pictureBox_user.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 186</value>
+  </data>
+  <data name="pictureBox_user.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox_user.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_user.Name" xml:space="preserve">
+    <value>pictureBox_user</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_user.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_user.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_user.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textBox_email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 349</value>
+  </data>
+  <data name="textBox_email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="textBox_email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 26</value>
+  </data>
+  <data name="textBox_email.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="&gt;&gt;textBox_email.Name" xml:space="preserve">
+    <value>textBox_email</value>
+  </data>
+  <data name="&gt;&gt;textBox_email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_email.Parent" xml:space="preserve">
+    <value>panel_cover</value>
   </data>
   <data name="&gt;&gt;textBox_email.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="label_address.TabIndex" type="System.Int32, mscorlib">
-    <value>72</value>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="panel_header.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 354</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="panel_cover.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel_cover.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="panel_cover.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 598</value>
+  </data>
+  <data name="panel_cover.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_cover.Name" xml:space="preserve">
+    <value>panel_cover</value>
+  </data>
+  <data name="&gt;&gt;panel_cover.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_cover.Parent" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;panel_cover.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_main.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 88</value>
+  </data>
+  <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 598</value>
+  </data>
+  <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Name" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_main.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi-VN</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>984, 686</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ProfileForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ProfileForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
