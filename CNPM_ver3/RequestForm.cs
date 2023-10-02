@@ -85,9 +85,7 @@ namespace CNPM_ver3
 
         }
 
-        private void RequestForm_Load(object sender, EventArgs e)
-        {
 
-        }
+
     }
 }
