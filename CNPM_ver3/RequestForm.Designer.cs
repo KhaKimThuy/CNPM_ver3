@@ -43,9 +43,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.bt_Heading);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(14, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(851, 91);
+            this.panel1.Size = new System.Drawing.Size(957, 114);
             this.panel1.TabIndex = 0;
             // 
             // bt_Heading
@@ -54,8 +55,9 @@
             this.bt_Heading.Font = new System.Drawing.Font("Microsoft YaHei UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Heading.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt_Heading.Location = new System.Drawing.Point(0, 0);
+            this.bt_Heading.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bt_Heading.Name = "bt_Heading";
-            this.bt_Heading.Size = new System.Drawing.Size(851, 91);
+            this.bt_Heading.Size = new System.Drawing.Size(957, 114);
             this.bt_Heading.TabIndex = 0;
             this.bt_Heading.Text = "ADD REQUEST";
             this.bt_Heading.UseVisualStyleBackColor = false;
@@ -63,27 +65,29 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.tReq);
-            this.panel2.Location = new System.Drawing.Point(13, 109);
+            this.panel2.Location = new System.Drawing.Point(15, 136);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(850, 325);
+            this.panel2.Size = new System.Drawing.Size(956, 406);
             this.panel2.TabIndex = 1;
             // 
             // tReq
             // 
-            this.tReq.Location = new System.Drawing.Point(4, 4);
+            this.tReq.Location = new System.Drawing.Point(4, 5);
+            this.tReq.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tReq.Name = "tReq";
-            this.tReq.Size = new System.Drawing.Size(843, 318);
+            this.tReq.Size = new System.Drawing.Size(948, 396);
             this.tReq.TabIndex = 0;
             this.tReq.Text = "";
-          
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.bt_del);
             this.panel3.Controls.Add(this.bt_Request);
-            this.panel3.Location = new System.Drawing.Point(12, 440);
+            this.panel3.Location = new System.Drawing.Point(14, 550);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(851, 88);
+            this.panel3.Size = new System.Drawing.Size(957, 110);
             this.panel3.TabIndex = 2;
             // 
             // bt_del
@@ -91,9 +95,10 @@
             this.bt_del.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.bt_del.Font = new System.Drawing.Font("Microsoft YaHei UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_del.ForeColor = System.Drawing.SystemColors.Control;
-            this.bt_del.Location = new System.Drawing.Point(3, 3);
+            this.bt_del.Location = new System.Drawing.Point(3, 4);
+            this.bt_del.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bt_del.Name = "bt_del";
-            this.bt_del.Size = new System.Drawing.Size(440, 85);
+            this.bt_del.Size = new System.Drawing.Size(495, 106);
             this.bt_del.TabIndex = 0;
             this.bt_del.Text = "DELETE";
             this.bt_del.UseVisualStyleBackColor = false;
@@ -104,9 +109,10 @@
             this.bt_Request.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.bt_Request.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Request.ForeColor = System.Drawing.SystemColors.Control;
-            this.bt_Request.Location = new System.Drawing.Point(440, 3);
+            this.bt_Request.Location = new System.Drawing.Point(495, 4);
+            this.bt_Request.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bt_Request.Name = "bt_Request";
-            this.bt_Request.Size = new System.Drawing.Size(408, 85);
+            this.bt_Request.Size = new System.Drawing.Size(459, 106);
             this.bt_Request.TabIndex = 1;
             this.bt_Request.Text = "REQUEST";
             this.bt_Request.UseVisualStyleBackColor = false;
@@ -114,12 +120,13 @@
             // 
             // RequestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 549);
+            this.ClientSize = new System.Drawing.Size(984, 686);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RequestForm";
             this.Text = "RequestForm";
             this.panel1.ResumeLayout(false);
