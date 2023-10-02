@@ -76,7 +76,8 @@ namespace CNPM_ver3
             }
             else
             {
-                MessageBox.Show("Some thing went wrong", "Add Request", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string hello = "lalaland";
+                MessageBox.Show(hello, "Add Request", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
       
