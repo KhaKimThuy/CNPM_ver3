@@ -75,7 +75,6 @@
             this.tReq.Size = new System.Drawing.Size(843, 318);
             this.tReq.TabIndex = 0;
             this.tReq.Text = "";
-          
             // 
             // panel3
             // 
@@ -122,6 +121,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "RequestForm";
             this.Text = "RequestForm";
+            this.Load += new System.EventHandler(this.RequestForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
