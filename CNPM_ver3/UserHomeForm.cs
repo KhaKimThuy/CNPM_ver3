@@ -24,22 +24,30 @@ namespace CNPM_ver3
 
         private void UserHomeForm_Load(object sender, EventArgs e)
         {
-            if (Users.VT_NAME=="Intern")
+            if (Users.LV_NAME=="Nhân viên")
             {
                 panel_tool.BackColor = Color.FromArgb(14, 33, 160);
                 panel_header.BackColor = Color.FromArgb(14, 33, 160);
-                button_manageMember.Visible = false;
-                button_addMember.Visible = false;
-                button_assign.Visible = false;
-                button_manageProject.Visible = false;
+
+                button_profile.Visible = true;
                 button_profile.BackColor = Color.FromArgb(77, 45, 183);
+
+                button_myJProject.Visible = true;
                 button_myJProject.BackColor = Color.FromArgb(77, 45, 183);
+
+                button_manageRequest.Visible = true;
                 button_manageRequest.BackColor = Color.FromArgb(77, 45, 183);
+
                 button_4.BackColor = Color.FromArgb(77, 45, 183);
             }
-            else
+            else if (Users.LV_NAME == "Quản lý nhân sự")
             {
-                button_myJProject.Visible = false;
+                button_manageMember.Visible = true;
+            }
+            else if (Users.LV_NAME == "Quản lý dự án")
+            {
+                button_myJProject.Visible = true;
+                button_manageProject.Visible = true;
             }
 
             try
@@ -47,16 +55,13 @@ namespace CNPM_ver3
                 byte[] img = (byte[])Users.USER_IMAGE;
                 MemoryStream ms = new MemoryStream(img);
                 pictureBox_user.Image = Image.FromStream(ms);
-
-                label_role.Text = Users.VT_NAME;
+                label_role.Text = Users.LV_NAME;
                 label_username.Text = Users.USER_NAME;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void button_logout_Click(object sender, EventArgs e)
@@ -107,6 +112,5 @@ namespace CNPM_ver3
         {
             ovf.openChildForm(new RequestForm(), ref panel_main);
         }
-
     }
 }

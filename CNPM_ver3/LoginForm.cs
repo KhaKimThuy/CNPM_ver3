@@ -143,5 +143,11 @@ namespace CNPM_ver3
             value = textBox.Text;
             return dialogResult;
         }
+
+        private void button_addUser_Click(object sender, EventArgs e)
+        {
+            AddUserForm addUForm = new AddUserForm();
+            addUForm.Show();
+        }
     }
 }

@@ -43,7 +43,6 @@
             this.button_assign = new System.Windows.Forms.Button();
             this.button_profile = new System.Windows.Forms.Button();
             this.button_4 = new System.Windows.Forms.Button();
-            this.button_addMember = new System.Windows.Forms.Button();
             this.button_manageMember = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -115,7 +114,6 @@
             this.panel_cover.Controls.Add(this.button_assign);
             this.panel_cover.Controls.Add(this.button_profile);
             this.panel_cover.Controls.Add(this.button_4);
-            this.panel_cover.Controls.Add(this.button_addMember);
             this.panel_cover.Controls.Add(this.button_manageMember);
             this.panel_cover.Controls.Add(this.panel_header);
             resources.ApplyResources(this.panel_cover, "panel_cover");
@@ -173,15 +171,6 @@
             this.button_4.Name = "button_4";
             this.button_4.UseVisualStyleBackColor = false;
             // 
-            // button_addMember
-            // 
-            this.button_addMember.BackColor = System.Drawing.Color.Firebrick;
-            this.button_addMember.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.button_addMember, "button_addMember");
-            this.button_addMember.Name = "button_addMember";
-            this.button_addMember.UseVisualStyleBackColor = false;
-            this.button_addMember.Click += new System.EventHandler(this.button_addMember_Click_1);
-            // 
             // button_manageMember
             // 
             this.button_manageMember.BackColor = System.Drawing.Color.Firebrick;
@@ -211,6 +200,7 @@
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_tool);
             this.Name = "UserHomeForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UserHomeForm_Load);
             this.panel_tool.ResumeLayout(false);
             this.panel_tool.PerformLayout();
@@ -237,7 +227,6 @@
         private System.Windows.Forms.Button button_assign;
         private System.Windows.Forms.Button button_profile;
         private System.Windows.Forms.Button button_4;
-        private System.Windows.Forms.Button button_addMember;
         private System.Windows.Forms.Button button_manageMember;
         private System.Windows.Forms.Button button_home;
         private System.Windows.Forms.Button button_manageRequest;

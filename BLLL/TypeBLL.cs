@@ -26,10 +26,5 @@ namespace BLLL
         {
             return type_access.getUserType();
         }
-
-        public int type2id(string t)
-        {
-            return type_access.type2id(t);
-        }
     }
 }

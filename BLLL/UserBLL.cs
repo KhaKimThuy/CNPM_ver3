@@ -8,6 +8,7 @@ using DALL;
 using System.Data.SqlClient;
 using System.Data;
 using System.Text.RegularExpressions;
+using System.Security.Policy;
 
 namespace BLL
 {
@@ -16,21 +17,9 @@ namespace BLL
         UserAccessDAL user_access = new UserAccessDAL();
 
 
-        public bool IsValidEmail(string email)
+        public bool insertUser(string vt_name, string username, DateTime birthdate, string address, string cccd, byte[] image, string email, string gender, string dp, string lv, string phone)
         {
-            string emailPattern = @"^[a-zA-Z0-9_%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$";
-
-            if (string.IsNullOrEmpty(email))
-                return false;
-
-            Regex regex = new Regex(emailPattern);
-            return regex.IsMatch(email);
-        }
-
-
-        public bool insertUser(string vt_name, string username, DateTime birthdate, string address, string cccd, byte[] image, string email, string gender)
-        {
-            if (user_access.insertUser(vt_name, username, birthdate, address, cccd, image, email, gender))
+            if (user_access.insertUser(vt_name, username, birthdate, address, cccd, image, email, gender, dp, lv, phone))
             {
                 string[] id_pass = user_access.GetAccountByEmail(email);
                 string id = id_pass[0];
@@ -56,9 +45,20 @@ namespace BLL
             return user_access.getUserInfoAll();
         }
 
-        public bool loginCheck(string userID, string pass)
+        public bool IsValidEmail(string email)
         {
-            if (user_access.loginCheck(userID, pass))
+            string emailPattern = @"^[a-zA-Z0-9_%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$";
+
+            if (string.IsNullOrEmpty(email))
+                return false;
+
+            Regex regex = new Regex(emailPattern);
+            return regex.IsMatch(email);
+        }
+
+            public bool loginCheck(string user_login, string password)
+        {
+            if (user_access.loginCheck(user_login, password))
             {
                 return true;
             }
@@ -66,6 +66,11 @@ namespace BLL
             {
                 return false;
             }
+        }
+
+        public bool UpdateUserInfo(string pk, string u_name, DateTime bd, string cccd, string addr, string gd, string email, string vt_name, string u_pass, string lv_name, string dp_name, string u_phone, byte[] img)
+        {
+            return user_access.UpdateUserInfo(pk, u_name, bd, cccd, addr, gd, email, vt_name, u_pass, lv_name, dp_name, u_phone, img);
         }
 
         public string[] GetAccountByEmail(string email)

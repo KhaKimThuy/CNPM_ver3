@@ -173,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RequestForm.resx">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResetPassForm.resx">
       <DependentUpon>ResetPassForm.cs</DependentUpon>
     </EmbeddedResource>

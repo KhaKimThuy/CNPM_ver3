@@ -25,7 +25,7 @@ namespace CNPM_ver3
         {
             UserBLL myUL = new UserBLL();
 
-            string s_id = Users.USER_ID;
+            string s_id = Users.PK;
             //string s_id = "05907";
             DataRow myRow = myUL.checkRequest(s_id);
             if(myRow != null)
@@ -44,7 +44,7 @@ namespace CNPM_ver3
         private void bt_delete_Click(object sender, EventArgs e)
         {
             UserBLL myUL = new UserBLL();
-            string s_id = Users.USER_ID;
+            string s_id = Users.PK;
             myUL.updateRequest(s_id);
             tReq.Text = "";
             bt_Request.Text = "REQUEST";
@@ -57,7 +57,7 @@ namespace CNPM_ver3
             string myText = bt_Request.Text.ToString();
             string myDes = tReq.Text.ToString();
 
-            string s_id = Users.USER_ID;
+            string s_id = Users.PK;
             //string s_id = "05907";
             string r_id = "85001";
 

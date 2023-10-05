@@ -27,7 +27,7 @@ namespace CNPM_ver3
         public void showTable()
         {
             dataGridView_myJProject.ReadOnly = true;
-            dataGridView_myJProject.DataSource = ul.GetAllProjectOfUser(Users.USER_ID);
+            dataGridView_myJProject.DataSource = ul.GetAllProjectOfUser(Users.PK);
         }
     }
 }

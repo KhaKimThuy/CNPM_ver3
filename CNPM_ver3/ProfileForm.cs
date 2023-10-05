@@ -34,7 +34,10 @@ namespace CNPM_ver3
                 dateTimePicker_birthdate.Value = (DateTime)Users.USER_BIRTH;
                 textBox_pass.Text = Users.PASSWORD;
                 comboBox_type.Text = Users.VT_NAME;
+                comboBox_lv.Text = Users.LV_NAME;
+                comboBox_dp.Text = Users.DP_NAME;
                 textBox_cccd.Text = Users.USER_CCCD;
+                textBox_phone.Text = Users.USER_PHONE;
                 comboBox_enable.Text = Users.ENABLE.ToString();
                 comboBox_gender.Text = Users.USER_GENDER;
                 textBox_email.Text = Users.USER_EMAIL;

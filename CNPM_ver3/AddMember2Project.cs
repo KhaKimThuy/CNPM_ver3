@@ -85,5 +85,25 @@ namespace CNPM_ver3
                 MessageBox.Show(Properties.Resources.add_mem_2_pj_fail);
             }
         }
+
+        private void dataGridView_mInProject_Click(object sender, EventArgs e)
+        {
+            //string u_id = dataGridView_user.CurrentRow.Cells[0].Value.ToString();
+            string u_pk = dataGridView_mInProject.CurrentRow.Cells["USER_ID"].Value.ToString();
+            if (DialogResult.Yes == MessageBox.Show("Do You Want Delete ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                if (pj.DelMemberFromProject(u_pk, cur_pj_id))
+                {
+                    MessageBox.Show("Delete member from project successfully");
+                    // Hide row
+                    dataGridView_mInProject.Rows.RemoveAt(dataGridView_mInProject.CurrentRow.Index);
+                }
+                else
+                {
+                    MessageBox.Show("Fail to delete member from project successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
     }
 }

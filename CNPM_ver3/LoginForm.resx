@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -201,7 +201,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -228,7 +228,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="checkBox_remember.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -255,7 +255,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkBox_remember.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="button_login.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -282,7 +282,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="button_forget.Location" type="System.Drawing.Point, System.Drawing">
     <value>1082, 363</value>
@@ -306,7 +306,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button_forget.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -341,7 +341,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="comboBox_language.Items" xml:space="preserve">
     <value>English</value>
@@ -371,7 +371,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox_language.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label_remember.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -398,7 +398,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label_remember.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -756,7 +756,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button_showPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -772,10 +772,10 @@ E-mail: info@bcmpkorea.com</value>
 </value>
   </data>
   <data name="button_showPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1209, 282</value>
+    <value>1222, 287</value>
   </data>
   <data name="button_showPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+    <value>17, 20</value>
   </data>
   <data name="button_showPass.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -790,7 +790,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button_showPass.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pictureBox1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4027,7 +4027,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
     <value>902, 293</value>
@@ -4048,7 +4048,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox_pass.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="textBox_userid.Location" type="System.Drawing.Point, System.Drawing">
     <value>902, 254</value>
@@ -4069,7 +4069,31 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox_userid.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="button_addUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1046, 457</value>
+  </data>
+  <data name="button_addUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 42</value>
+  </data>
+  <data name="button_addUser.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="button_addUser.Text" xml:space="preserve">
+    <value>HR Manager</value>
+  </data>
+  <data name="&gt;&gt;button_addUser.Name" xml:space="preserve">
+    <value>button_addUser</value>
+  </data>
+  <data name="&gt;&gt;button_addUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_addUser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_addUser.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -4078,7 +4102,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1276, 603</value>
+    <value>1284, 580</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>

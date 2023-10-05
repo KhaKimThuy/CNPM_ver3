@@ -18,6 +18,8 @@ namespace CNPM_ver3
     {
 
         UserBLL ul = new UserBLL();
+        OverwriteForm ovf = new OverwriteForm();
+        string curr_pk = "";
 
         public ManageMemberForm()
         {
@@ -31,6 +33,20 @@ namespace CNPM_ver3
             foreach (string t in types)
             {
                 comboBox_type.Items.Add(t);
+            }
+
+            LevelBLL lv = new LevelBLL();
+            string[] levels = lv.GetUserLevel();
+            foreach (string t in levels)
+            {
+                comboBox_lv.Items.Add(t);
+            }
+
+            DepartmentBLL dp = new DepartmentBLL();
+            string[] dps = dp.GetUserDP();
+            foreach (string t in dps)
+            {
+                comboBox_dp.Items.Add(t);
             }
             showTable();
         }
@@ -47,28 +63,75 @@ namespace CNPM_ver3
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
-        private void DataGridView_user_Click(object sender, EventArgs e)
+        private void toolStripLabel_addUser_Click(object sender, EventArgs e)
         {
-            textBox_username.Text = dataGridView_user.CurrentRow.Cells[1].Value.ToString();
-            dateTimePicker_birthdate.Value = (DateTime)dataGridView_user.CurrentRow.Cells[2].Value;
-            textBox1.Text = dataGridView_user.CurrentRow.Cells[3].Value.ToString();
-            textBox_cccd.Text = dataGridView_user.CurrentRow.Cells[4].Value.ToString();
+            ovf.openChildForm(new AddUserForm(), ref panel_main);
+        }
 
-            byte[] img = (byte[])dataGridView_user.CurrentRow.Cells[7].Value;
-            MemoryStream ms = new MemoryStream(img);
-            pictureBox_user.Image = Image.FromStream(ms);
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            string u_name = textBox_username.Text;
+            DateTime bd = dateTimePicker_birthdate.Value;
+            string cccd = textBox_cccd.Text;
+            string addr = textBox_addr.Text;
+            string gd = comboBox_gender.Text;
+            string email = textBox_email.Text;
+            string vt_name = comboBox_type.Text;
+            string u_pass = textBox_pass.Text;
+            string lv_name = comboBox_lv.Text;
+            string dp_name = comboBox_dp.Text;
+            string u_phone = textBox_phone.Text;
 
-            textBox_email.Text = dataGridView_user.CurrentRow.Cells[6].Value.ToString();
-            comboBox_gender.Text = dataGridView_user.CurrentRow.Cells[7].Value.ToString();
-            textBox_pass.Text = dataGridView_user.CurrentRow.Cells[8].Value.ToString();
-            comboBox_type.Text = dataGridView_user.CurrentRow.Cells[9].Value.ToString();
-            comboBox1.Text = dataGridView_user.CurrentRow.Cells[10].Value.ToString();
+            MemoryStream ms = new MemoryStream();
+            pictureBox_user.Image.Save(ms, pictureBox_user.Image.RawFormat);
+            byte[] img = ms.ToArray();
+            if (ul.UpdateUserInfo(curr_pk, u_name, bd, cccd, addr, gd, email, vt_name, u_pass, lv_name, dp_name, u_phone, img))
+            {
+                MessageBox.Show("Update user information successfully");
+            }
+            else
+            {
+                MessageBox.Show("Fail to update user information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
-        private void button_addmember_Click(object sender, EventArgs e)
+        private void dataGridView_user_Click_1(object sender, EventArgs e)
         {
 
+            curr_pk = dataGridView_user.CurrentRow.Cells["USER_ID"].Value.ToString();
+            textBox_username.Text = dataGridView_user.CurrentRow.Cells["USER_NAME"].Value.ToString();
+            dateTimePicker_birthdate.Value = (DateTime)dataGridView_user.CurrentRow.Cells["USER_BIRTH"].Value;
+            textBox_email.Text = dataGridView_user.CurrentRow.Cells["USER_EMAIL"].Value.ToString();
+            textBox_cccd.Text = dataGridView_user.CurrentRow.Cells["USER_CCCD"].Value.ToString();
+
+            try
+            {
+                byte[] img = (byte[])dataGridView_user.CurrentRow.Cells["USER_IMAGE"].Value;
+                MemoryStream ms = new MemoryStream(img);
+                pictureBox_user.Image = Image.FromStream(ms);
+            }catch
+            {
+
+            }
+
+
+            comboBox_gender.Text = dataGridView_user.CurrentRow.Cells["USER_GENDER"].Value.ToString();
+            comboBox_enable.Text = dataGridView_user.CurrentRow.Cells["U_EN"].Value.ToString();
+            textBox_pass.Text = dataGridView_user.CurrentRow.Cells["U_PASS"].Value.ToString();
+            comboBox_type.Text = dataGridView_user.CurrentRow.Cells["VT_NAME"].Value.ToString();
+            comboBox_lv.Text = dataGridView_user.CurrentRow.Cells["LV_NAME"].Value.ToString();
+            comboBox_dp.Text = dataGridView_user.CurrentRow.Cells["PB_NAME"].Value.ToString();
+            textBox_addr.Text = dataGridView_user.CurrentRow.Cells["USER_ADDRESS"].Value.ToString();
+            textBox_phone.Text = dataGridView_user.CurrentRow.Cells["USER_PHONE"].Value.ToString();
+        }
+
+        private void button_upload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Select Photo(*.jpg;*.png;*.gif) | *.jpg;*.png;*.gif";
+            if (ofd.ShowDialog() == DialogResult.OK)
+                pictureBox_user.Image = Image.FromFile(ofd.FileName);
         }
     }
 }

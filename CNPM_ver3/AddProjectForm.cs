@@ -31,9 +31,9 @@ namespace CNPM_ver3
             DateTime end = dateTimePicker_end.Value;
             DateTime exp = dateTimePicker_exp.Value;
             string desc = textBox_desc.Text;
-            string u_id = Users.USER_ID;
+            string pk = Users.PK;
 
-            if (pj.InsertPJ(name, desc, exp, start, end, ver, u_id))
+            if (pj.InsertPJ(name, desc, exp, start, end, ver, pk))
             {
                 MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

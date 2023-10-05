@@ -44,6 +44,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox_pass = new CNPM_ver3.TxtBox1();
             this.textBox_userid = new CNPM_ver3.TxtBox1();
+            this.button_addUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -147,11 +148,21 @@
             resources.ApplyResources(this.textBox_userid, "textBox_userid");
             this.textBox_userid.Name = "textBox_userid";
             // 
+            // button_addUser
+            // 
+            this.button_addUser.BackColor = System.Drawing.Color.DarkOrange;
+            this.button_addUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.button_addUser, "button_addUser");
+            this.button_addUser.Name = "button_addUser";
+            this.button_addUser.UseVisualStyleBackColor = false;
+            this.button_addUser.Click += new System.EventHandler(this.button_addUser_Click);
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.button_addUser);
             this.Controls.Add(this.textBox_pass);
             this.Controls.Add(this.textBox_userid);
             this.Controls.Add(this.label_remember);
@@ -169,6 +180,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "LoginForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -194,6 +206,7 @@
         private System.Windows.Forms.ComboBox comboBox_language;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label_remember;
+        private System.Windows.Forms.Button button_addUser;
     }
 }
 

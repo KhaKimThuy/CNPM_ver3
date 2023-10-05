@@ -8,18 +8,22 @@ namespace DTOO
 {
     public static class Users
     {
-        public static string USER_ID;
+        public static string PK;
+        public static string USER_LOGIN;
         public static string USER_NAME;
         public static DateTime USER_BIRTH;
         public static string USER_ADDRESS;
         public static string USER_CCCD;
-        public static byte[] USER_IMAGE;
         public static string USER_EMAIL;
         public static string USER_GENDER;
+        public static byte[] USER_IMAGE;
+
         public static string PASSWORD;
         public static int ENABLE;
-        public static int VT_ID;
+        public static string LV_NAME;
         public static string VT_NAME;
+        public static string DP_NAME;
+        public static string USER_PHONE;
     }
 }
 

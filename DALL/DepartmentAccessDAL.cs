@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace DALL
 {
-    public class TypeAccessDAL : DataAccessDAL
+    public class DepartmentAccessDAL : DataAccessDAL
     {
-
-        public string [] getUserType()
+        public string[] GetUserDP()
         {
-            string query = "SELECT * FROM TYPE";
+            string query = "SELECT * FROM DEPARTMENT";
             MySqlCommand command = new MySqlCommand(query, con);
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -23,7 +22,7 @@ namespace DALL
             List<string> termsList = new List<string>();
             foreach (DataRow row in table.Rows)
             {
-                termsList.Add(row["VT_NAME"].ToString());
+                termsList.Add(row["PB_NAME"].ToString());
             }
             string[] types = termsList.ToArray();
             return types;

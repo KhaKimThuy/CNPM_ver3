@@ -94,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessDAL.cs" />
+    <Compile Include="DepartmentAccessDAL.cs" />
+    <Compile Include="LevelAccessDAL.cs" />
     <Compile Include="ProjectAccessDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestAccessDAL.cs" />

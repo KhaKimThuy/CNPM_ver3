@@ -33,6 +33,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox_phone = new System.Windows.Forms.TextBox();
+            this.comboBox_dp = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox_lv = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.button_changePass = new System.Windows.Forms.Button();
             this.textBox_cccd = new System.Windows.Forms.TextBox();
             this.comboBox_type = new System.Windows.Forms.ComboBox();
@@ -80,6 +86,12 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.label12);
+            this.panel_cover.Controls.Add(this.textBox_phone);
+            this.panel_cover.Controls.Add(this.comboBox_dp);
+            this.panel_cover.Controls.Add(this.label3);
+            this.panel_cover.Controls.Add(this.comboBox_lv);
+            this.panel_cover.Controls.Add(this.label2);
             this.panel_cover.Controls.Add(this.button_changePass);
             this.panel_cover.Controls.Add(this.textBox_cccd);
             this.panel_cover.Controls.Add(this.comboBox_type);
@@ -103,6 +115,41 @@
             resources.ApplyResources(this.panel_cover, "panel_cover");
             this.panel_cover.Name = "panel_cover";
             // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // textBox_phone
+            // 
+            resources.ApplyResources(this.textBox_phone, "textBox_phone");
+            this.textBox_phone.Name = "textBox_phone";
+            this.textBox_phone.ReadOnly = true;
+            // 
+            // comboBox_dp
+            // 
+            this.comboBox_dp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox_dp, "comboBox_dp");
+            this.comboBox_dp.FormattingEnabled = true;
+            this.comboBox_dp.Name = "comboBox_dp";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // comboBox_lv
+            // 
+            this.comboBox_lv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox_lv, "comboBox_lv");
+            this.comboBox_lv.FormattingEnabled = true;
+            this.comboBox_lv.Name = "comboBox_lv";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // button_changePass
             // 
             this.button_changePass.BackColor = System.Drawing.Color.IndianRed;
@@ -121,8 +168,8 @@
             // comboBox_type
             // 
             this.comboBox_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_type.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox_type, "comboBox_type");
+            this.comboBox_type.FormattingEnabled = true;
             this.comboBox_type.Name = "comboBox_type";
             // 
             // label4
@@ -133,11 +180,11 @@
             // comboBox_enable
             // 
             this.comboBox_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox_enable, "comboBox_enable");
             this.comboBox_enable.FormattingEnabled = true;
             this.comboBox_enable.Items.AddRange(new object[] {
             resources.GetString("comboBox_enable.Items"),
             resources.GetString("comboBox_enable.Items1")});
-            resources.ApplyResources(this.comboBox_enable, "comboBox_enable");
             this.comboBox_enable.Name = "comboBox_enable";
             // 
             // textBox_username
@@ -271,5 +318,11 @@
         private System.Windows.Forms.PictureBox pictureBox_user;
         private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox_lv;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox_dp;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox_phone;
     }
 }

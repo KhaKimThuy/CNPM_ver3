@@ -17,7 +17,7 @@ namespace DALL
     //git fetch && git checkout FETCH_HEAD -- DALL/UserAccessDAL.cs
     public class ProjectAccessDAL : DataAccessDAL
     {
-        public bool InsertPJ(string name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string u_id)
+        public bool InsertPJ(string name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string pk)
         {
             MySqlCommand command = new MySqlCommand("SELECT ADD_PJ (@name, @desc, @exp, @start, @end, @ver, @u_id) as Result", con);
 
@@ -27,7 +27,7 @@ namespace DALL
             command.Parameters.Add("@start", MySqlDbType.Date).Value = start;
             command.Parameters.Add("@end", MySqlDbType.Date).Value = end;
             command.Parameters.Add("@ver", MySqlDbType.Int32).Value = Int32.Parse(ver);
-            command.Parameters.Add("@u_id", MySqlDbType.VarChar).Value = u_id;
+            command.Parameters.Add("@u_id", MySqlDbType.VarChar).Value = pk;
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -51,11 +51,11 @@ namespace DALL
             }
         }
 
-        public DataTable GetProjectInfoAllOfMan(string u_id)
+        public DataTable GetProjectInfoAllOfMan(string pk)
         {
-            String query = String.Format("call GET_PJ_USER_MANAGE(@u_id)");
+            String query = String.Format("call GET_PJ_USER_MANAGE(@pk)");
             MySqlCommand command = new MySqlCommand(query, con);
-            command.Parameters.Add("@u_id", MySqlDbType.VarChar).Value = u_id;
+            command.Parameters.Add("@pk", MySqlDbType.VarChar).Value = pk;
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -96,6 +96,74 @@ namespace DALL
                 string title = "Welcome to new project!";
                 string message = "You've just been added to Project:" + pj_id;
                 ul.verifyEmail(u_email, title, message);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool DelMemberFromProject(string u_pk, string pj_id)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT DEL_U_PJ(@u_pk, @pj_id) as Result", con);
+
+            command.Parameters.Add("@u_pk", MySqlDbType.VarChar).Value = u_pk;
+            command.Parameters.Add("@pj_id", MySqlDbType.VarChar).Value = pj_id;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            int i = 0;
+            foreach (DataRow row in table.Rows)
+            {
+                string r = row["Result"].ToString();
+                i = Int32.Parse(r);
+            }
+
+            if (i > 0)
+            {
+                UserAccessDAL ul = new UserAccessDAL();
+                //string title = "Welcome to new project!";
+                //string message = "You've just been added to Project:" + pj_id;
+                //ul.verifyEmail(u_email, title, message);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateProject(string pj_id, string pj_name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string u_pk)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT UPDATE_PJ (@pj_id, @pj_name, @desc, @exp, @start, @end, @ver, @u_pk) as Result", con);
+
+            command.Parameters.Add("@pj_id", MySqlDbType.VarChar).Value = pj_id;
+            command.Parameters.Add("@pj_name", MySqlDbType.VarChar).Value = pj_name;
+            command.Parameters.Add("@desc", MySqlDbType.VarChar).Value = desc;
+            command.Parameters.Add("@exp", MySqlDbType.Date).Value = exp;
+            command.Parameters.Add("@start", MySqlDbType.Date).Value = start;
+            command.Parameters.Add("@end", MySqlDbType.Date).Value = end;
+            command.Parameters.Add("@ver", MySqlDbType.Int32).Value = Int32.Parse(ver);
+            command.Parameters.Add("@u_pk", MySqlDbType.VarChar).Value = u_pk;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            int i = 0;
+            foreach (DataRow row in table.Rows)
+            {
+                string r = row["Result"].ToString();
+                i = Int32.Parse(r);
+            }
+
+            if (i > 0)
+            {
                 return true;
             }
             else

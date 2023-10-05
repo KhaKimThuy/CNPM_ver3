@@ -10,6 +10,7 @@ using System.Runtime.Remoting.Contexts;
 using System.IO;
 using System.Net.Mail;
 using System.Net;
+using System.Web;
 
 namespace DALL
 {
@@ -33,15 +34,16 @@ namespace DALL
                 string pass = "";
                 foreach (DataRow row in table.Rows)
                 {
-                    id = row["USER_ID"].ToString();
-                    pass = row["PASSWORD"].ToString();
+                    id = row["U_LOGIN"].ToString();
+                    pass = row["U_PASS"].ToString();
                 }
                 string[] id_pass = {id,pass};
                 return id_pass;
             } 
             else
             {
-                return null;
+                string[] non_result = { "", "" };
+                return non_result;
             }
         }
 
@@ -50,9 +52,9 @@ namespace DALL
         {
             if (m != null && m != "")
             {
-                string from = "huonghvus2862003@gmail.com";
-                //string to = textBox_email.Text;
-                string email_app_pass = "bcem bcwl sbfm tcuc";
+                string from = "epdcsver0@gmail.com";
+                // pass: 123456789epdcs
+                string email_app_pass = "tmum fbnp gabm evpt";
 
                 MailMessage message = new MailMessage();
                 message.To.Add(to_email);
@@ -61,7 +63,6 @@ namespace DALL
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
                 smtpClient.EnableSsl = true;
                 smtpClient.Port = 587;
-                //message.Body = "Your USER ID is " + user_id + "\nYour PASSWORD is " + user_pass;
                 message.Body = m;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Credentials = new NetworkCredential(from, email_app_pass);
@@ -100,9 +101,9 @@ namespace DALL
             }
         }
 
-        public bool insertUser(string vt_name, string username, DateTime birthdate, string address, string cccd, byte[] image, string email, string gender)
+        public bool insertUser(string vt_name, string username, DateTime birthdate, string address, string cccd, byte[] image, string email, string gender, string dp, string lv, string phone)
         {
-            MySqlCommand command = new MySqlCommand("SELECT ADD_USER (@vt_name, @uname, @bd, @addr, @cccd, @img, @email, @gd, @lv, @pb) as Result", con);
+            MySqlCommand command = new MySqlCommand("SELECT ADD_USER (@vt_name, @uname, @bd, @addr, @cccd, @img, @email, @gd, @lv, @dp, @phone) as Result", con);
 
             command.Parameters.Add("@vt_name", MySqlDbType.VarChar).Value = vt_name;
             command.Parameters.Add("@uname", MySqlDbType.VarChar).Value = username;
@@ -112,13 +113,54 @@ namespace DALL
             command.Parameters.Add("@img", MySqlDbType.LongBlob).Value = image;
             command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             command.Parameters.Add("@gd", MySqlDbType.VarChar).Value = gender;
-            command.Parameters.Add("@lv", MySqlDbType.VarChar).Value = "Nhân viên";
-            command.Parameters.Add("@pb", MySqlDbType.VarChar).Value = "IT";
+            command.Parameters.Add("@lv", MySqlDbType.VarChar).Value = lv;
+            command.Parameters.Add("@dp", MySqlDbType.VarChar).Value = dp;
+            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone;
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
 
             // `Fill` để lấy dữ liệu từ cơ sở dữ liệu MySQL vào một đối tượng `DataSet` hoặc `DataTable`
+            adapter.Fill(table);
+
+            int i = 0;
+            foreach (DataRow row in table.Rows)
+            {
+                string r = row["Result"].ToString();
+                i = Int32.Parse(r);
+            }
+
+            if (i > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateUserInfo(string pk, string u_name, DateTime bd, string cccd, string addr, string gd, string email, string vt_name, string u_pass, string lv_name, string dp_name, string u_phone, byte[] img)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT UPDATE_USER_INFO (@pk, @u_name, @bd, @cccd, @addr, @gd, @email, @vt_name, @u_pass, @lv_name, @dp_name, @u_phone, @img) as Result", con);
+
+            command.Parameters.Add("@pk", MySqlDbType.VarChar).Value = pk;
+            command.Parameters.Add("@u_name", MySqlDbType.VarChar).Value = u_name;
+            command.Parameters.Add("@bd", MySqlDbType.Date).Value = bd;
+            command.Parameters.Add("@cccd", MySqlDbType.VarChar).Value = cccd;
+            command.Parameters.Add("@addr", MySqlDbType.VarChar).Value = addr;
+            command.Parameters.Add("@gd", MySqlDbType.VarChar).Value = gd;
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+            command.Parameters.Add("@vt_name", MySqlDbType.VarChar).Value = vt_name;
+            command.Parameters.Add("@u_pass", MySqlDbType.VarChar).Value = u_pass;
+            command.Parameters.Add("@lv_name", MySqlDbType.VarChar).Value = lv_name;
+            command.Parameters.Add("@dp_name", MySqlDbType.VarChar).Value = dp_name;
+            command.Parameters.Add("@u_phone", MySqlDbType.VarChar).Value = u_phone;
+            command.Parameters.Add("@img", MySqlDbType.LongBlob).Value = img;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
             adapter.Fill(table);
 
             int i = 0;
@@ -151,13 +193,15 @@ namespace DALL
             {
                 foreach (DataRow row in table.Rows)
                 {
-                    Users.USER_ID = row["USER_ID"].ToString();
+                    Users.PK = row["USER_ID"].ToString();
+                    Users.USER_LOGIN = row["U_LOGIN"].ToString();
                     Users.USER_NAME = row["USER_NAME"].ToString();
                     Users.USER_BIRTH = (DateTime)row["USER_BIRTH"];
                     Users.USER_ADDRESS = row["USER_ADDRESS"].ToString();
                     Users.USER_CCCD = row["USER_CCCD"].ToString();
                     Users.USER_EMAIL = row["USER_EMAIL"].ToString();
                     Users.USER_GENDER = row["USER_GENDER"].ToString();
+                    Users.USER_PHONE = row["USER_PHONE"].ToString();
 
                     try
                     {
@@ -168,10 +212,11 @@ namespace DALL
                         Users.USER_IMAGE = null;
                     }
 
-                    Users.PASSWORD = row["PASSWORD"].ToString();
-                    Users.ENABLE = Int32.Parse(row["ENABLE"].ToString());
-                    Users.VT_ID = Int32.Parse(row["VT_ID"].ToString());
+                    Users.PASSWORD = row["U_PASS"].ToString();
+                    Users.ENABLE = Int32.Parse(row["U_EN"].ToString());
                     Users.VT_NAME = row["VT_NAME"].ToString();
+                    Users.LV_NAME = row["LV_NAME"].ToString();
+                    Users.DP_NAME = row["PB_NAME"].ToString();
                 }
                 return table.Rows[0];
             }
@@ -182,9 +227,9 @@ namespace DALL
         }
 
 
-        public bool loginCheck(string userID, string pass)
+        public bool loginCheck(string user_login, string pass)
         {
-            String query = String.Format("call LOGIN_CHECK('{0}', '{1}')", userID, pass);
+            String query = String.Format("call LOGIN_CHECK('{0}', '{1}')", user_login, pass);
             MySqlCommand command = new MySqlCommand(query, con);
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -194,7 +239,9 @@ namespace DALL
 
             if (table.Rows.Count > 0)
             {
-                getUserInfo(userID);
+                DataRow row = table.Rows[0];
+                string id = row["USER_ID"].ToString(); 
+                getUserInfo(id);
                 return true;
             }
             else
