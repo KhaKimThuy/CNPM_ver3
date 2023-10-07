@@ -149,5 +149,11 @@ namespace CNPM_ver3
             AddUserForm addUForm = new AddUserForm();
             addUForm.Show();
         }
+
+        private void btForget_Click(object sender, EventArgs e)
+        {
+            ForgetPassForm forgetPassForm = new ForgetPassForm();
+            forgetPassForm.Show();
+        }
     }
 }

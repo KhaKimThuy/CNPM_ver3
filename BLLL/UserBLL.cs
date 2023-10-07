@@ -115,5 +115,27 @@ namespace BLL
             return user_access.updatePassword(s_id, s_password);
         }
 
+        // function to check if user with the input cccd and email is existed
+
+        public string checkForgot(string cccd, string email)
+        {
+            return user_access.checkForGot(cccd, email);
+        }
+
+        // function to add OTP when forgot password
+
+        public int addOTP(string id, string OTP)
+        {
+            return user_access.addOTP(id, OTP);
+        }
+
+        // function to check if OTP is valid
+
+        public int checkOTP(string id , string otp)
+        {
+            return user_access.checkOTP(id, otp);  
+        }
+
+
     }
 }

@@ -66,6 +66,24 @@
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ChangeLanguageClass.cs" />
+    <Compile Include="ForgetPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm.Designer.cs">
+      <DependentUpon>ForgetPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm1.Designer.cs">
+      <DependentUpon>ForgetPassForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm2.Designer.cs">
+      <DependentUpon>ForgetPassForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +152,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm.resx">
+      <DependentUpon>ForgetPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm1.resx">
+      <DependentUpon>ForgetPassForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm2.resx">
+      <DependentUpon>ForgetPassForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

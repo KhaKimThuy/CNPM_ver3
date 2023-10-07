@@ -24,6 +24,8 @@ namespace DTOO
         public static string VT_NAME;
         public static string DP_NAME;
         public static string USER_PHONE;
+        public static string F_USER;
+        public static string F_EMAIL;
     }
 }
 

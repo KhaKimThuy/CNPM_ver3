@@ -54,7 +54,7 @@ namespace DALL
             {
                 string from = "epdcsver0@gmail.com";
                 // pass: 123456789epdcs
-                string email_app_pass = "tmum fbnp gabm evpt";
+                string email_app_pass = "gqdn zsev kzqy rezr";
 
                 MailMessage message = new MailMessage();
                 message.To.Add(to_email);
@@ -348,5 +348,66 @@ namespace DALL
 
             return Convert.ToInt32(dr["Result"].ToString());
         }
+
+
+        // function to check if user with cccd and email exist
+        // If exist , return the primary key of USER_S, 
+        // If not exist , return the empty string
+
+        public string checkForGot(string cccd, string email)
+        {
+            String query = String.Format("call GET_INFO_BY_EMAIL(@email)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+
+            if (table.Rows.Count == 0) return "";
+            
+            DataRow dr = table.Rows[0];
+
+            if (!dr["USER_CCCD"].Equals(cccd)) return "";
+            return dr["USER_ID"].ToString();
+            
+        }
+        
+        // function to add OTP when forgot password
+        public int addOTP(string id , string otp)
+        {
+            string query = string.Format("select ADD_OTP('{0}', '{1}') as Result", id, otp);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+
+        }
+
+        // fucntion to check OTP is valid
+
+        public int checkOTP(string id, string otp) {
+
+            string query = string.Format("select CHECK_OTP('{0}', '{1}') as Result", id, otp);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+        }
+
+
     }
 }
