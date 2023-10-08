@@ -144,5 +144,12 @@ namespace BLL
         }
 
 
+        // function to get the info of disable user
+        public DataTable getUserInfoDis()
+        {
+            return user_access.getUserInfoDis();
+        }
+
+
     }
 }

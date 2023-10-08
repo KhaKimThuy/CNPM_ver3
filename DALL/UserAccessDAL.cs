@@ -429,5 +429,28 @@ namespace DALL
             return Convert.ToInt32(dr["Result"].ToString());
         }
 
+
+        // function to get all the disable user
+        public DataTable getUserInfoDis()
+        {
+            String query = String.Format("call GET_INFO_USER_DIS()");
+            MySqlCommand command = new MySqlCommand(query, con);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
     }
 }
