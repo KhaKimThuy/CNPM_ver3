@@ -31,7 +31,6 @@
             this.bt_Heading = new System.Windows.Forms.Button();
             this.bt_Request = new System.Windows.Forms.Button();
             this.textBox_toUser = new System.Windows.Forms.TextBox();
-            this.tReq = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button_file = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +38,8 @@
             this.textBox_content = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buton_clear = new System.Windows.Forms.Button();
+            this.dataGridView_myReq = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_myReq)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_Heading
@@ -60,7 +61,7 @@
             this.bt_Request.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.bt_Request.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Request.ForeColor = System.Drawing.SystemColors.Control;
-            this.bt_Request.Location = new System.Drawing.Point(1279, 681);
+            this.bt_Request.Location = new System.Drawing.Point(1303, 831);
             this.bt_Request.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bt_Request.Name = "bt_Request";
             this.bt_Request.Size = new System.Drawing.Size(216, 52);
@@ -77,15 +78,6 @@
             this.textBox_toUser.Size = new System.Drawing.Size(255, 26);
             this.textBox_toUser.TabIndex = 2;
             // 
-            // tReq
-            // 
-            this.tReq.Location = new System.Drawing.Point(12, 99);
-            this.tReq.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tReq.Name = "tReq";
-            this.tReq.Size = new System.Drawing.Size(1566, 525);
-            this.tReq.TabIndex = 0;
-            this.tReq.Text = "";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -99,7 +91,7 @@
             // button_file
             // 
             this.button_file.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button_file.Location = new System.Drawing.Point(793, 705);
+            this.button_file.Location = new System.Drawing.Point(427, 740);
             this.button_file.Name = "button_file";
             this.button_file.Size = new System.Drawing.Size(174, 42);
             this.button_file.TabIndex = 5;
@@ -128,7 +120,7 @@
             this.textBox_content.Location = new System.Drawing.Point(116, 812);
             this.textBox_content.Multiline = true;
             this.textBox_content.Name = "textBox_content";
-            this.textBox_content.Size = new System.Drawing.Size(1110, 116);
+            this.textBox_content.Size = new System.Drawing.Size(1110, 162);
             this.textBox_content.TabIndex = 11;
             // 
             // label6
@@ -146,7 +138,7 @@
             this.buton_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.buton_clear.Font = new System.Drawing.Font("Microsoft YaHei UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buton_clear.ForeColor = System.Drawing.SystemColors.Control;
-            this.buton_clear.Location = new System.Drawing.Point(1279, 751);
+            this.buton_clear.Location = new System.Drawing.Point(1303, 901);
             this.buton_clear.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.buton_clear.Name = "buton_clear";
             this.buton_clear.Size = new System.Drawing.Size(216, 55);
@@ -155,11 +147,22 @@
             this.buton_clear.UseVisualStyleBackColor = false;
             this.buton_clear.Click += new System.EventHandler(this.bt_delete_Click);
             // 
+            // dataGridView_myReq
+            // 
+            this.dataGridView_myReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_myReq.Location = new System.Drawing.Point(13, 98);
+            this.dataGridView_myReq.Name = "dataGridView_myReq";
+            this.dataGridView_myReq.RowHeadersWidth = 62;
+            this.dataGridView_myReq.RowTemplate.Height = 28;
+            this.dataGridView_myReq.Size = new System.Drawing.Size(1565, 564);
+            this.dataGridView_myReq.TabIndex = 13;
+            // 
             // RequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1590, 994);
+            this.Controls.Add(this.dataGridView_myReq);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox_content);
             this.Controls.Add(this.textBox_subject);
@@ -168,12 +171,13 @@
             this.Controls.Add(this.bt_Heading);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_Request);
-            this.Controls.Add(this.tReq);
             this.Controls.Add(this.textBox_toUser);
             this.Controls.Add(this.buton_clear);
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "RequestForm";
             this.Text = "RequestForm";
+            this.Load += new System.EventHandler(this.RequestForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_myReq)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +187,6 @@
         private System.Windows.Forms.Button bt_Request;
         private System.Windows.Forms.Button bt_Heading;
         private System.Windows.Forms.TextBox textBox_toUser;
-        private System.Windows.Forms.RichTextBox tReq;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_file;
         private System.Windows.Forms.Label label2;
@@ -191,5 +194,6 @@
         private System.Windows.Forms.TextBox textBox_content;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buton_clear;
+        private System.Windows.Forms.DataGridView dataGridView_myReq;
     }
 }

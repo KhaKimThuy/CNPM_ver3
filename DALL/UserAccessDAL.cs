@@ -11,6 +11,7 @@ using System.IO;
 using System.Net.Mail;
 using System.Net;
 using System.Web;
+using static System.Net.WebRequestMethods;
 
 namespace DALL
 {
@@ -346,6 +347,106 @@ namespace DALL
             DataRow dr = table.Rows[0];
 
             return Convert.ToInt32(dr["Result"].ToString());
+        }
+
+
+        // function to check if user with cccd and email exist
+        // If exist , return the primary key of USER_S, 
+        // If not exist , return the empty string
+
+        public string checkForGot(string cccd, string email)
+        {
+            String query = String.Format("call GET_INFO_BY_EMAIL(@email)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+
+            if (table.Rows.Count == 0) return "";
+            
+            DataRow dr = table.Rows[0];
+
+            if (!dr["USER_CCCD"].Equals(cccd)) return "";
+            return dr["USER_ID"].ToString();
+            
+        }
+        
+        // function to add OTP when forgot password
+        public int addOTP(string id , string otp)
+        {
+            string query = string.Format("select ADD_OTP('{0}', '{1}') as Result", id, otp);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+
+        }
+
+        // function to check OTP is valid
+
+        public int checkOTP(string id, string otp) {
+
+            string query = string.Format("select CHECK_OTP('{0}', '{1}') as Result", id, otp);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+        }
+
+
+        // function to disable/enable user
+        // flag = 0 => disable user
+        // flag = 1 => enable user
+
+        public int disableUser(string id , int flag)
+        {
+            string query = string.Format("select UPDATE_U_EN('{0}', '{1}') as Result", id, flag);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+        }
+
+
+        // function to get all the disable user
+        public DataTable getUserInfoDis()
+        {
+            String query = String.Format("call GET_INFO_USER_DIS()");
+            MySqlCommand command = new MySqlCommand(query, con);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

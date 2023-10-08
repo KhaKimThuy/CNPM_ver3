@@ -52,7 +52,16 @@ namespace CNPM_ver3
         {
             if (VerifySelectedReq())
             {
-                req.UpdateRequestStatus(Users.PK, textBox_sender.Text);
+
+                if (textBox_status.Text.Equals("Chưa xử lí"))
+                {
+                    req.UpdateRequestStatus(textBox_sender.Text, Users.PK, "Đã xử lí");
+                    MessageBox.Show("Accept request successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Request has already processed", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -60,7 +69,15 @@ namespace CNPM_ver3
         {
             if (VerifySelectedReq())
             {
-                req.UpdateRequestStatus(Users.PK, textBox_sender.Text);
+                if (textBox_status.Text.Equals("Chưa xử lí"))
+                {
+                    req.UpdateRequestStatus(textBox_sender.Text, Users.PK, "Từ chối xử lí");
+                    MessageBox.Show("Reject request successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Request has already processed", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -70,6 +87,7 @@ namespace CNPM_ver3
             textBox_sender.Text = dataGridView_req.CurrentRow.Cells["SENDER_ID"].Value.ToString();
             textBox_subject.Text = dataGridView_req.CurrentRow.Cells["R_DES"].Value.ToString();
             textBox_content.Text = dataGridView_req.CurrentRow.Cells["R_CONTENT"].Value.ToString();
+            textBox_status.Text = dataGridView_req.CurrentRow.Cells["R_STATUS"].Value.ToString();
             dateTimePicker_sentDay.Value = (DateTime)dataGridView_req.CurrentRow.Cells["R_DATE"].Value;
 
             dataGridView_files.ReadOnly = true;

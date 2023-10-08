@@ -48,9 +48,14 @@ namespace BLLL
             return req_access.GetFileFromRequest(req_id);
         }
 
-        public void UpdateRequestStatus(string pk_sender, string pk_receiver)
+        public void UpdateRequestStatus(string pk_sender, string pk_receiver, string status)
         {
-            req_access.UpdateRequestStatus(pk_sender, pk_receiver);
+            req_access.UpdateRequestStatus(pk_sender, pk_receiver, status);
+        }
+
+        public DataTable GetMyRequest(string pk_sender)
+        {
+            return req_access.GetMyRequest(pk_sender);
         }
     }
 }

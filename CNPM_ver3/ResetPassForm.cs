@@ -25,7 +25,7 @@ namespace CNPM_ver3
             string new_1 = tNewPass1.Text;
             string new_2 = tNewPass2.Text;
 
-            if(curr.Equals("") || new_1.Equals("") || new_2.Equals(""))
+            if (curr.Equals("") || new_1.Equals("") || new_2.Equals(""))
             {
                 tCurrPass.Text = "";
                 tNewPass1.Text = "";
@@ -34,15 +34,16 @@ namespace CNPM_ver3
                 return;
             }
 
-            if(!new_1.Equals(new_2))
+            if (!new_1.Equals(new_2))
             {
                 tNewPass1.Text = "";
                 tNewPass2.Text = "";
                 MessageBox.Show("Your new password is not the same of your comfirm", "Comfirm check", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-            } 
+            }
 
-            if(!curr.Equals(Users.PASSWORD) ) {
+            if (!curr.Equals(Users.PASSWORD))
+            {
                 tCurrPass.Text = "";
                 tNewPass1.Text = "";
                 tNewPass2.Text = "";
@@ -60,9 +61,10 @@ namespace CNPM_ver3
 
             UserBLL myUL = new UserBLL();
 
-            int res = myUL.updatePassword(curr, new_2);
+            int res = myUL.updatePassword(Users.PK, new_2);
 
-            if(res == 1) {
+            if (res == 1)
+            {
                 Users.PASSWORD = new_1;
                 tCurrPass.Text = "";
                 tNewPass1.Text = "";
@@ -70,10 +72,6 @@ namespace CNPM_ver3
                 MessageBox.Show("Your password has been updated", "Update Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
-
         }
-
-     
     }
 }

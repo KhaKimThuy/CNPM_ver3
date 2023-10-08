@@ -94,14 +94,37 @@ namespace DALL
             }
         }
 
-        public void UpdateRequestStatus(string pk_sender, string pk_receiver)
+        public void UpdateRequestStatus(string pk_sender, string pk_receiver, string status)
         {
-            String query = String.Format("select UPDATE_R_STATUS(@pk_sender, @pk_receiver) as Result");
+            String query = String.Format("select UPDATE_R_STATUS(@pk_sender, @pk_receiver, @status) as Result");
             MySqlCommand command = new MySqlCommand(query, con);
             command.Parameters.Add("@pk_sender", MySqlDbType.VarChar).Value = pk_sender;
             command.Parameters.Add("@pk_receiver", MySqlDbType.VarChar).Value = pk_receiver;
+            command.Parameters.Add("@status", MySqlDbType.VarChar).Value = status;
 
-            command.ExecuteScalar();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+        }
+
+        public DataTable GetMyRequest(string pk_sender) 
+        {
+            String query = String.Format("call GET_R_OF_U(@pk_sender)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@pk_sender", MySqlDbType.VarChar).Value = pk_sender;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

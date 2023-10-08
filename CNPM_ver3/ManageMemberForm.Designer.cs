@@ -36,6 +36,8 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.btDisableList = new System.Windows.Forms.Button();
+            this.btDisable = new System.Windows.Forms.Button();
             this.comboBox_lv = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox_dp = new System.Windows.Forms.ComboBox();
@@ -114,6 +116,8 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.btDisableList);
+            this.panel_cover.Controls.Add(this.btDisable);
             this.panel_cover.Controls.Add(this.comboBox_lv);
             this.panel_cover.Controls.Add(this.label11);
             this.panel_cover.Controls.Add(this.comboBox_dp);
@@ -144,6 +148,24 @@
             this.panel_cover.Controls.Add(this.dataGridView_user);
             resources.ApplyResources(this.panel_cover, "panel_cover");
             this.panel_cover.Name = "panel_cover";
+            // 
+            // btDisableList
+            // 
+            this.btDisableList.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.btDisableList, "btDisableList");
+            this.btDisableList.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btDisableList.Name = "btDisableList";
+            this.btDisableList.UseVisualStyleBackColor = false;
+            this.btDisableList.Click += new System.EventHandler(this.btDisableList_Click);
+            // 
+            // btDisable
+            // 
+            this.btDisable.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.btDisable, "btDisable");
+            this.btDisable.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btDisable.Name = "btDisable";
+            this.btDisable.UseVisualStyleBackColor = false;
+            this.btDisable.Click += new System.EventHandler(this.btDisable_Click);
             // 
             // comboBox_lv
             // 
@@ -190,7 +212,7 @@
             // 
             // button_upload
             // 
-            this.button_upload.BackColor = System.Drawing.Color.IndianRed;
+            this.button_upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button_upload.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             resources.ApplyResources(this.button_upload, "button_upload");
             this.button_upload.Name = "button_upload";
@@ -374,5 +396,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox_phone;
+        private System.Windows.Forms.Button btDisable;
+        private System.Windows.Forms.Button btDisableList;
     }
 }

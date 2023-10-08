@@ -35,13 +35,10 @@
             this.panel_cover = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox_phone = new System.Windows.Forms.TextBox();
-            this.comboBox_dp = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox_lv = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button_changePass = new System.Windows.Forms.Button();
             this.textBox_cccd = new System.Windows.Forms.TextBox();
-            this.comboBox_type = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox_enable = new System.Windows.Forms.ComboBox();
             this.textBox_username = new System.Windows.Forms.TextBox();
@@ -59,6 +56,9 @@
             this.pictureBox_user = new System.Windows.Forms.PictureBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.textBox_type = new System.Windows.Forms.TextBox();
+            this.textBox_level = new System.Windows.Forms.TextBox();
+            this.textBox_dp = new System.Windows.Forms.TextBox();
             this.panel_header.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.panel_cover.SuspendLayout();
@@ -86,15 +86,15 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.textBox_dp);
+            this.panel_cover.Controls.Add(this.textBox_level);
+            this.panel_cover.Controls.Add(this.textBox_type);
             this.panel_cover.Controls.Add(this.label12);
             this.panel_cover.Controls.Add(this.textBox_phone);
-            this.panel_cover.Controls.Add(this.comboBox_dp);
             this.panel_cover.Controls.Add(this.label3);
-            this.panel_cover.Controls.Add(this.comboBox_lv);
             this.panel_cover.Controls.Add(this.label2);
             this.panel_cover.Controls.Add(this.button_changePass);
             this.panel_cover.Controls.Add(this.textBox_cccd);
-            this.panel_cover.Controls.Add(this.comboBox_type);
             this.panel_cover.Controls.Add(this.label4);
             this.panel_cover.Controls.Add(this.comboBox_enable);
             this.panel_cover.Controls.Add(this.textBox_username);
@@ -126,24 +126,10 @@
             this.textBox_phone.Name = "textBox_phone";
             this.textBox_phone.ReadOnly = true;
             // 
-            // comboBox_dp
-            // 
-            this.comboBox_dp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox_dp, "comboBox_dp");
-            this.comboBox_dp.FormattingEnabled = true;
-            this.comboBox_dp.Name = "comboBox_dp";
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // comboBox_lv
-            // 
-            this.comboBox_lv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox_lv, "comboBox_lv");
-            this.comboBox_lv.FormattingEnabled = true;
-            this.comboBox_lv.Name = "comboBox_lv";
             // 
             // label2
             // 
@@ -164,13 +150,6 @@
             resources.ApplyResources(this.textBox_cccd, "textBox_cccd");
             this.textBox_cccd.Name = "textBox_cccd";
             this.textBox_cccd.ReadOnly = true;
-            // 
-            // comboBox_type
-            // 
-            this.comboBox_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox_type, "comboBox_type");
-            this.comboBox_type.FormattingEnabled = true;
-            this.comboBox_type.Name = "comboBox_type";
             // 
             // label4
             // 
@@ -274,6 +253,24 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
+            // textBox_type
+            // 
+            resources.ApplyResources(this.textBox_type, "textBox_type");
+            this.textBox_type.Name = "textBox_type";
+            this.textBox_type.ReadOnly = true;
+            // 
+            // textBox_level
+            // 
+            resources.ApplyResources(this.textBox_level, "textBox_level");
+            this.textBox_level.Name = "textBox_level";
+            this.textBox_level.ReadOnly = true;
+            // 
+            // textBox_dp
+            // 
+            resources.ApplyResources(this.textBox_dp, "textBox_dp");
+            this.textBox_dp.Name = "textBox_dp";
+            this.textBox_dp.ReadOnly = true;
+            // 
             // ProfileForm
             // 
             resources.ApplyResources(this, "$this");
@@ -300,7 +297,6 @@
         private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.Button button_changePass;
         private System.Windows.Forms.TextBox textBox_cccd;
-        private System.Windows.Forms.ComboBox comboBox_type;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox_enable;
         private System.Windows.Forms.TextBox textBox_username;
@@ -318,11 +314,12 @@
         private System.Windows.Forms.PictureBox pictureBox_user;
         private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox_lv;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox_dp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox_phone;
+        private System.Windows.Forms.TextBox textBox_dp;
+        private System.Windows.Forms.TextBox textBox_level;
+        private System.Windows.Forms.TextBox textBox_type;
     }
 }

@@ -20,13 +20,22 @@ namespace CNPM_ver3
         UserBLL ul = new UserBLL();
         OverwriteForm ovf = new OverwriteForm();
         string curr_pk = "";
+        int flag = 0;
 
         public ManageMemberForm()
         {
             InitializeComponent();
+            btDisable.Text = "Disable";
+            button_update.Visible = true;
+
         }
 
         private void ManageMemberForm_Load(object sender, EventArgs e)
+        {
+            loadTable();
+        }
+
+        public void loadTable()
         {
             TypeBLL tl = new TypeBLL();
             string[] types = tl.getUserType();
@@ -59,7 +68,7 @@ namespace CNPM_ver3
 
             // Show image
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns[7];
+            imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns["USER_IMAGE"];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
@@ -98,7 +107,7 @@ namespace CNPM_ver3
 
         private void dataGridView_user_Click_1(object sender, EventArgs e)
         {
-
+            
             curr_pk = dataGridView_user.CurrentRow.Cells["USER_ID"].Value.ToString();
             textBox_username.Text = dataGridView_user.CurrentRow.Cells["USER_NAME"].Value.ToString();
             dateTimePicker_birthdate.Value = (DateTime)dataGridView_user.CurrentRow.Cells["USER_BIRTH"].Value;
@@ -110,12 +119,11 @@ namespace CNPM_ver3
                 byte[] img = (byte[])dataGridView_user.CurrentRow.Cells["USER_IMAGE"].Value;
                 MemoryStream ms = new MemoryStream(img);
                 pictureBox_user.Image = Image.FromStream(ms);
-            }catch
+            }
+            catch
             {
 
             }
-
-
             comboBox_gender.Text = dataGridView_user.CurrentRow.Cells["USER_GENDER"].Value.ToString();
             comboBox_enable.Text = dataGridView_user.CurrentRow.Cells["U_EN"].Value.ToString();
             textBox_pass.Text = dataGridView_user.CurrentRow.Cells["U_PASS"].Value.ToString();
@@ -132,6 +140,128 @@ namespace CNPM_ver3
             ofd.Filter = "Select Photo(*.jpg;*.png;*.gif) | *.jpg;*.png;*.gif";
             if (ofd.ShowDialog() == DialogResult.OK)
                 pictureBox_user.Image = Image.FromFile(ofd.FileName);
+        }
+
+        private void btDisable_Click(object sender, EventArgs e)
+        {
+
+
+            if (curr_pk.Equals("")) return;
+
+            if(flag == 0)
+            {
+                if (MessageBox.Show("Do you want to disable this user?", "Disable User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int res = ul.disableUser(curr_pk, flag);
+
+                    if (res == 1)
+                    {
+
+                        MessageBox.Show("This user has been disabled", "Sucessfully Disable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        loadTable();
+
+                    }
+                }
+
+                return;
+            }
+
+            if (flag == 1)
+            {
+                if (MessageBox.Show("Do you want to enable this user?", "Enable User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int res = ul.disableUser(curr_pk, flag);
+
+                    if (res == 1)
+                    {
+
+                        MessageBox.Show("This user has been enabled", "Sucessfully Enable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        loadTableDis();
+
+                    }
+                }
+
+                return;
+            }
+
+
+        }
+
+
+        // function loadTableDisable 
+        // copy from function loadTable above
+
+        public void loadTableDis()
+        {
+            TypeBLL tl = new TypeBLL();
+            string[] types = tl.getUserType();
+            foreach (string t in types)
+            {
+                comboBox_type.Items.Add(t);
+            }
+
+            LevelBLL lv = new LevelBLL();
+            string[] levels = lv.GetUserLevel();
+            foreach (string t in levels)
+            {
+                comboBox_lv.Items.Add(t);
+            }
+
+            DepartmentBLL dp = new DepartmentBLL();
+            string[] dps = dp.GetUserDP();
+            foreach (string t in dps)
+            {
+                comboBox_dp.Items.Add(t);
+            }
+            showTableDis();
+        }
+
+        // function showTableDisable
+        // copy from function showTable above
+
+        public void showTableDis()
+        {
+            dataGridView_user.ReadOnly = true;
+            dataGridView_user.DataSource = ul.getUserInfoDis();
+            dataGridView_user.RowTemplate.Height = 80;
+
+            try
+            {
+                // Show image
+                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+                imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns[7];
+                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            } catch { }
+            
+        }
+
+
+        // function to switch between disable and enable list
+        private void btDisableList_Click(object sender, EventArgs e)
+        {
+            if(flag == 0)
+            {
+                loadTableDis();
+                flag = 1;
+                btDisableList.Text = "Return management form";
+                btDisable.Text = "Enable";
+                button_update.Visible = false;
+                return;
+            }
+
+            if(flag == 1)
+            {
+                loadTable();
+                flag = 0;
+                btDisableList.Text = "Disabled user list";
+                btDisable.Text = "Disable";
+                button_update.Visible = true;
+                return;
+
+            }
+
+            
+
         }
     }
 }

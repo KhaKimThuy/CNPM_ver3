@@ -43,6 +43,8 @@
             this.button_reject = new System.Windows.Forms.Button();
             this.dateTimePicker_sentDay = new System.Windows.Forms.DateTimePicker();
             this.dataGridView_files = new System.Windows.Forms.DataGridView();
+            this.textBox_status = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_req)).BeginInit();
             this.panel_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_files)).BeginInit();
@@ -87,6 +89,7 @@
             // 
             this.textBox_subject.Location = new System.Drawing.Point(174, 628);
             this.textBox_subject.Name = "textBox_subject";
+            this.textBox_subject.ReadOnly = true;
             this.textBox_subject.Size = new System.Drawing.Size(244, 26);
             this.textBox_subject.TabIndex = 2;
             // 
@@ -113,6 +116,7 @@
             this.textBox_content.Location = new System.Drawing.Point(174, 677);
             this.textBox_content.Multiline = true;
             this.textBox_content.Name = "textBox_content";
+            this.textBox_content.ReadOnly = true;
             this.textBox_content.Size = new System.Drawing.Size(727, 158);
             this.textBox_content.TabIndex = 4;
             // 
@@ -138,6 +142,7 @@
             // 
             this.textBox_sender.Location = new System.Drawing.Point(174, 576);
             this.textBox_sender.Name = "textBox_sender";
+            this.textBox_sender.ReadOnly = true;
             this.textBox_sender.Size = new System.Drawing.Size(244, 26);
             this.textBox_sender.TabIndex = 8;
             // 
@@ -174,6 +179,7 @@
             // 
             // dateTimePicker_sentDay
             // 
+            this.dateTimePicker_sentDay.Enabled = false;
             this.dateTimePicker_sentDay.Location = new System.Drawing.Point(1032, 582);
             this.dateTimePicker_sentDay.Name = "dateTimePicker_sentDay";
             this.dateTimePicker_sentDay.Size = new System.Drawing.Size(506, 26);
@@ -190,11 +196,30 @@
             this.dataGridView_files.TabIndex = 15;
             this.dataGridView_files.Click += new System.EventHandler(this.dataGridView_files_Click);
             // 
+            // textBox_status
+            // 
+            this.textBox_status.Location = new System.Drawing.Point(540, 627);
+            this.textBox_status.Name = "textBox_status";
+            this.textBox_status.ReadOnly = true;
+            this.textBox_status.Size = new System.Drawing.Size(244, 26);
+            this.textBox_status.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(478, 630);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Status";
+            // 
             // ManageRequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1590, 994);
+            this.Controls.Add(this.textBox_status);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView_files);
             this.Controls.Add(this.dateTimePicker_sentDay);
             this.Controls.Add(this.button_reject);
@@ -238,5 +263,7 @@
         private System.Windows.Forms.Button button_reject;
         private System.Windows.Forms.DateTimePicker dateTimePicker_sentDay;
         private System.Windows.Forms.DataGridView dataGridView_files;
+        private System.Windows.Forms.TextBox textBox_status;
+        private System.Windows.Forms.Label label7;
     }
 }

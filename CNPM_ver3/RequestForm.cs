@@ -19,18 +19,17 @@ namespace CNPM_ver3
     {
         RequestBLL reqBll = new RequestBLL();
         List<string> files = new List<string>();
-        UserBLL myUL = new UserBLL();
 
 
         public RequestForm()
         {
             InitializeComponent();
-            checkState();
+            //checkState();
             
         }
 
 
-        void checkState()
+        /*void checkState()
         {
             UserBLL myUL = new UserBLL();
 
@@ -47,7 +46,7 @@ namespace CNPM_ver3
                 bt_Request.Text = "REQUEST";
             }
 
-        }
+        }*/
         
 
         private void bt_delete_Click(object sender, EventArgs e)
@@ -55,23 +54,11 @@ namespace CNPM_ver3
             textBox_subject.Clear();
             textBox_toUser.Clear();
             textBox_content.Clear();
+            files.Clear();
         }
 
         private void bt_Request_Click(object sender, EventArgs e)
         {
-            /*
-            string myDes = tReq.Text.ToString();
-            string s_id = Users.PK;
-            //string s_id = "05907";
-            string r_id = "85001";
-
-            if (!myText.Equals("REQUEST"))
-            {
-                myUL.updateRequest(s_id);
-            
-            }
-            */
-
             string subject = textBox_subject.Text;
             string pk_receiver = textBox_toUser.Text;
             string content = textBox_content.Text;
@@ -88,22 +75,6 @@ namespace CNPM_ver3
 
         private void button_file_Click(object sender, EventArgs e)
         {
-            /*using(OpenFileDialog dlg = new OpenFileDialog() { Filter = "Text Documents (*.pdf;) |*.pdf", ValidateNames=true})
-            {
-                if(dlg.ShowDialog() == DialogResult.OK) 
-                {
-                    DialogResult res = MessageBox.Show("Are you sure you want to upload this file?", "Attach file", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (res == DialogResult.Yes)
-                    {
-                        string filename = dlg.FileName;
-                        reqBll.UploadFile(Users.PK, textBox_toUser.Text, filename);
-                    }
-                    else
-                    {
-                        return;
-                    }
-                }
-            }*/
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Multiselect = true;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -114,6 +85,17 @@ namespace CNPM_ver3
                 }
                 MessageBox.Show("Uploaded " + files.Count + " successfully");
             }
+        }
+
+        private void RequestForm_Load(object sender, EventArgs e)
+        {
+            showTable();
+        }
+
+        public void showTable()
+        {
+            dataGridView_myReq.ReadOnly = true;
+            dataGridView_myReq.DataSource = reqBll.GetMyRequest(Users.PK);
         }
     }
 }

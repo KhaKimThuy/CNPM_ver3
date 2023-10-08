@@ -45,6 +45,7 @@
             this.textBox_pass = new CNPM_ver3.TxtBox1();
             this.textBox_userid = new CNPM_ver3.TxtBox1();
             this.button_addUser = new System.Windows.Forms.Button();
+            this.btForget = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -157,11 +158,21 @@
             this.button_addUser.UseVisualStyleBackColor = false;
             this.button_addUser.Click += new System.EventHandler(this.button_addUser_Click);
             // 
+            // btForget
+            // 
+            this.btForget.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btForget.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.btForget, "btForget");
+            this.btForget.Name = "btForget";
+            this.btForget.UseVisualStyleBackColor = false;
+            this.btForget.Click += new System.EventHandler(this.btForget_Click);
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btForget);
             this.Controls.Add(this.button_addUser);
             this.Controls.Add(this.textBox_pass);
             this.Controls.Add(this.textBox_userid);
@@ -207,6 +218,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label_remember;
         private System.Windows.Forms.Button button_addUser;
+        private System.Windows.Forms.Button btForget;
     }
 }
 
