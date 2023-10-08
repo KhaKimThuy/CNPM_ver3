@@ -11,6 +11,7 @@ using System.IO;
 using System.Net.Mail;
 using System.Net;
 using System.Web;
+using static System.Net.WebRequestMethods;
 
 namespace DALL
 {
@@ -391,7 +392,7 @@ namespace DALL
 
         }
 
-        // fucntion to check OTP is valid
+        // function to check OTP is valid
 
         public int checkOTP(string id, string otp) {
 
@@ -408,6 +409,25 @@ namespace DALL
             return Convert.ToInt32(dr["Result"].ToString());
         }
 
+
+        // function to disable/enable user
+        // flag = 0 => disable user
+        // flag = 1 => enable user
+
+        public int disableUser(string id , int flag)
+        {
+            string query = string.Format("select UPDATE_U_EN('{0}', '{1}') as Result", id, flag);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            DataRow dr = table.Rows[0];
+
+            return Convert.ToInt32(dr["Result"].ToString());
+        }
 
     }
 }

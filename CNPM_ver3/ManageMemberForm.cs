@@ -28,6 +28,11 @@ namespace CNPM_ver3
 
         private void ManageMemberForm_Load(object sender, EventArgs e)
         {
+            loadTable();
+        }
+
+        public void loadTable()
+        {
             TypeBLL tl = new TypeBLL();
             string[] types = tl.getUserType();
             foreach (string t in types)
@@ -133,5 +138,25 @@ namespace CNPM_ver3
             if (ofd.ShowDialog() == DialogResult.OK)
                 pictureBox_user.Image = Image.FromFile(ofd.FileName);
         }
+
+        private void btDisable_Click(object sender, EventArgs e)
+        {
+
+            if (curr_pk.Equals("")) return;
+
+            if(MessageBox.Show("Do you want to disable this user?", "Disable User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int res = ul.disableUser(curr_pk, 0);
+
+                if (res == 1) {
+
+                    MessageBox.Show("This user has been disabled", "Sucessfully Disable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    loadTable();
+                    
+                }
+            }
+        }
+
+       
     }
 }

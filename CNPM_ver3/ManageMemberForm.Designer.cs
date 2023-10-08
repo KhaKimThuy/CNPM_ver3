@@ -64,6 +64,7 @@
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView_user = new System.Windows.Forms.DataGridView();
+            this.btDisable = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel_main.SuspendLayout();
@@ -114,6 +115,7 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.btDisable);
             this.panel_cover.Controls.Add(this.comboBox_lv);
             this.panel_cover.Controls.Add(this.label11);
             this.panel_cover.Controls.Add(this.comboBox_dp);
@@ -314,6 +316,15 @@
             this.dataGridView_user.Name = "dataGridView_user";
             this.dataGridView_user.Click += new System.EventHandler(this.dataGridView_user_Click_1);
             // 
+            // btDisable
+            // 
+            this.btDisable.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.btDisable, "btDisable");
+            this.btDisable.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btDisable.Name = "btDisable";
+            this.btDisable.UseVisualStyleBackColor = false;
+            this.btDisable.Click += new System.EventHandler(this.btDisable_Click);
+            // 
             // ManageMemberForm
             // 
             resources.ApplyResources(this, "$this");
@@ -374,5 +385,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox_phone;
+        private System.Windows.Forms.Button btDisable;
     }
 }

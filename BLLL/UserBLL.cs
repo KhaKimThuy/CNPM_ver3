@@ -136,6 +136,13 @@ namespace BLL
             return user_access.checkOTP(id, otp);  
         }
 
+        // function to disable or enable user
+
+        public int disableUser(string id , int flag)
+        {
+            return user_access.disableUser(id, flag);
+        }
+
 
     }
 }
