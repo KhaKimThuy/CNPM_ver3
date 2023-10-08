@@ -16,7 +16,6 @@ namespace DALL
 {
     public class UserAccessDAL : DataAccessDAL
     {
-
         public string[] GetAccountByEmail(string email)    
         {
             String query = String.Format("call GET_INFO_BY_EMAIL(@email)");
@@ -54,7 +53,7 @@ namespace DALL
             {
                 string from = "epdcsver0@gmail.com";
                 // pass: 123456789epdcs
-                string email_app_pass = "tmum fbnp gabm evpt";
+                string email_app_pass = "voyr rpvf pyxb lode";
 
                 MailMessage message = new MailMessage();
                 message.To.Add(to_email);

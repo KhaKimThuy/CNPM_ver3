@@ -79,7 +79,7 @@ namespace CNPM_ver3
         {
             if (curr_pj_id != null)
             {
-                curr_pj_id = dataGridView_project.CurrentRow.Cells[0].Value.ToString();
+                curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
 
                 string pj_name = textBox_name.Text;
                 string desc = textBox_desc.Text;
@@ -106,15 +106,14 @@ namespace CNPM_ver3
 
         private void button_search_Click(object sender, EventArgs e)
         {
-/*            dataGridView_project.DataSource = pj.searchStudent(textBox_search.Text);
-            dataGridView_project.RowTemplate.Height = 80;
-
-            // Xử lý cột dữ liệu chứa ảnh
-            // `DataGridViewImageColumn` kế thừa từ `DataGridViewColumn` và cung cấp các chức năng để hiển thị hình
-            // ảnh trong các ô của cột tương ứng.
-            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)DataGridView_student.Columns[7];
-            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; */
+            if (!string.IsNullOrEmpty(textBox_search.Text))
+            {
+                dataGridView_project.DataSource = pj.SearchProject(textBox_search.Text);
+            }
+            else
+            {
+                MessageBox.Show("Search without any hint error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

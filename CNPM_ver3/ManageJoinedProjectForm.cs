@@ -1,4 +1,5 @@
 ﻿using BLL;
+using BLLL;
 using DTOO;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace CNPM_ver3
     public partial class ManageJoinedProjectForm : Form
     {
         UserBLL ul = new UserBLL();
+        ProjectBLL pj = new ProjectBLL();
         public ManageJoinedProjectForm()
         {
             InitializeComponent();
@@ -28,6 +30,18 @@ namespace CNPM_ver3
         {
             dataGridView_myJProject.ReadOnly = true;
             dataGridView_myJProject.DataSource = ul.GetAllProjectOfUser(Users.PK);
+        }
+
+        private void button_search_Click(object sender, EventArgs e)
+        {   
+            if (!string.IsNullOrEmpty(textBox_search.Text))
+            {
+                dataGridView_myJProject.DataSource = pj.SearchProjectU(Users.PK, textBox_search.Text);
+            }
+            else
+            {
+                MessageBox.Show("Search without any hint error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

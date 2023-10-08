@@ -21,7 +21,26 @@ namespace CNPM_ver3
             InitializeComponent();
         }
 
-        
+        public bool ValidateDeadline(DateTime start, DateTime end, DateTime exp)
+        {
+            TimeSpan s_e = end - start;
+            TimeSpan ex_e = end - exp;
+            TimeSpan ex_s = exp - start;
+
+            int start_end = s_e.Days;
+            int exp_end = ex_e.Days;
+            int exp_start = ex_s.Days;
+
+            // Validate deadline
+            if (start_end <= 0 || exp_end <= 0 || exp_start <= 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         private void button_addProject_Click(object sender, EventArgs e)
         {
@@ -33,19 +52,33 @@ namespace CNPM_ver3
             string desc = textBox_desc.Text;
             string pk = Users.PK;
 
-            if (pj.InsertPJ(name, desc, exp, start, end, ver, pk))
+            if (ValidateChildren(ValidationConstraints.Enabled) && ValidateDeadline(start, end, exp))
             {
-                MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (pj.InsertPJ(name, desc, exp, start, end, ver, pk))
+                {
+                    MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(Properties.Resources.add_pj_fail, Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
-            {
-                MessageBox.Show(Properties.Resources.add_pj_fail, Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+
         }
 
         private void AddProjectForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox_name_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox_name.Text))
+            {
+                e.Cancel = true;
+                textBox_name.Focus();
+                errorProvider1.SetError(textBox_name, "Please enter project name");
+            }
         }
     }
 }

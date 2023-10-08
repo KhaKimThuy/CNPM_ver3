@@ -35,19 +35,21 @@ namespace CNPM_ver3
                 button_myJProject.Visible = true;
                 button_myJProject.BackColor = Color.FromArgb(77, 45, 183);
 
-                button_manageRequest.Visible = true;
-                button_manageRequest.BackColor = Color.FromArgb(77, 45, 183);
+                button_request.Visible = true;
+                button_request.BackColor = Color.FromArgb(77, 45, 183);
 
                 button_4.BackColor = Color.FromArgb(77, 45, 183);
             }
             else if (Users.LV_NAME == "Quản lý nhân sự")
             {
                 button_manageMember.Visible = true;
+                button_manageReq.Visible = true;
             }
             else if (Users.LV_NAME == "Quản lý dự án")
             {
                 button_myJProject.Visible = true;
                 button_manageProject.Visible = true;
+                button_manageReq.Visible = true;
             }
 
             try
@@ -111,6 +113,11 @@ namespace CNPM_ver3
         private void button_manageRequest_Click(object sender, EventArgs e)
         {
             ovf.openChildForm(new RequestForm(), ref panel_main);
+        }
+
+        private void button_manageReq_Click(object sender, EventArgs e)
+        {
+            ovf.openChildForm(new ManageRequestForm(), ref panel_main);
         }
     }
 }

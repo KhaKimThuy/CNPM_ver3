@@ -17,6 +17,34 @@ namespace DALL
     //git fetch && git checkout FETCH_HEAD -- DALL/UserAccessDAL.cs
     public class ProjectAccessDAL : DataAccessDAL
     {
+        public DataTable SearchProject(string desc)
+        {
+            MySqlCommand command = new MySqlCommand("CALL SEARCH_IN_PJ_MANAGE (@desc)", con);
+
+            command.Parameters.Add("@desc", MySqlDbType.VarChar).Value = desc;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            return table;
+        }
+        public DataTable SearchProjectU(string pk_u, string pj_desc)
+        {
+            MySqlCommand command = new MySqlCommand("CALL SEARCH_IN_PJ_U (@pk, @desc)", con);
+
+            command.Parameters.Add("@pk", MySqlDbType.VarChar).Value = pk_u;
+            command.Parameters.Add("@desc", MySqlDbType.VarChar).Value = pj_desc;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            return table;
+        }
+
         public bool InsertPJ(string name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string pk)
         {
             MySqlCommand command = new MySqlCommand("SELECT ADD_PJ (@name, @desc, @exp, @start, @end, @ver, @u_id) as Result", con);

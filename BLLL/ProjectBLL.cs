@@ -12,6 +12,17 @@ namespace BLLL
     public class ProjectBLL
     {
         ProjectAccessDAL pj_access = new ProjectAccessDAL();
+
+        public DataTable SearchProject(string desc)
+        {
+            return pj_access.SearchProject(desc);
+        }
+
+        public DataTable SearchProjectU(string pk_u, string pj_desc)
+        {
+            return pj_access.SearchProjectU(pk_u, pj_desc);
+        }
+
         public bool InsertPJ(string name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string pk)
         {
             return pj_access.InsertPJ(name, desc, exp, start, end, ver, pk);

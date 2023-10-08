@@ -16,6 +16,7 @@ using BLLL;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.ComponentModel.DataAnnotations;
 
 namespace CNPM_ver3
 {
@@ -53,56 +54,10 @@ namespace CNPM_ver3
             string address = textBox_address.Text;
 
             byte[] image = null;
-            try
-            {
-                MemoryStream ms = new MemoryStream();
-                pictureBox_user.Image.Save(ms, pictureBox_user.Image.RawFormat);
-                image = ms.ToArray();
-            }catch
-            {
-                MessageBox.Show("Image is empty");
-            }
-
-
-            int y_user = birthdate.Year;
-            int y_now = DateTime.Now.Year;
-
-            // Validate information of new user
-            if (type == "")
-            {
-                comboBox_type.Focus();
-            }
-            //else if (username == "" || !username.All(c => Char.IsLetter(c) || c == ' '))
-            else if (username == "")
-            {
-                        MessageBox.Show("Name is invalid ", "Error");
-            }
-            // Validate birthdate
-            else if (y_now - y_user < 18)
-            {
-                MessageBox.Show("Age is invalid", "Error");
-            }
-            else if (address == "")
-            {
-                MessageBox.Show("Address is invalid ", "Error");
-            }
-            else if (cccd.Length < 8)
-            {
-                MessageBox.Show("CCCD is invalid ", "Error");
-            }
-            else if (!IsValidEmail(email))
-            {
-                MessageBox.Show("Email is invalid ", "Error");
-            }
-            else if (gender == "")
-            {
-                MessageBox.Show("Gender is invalid ", "Error");
-            }
-            else if (image==null)
-            {
-                MessageBox.Show("Image user is invalid ", "Error");
-            }
-            else
+            MemoryStream ms = new MemoryStream();
+            pictureBox_user.Image.Save(ms, pictureBox_user.Image.RawFormat);
+            image = ms.ToArray();
+            if (ValidateChildren(ValidationConstraints.Enabled))
             {
                 if (ul.insertUser(type, username, birthdate, address, cccd, image, email, gender, dp, lv, phone))
                 {
@@ -153,6 +108,66 @@ namespace CNPM_ver3
             ofd.Filter = "Select Photo(*.jpg;*.png;*.gif) | *.jpg;*.png;*.gif";
             if (ofd.ShowDialog() == DialogResult.OK)
                 pictureBox_user.Image = Image.FromFile(ofd.FileName);
+        }
+
+        private void textBox_username_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (string.IsNullOrEmpty(textBox_username.Text) || !textBox_username.Text.All(c => Char.IsLetter(c) || c == ' '))
+            {
+                e.Cancel = true;
+                textBox_username.Focus();
+                errorProvider1.SetError(textBox_username, "Invalid username");
+            }
+        }
+
+        private void textBox_phone_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider2.Clear();
+            Regex r = new Regex(@"^[0-9]{10}$");
+            if (!r.IsMatch(textBox_phone.Text))
+            {
+                e.Cancel = true;
+                textBox_phone.Focus();
+                errorProvider2.SetError(textBox_phone, "Phone number must contain 10 digits");
+            }
+        }
+
+        private void dateTimePicker_birthdate_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider3.Clear();
+            DateTime birthdate = dateTimePicker_birthdate.Value;
+            DateTime now = DateTime.Now;
+            TimeSpan date_num = now - birthdate;
+            int day_age = date_num.Days;
+            if (day_age < 6570)
+            {
+                e.Cancel = true;
+                errorProvider3.SetError(dateTimePicker_birthdate, "Account is only for the age of 18 or up");
+            }
+        }
+
+        private void textBox_email_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider4.Clear();
+            var email_form = new EmailAddressAttribute();
+            if (!email_form.IsValid(textBox_email.Text))
+            {
+                e.Cancel = true;
+                textBox_email.Focus();
+                errorProvider4.SetError(textBox_email, "Email is invalid");
+            }
+        }
+
+        private void textBox_cccd_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider5.Clear();
+            if (!textBox_cccd.Text.All(char.IsDigit) || textBox_cccd.Text.Length < 9)
+            {
+                e.Cancel = true;
+                textBox_cccd.Focus();
+                errorProvider5.SetError(textBox_cccd, "Identification number must contain above 8 digits");
+            }
         }
     }
 }

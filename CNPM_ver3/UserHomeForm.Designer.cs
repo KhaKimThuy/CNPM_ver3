@@ -39,13 +39,14 @@
             this.panel_cover = new System.Windows.Forms.Panel();
             this.button_myJProject = new System.Windows.Forms.Button();
             this.button_manageProject = new System.Windows.Forms.Button();
-            this.button_manageRequest = new System.Windows.Forms.Button();
+            this.button_request = new System.Windows.Forms.Button();
             this.button_assign = new System.Windows.Forms.Button();
             this.button_profile = new System.Windows.Forms.Button();
             this.button_4 = new System.Windows.Forms.Button();
             this.button_manageMember = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_manageReq = new System.Windows.Forms.Button();
             this.panel_tool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.panel_main.SuspendLayout();
@@ -108,9 +109,10 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.button_manageReq);
             this.panel_cover.Controls.Add(this.button_myJProject);
             this.panel_cover.Controls.Add(this.button_manageProject);
-            this.panel_cover.Controls.Add(this.button_manageRequest);
+            this.panel_cover.Controls.Add(this.button_request);
             this.panel_cover.Controls.Add(this.button_assign);
             this.panel_cover.Controls.Add(this.button_profile);
             this.panel_cover.Controls.Add(this.button_4);
@@ -137,14 +139,14 @@
             this.button_manageProject.UseVisualStyleBackColor = false;
             this.button_manageProject.Click += new System.EventHandler(this.button_addProject_Click);
             // 
-            // button_manageRequest
+            // button_request
             // 
-            this.button_manageRequest.BackColor = System.Drawing.Color.Firebrick;
-            this.button_manageRequest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.button_manageRequest, "button_manageRequest");
-            this.button_manageRequest.Name = "button_manageRequest";
-            this.button_manageRequest.UseVisualStyleBackColor = false;
-            this.button_manageRequest.Click += new System.EventHandler(this.button_manageRequest_Click);
+            this.button_request.BackColor = System.Drawing.Color.Firebrick;
+            this.button_request.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            resources.ApplyResources(this.button_request, "button_request");
+            this.button_request.Name = "button_request";
+            this.button_request.UseVisualStyleBackColor = false;
+            this.button_request.Click += new System.EventHandler(this.button_manageRequest_Click);
             // 
             // button_assign
             // 
@@ -193,6 +195,15 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Name = "label1";
             // 
+            // button_manageReq
+            // 
+            this.button_manageReq.BackColor = System.Drawing.Color.Firebrick;
+            this.button_manageReq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            resources.ApplyResources(this.button_manageReq, "button_manageReq");
+            this.button_manageReq.Name = "button_manageReq";
+            this.button_manageReq.UseVisualStyleBackColor = false;
+            this.button_manageReq.Click += new System.EventHandler(this.button_manageReq_Click);
+            // 
             // UserHomeForm
             // 
             resources.ApplyResources(this, "$this");
@@ -229,8 +240,9 @@
         private System.Windows.Forms.Button button_4;
         private System.Windows.Forms.Button button_manageMember;
         private System.Windows.Forms.Button button_home;
-        private System.Windows.Forms.Button button_manageRequest;
+        private System.Windows.Forms.Button button_request;
         private System.Windows.Forms.Button button_manageProject;
         private System.Windows.Forms.Button button_myJProject;
+        private System.Windows.Forms.Button button_manageReq;
     }
 }
