@@ -39,6 +39,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.buton_clear = new System.Windows.Forms.Button();
             this.dataGridView_myReq = new System.Windows.Forms.DataGridView();
+            this.comboBox_files = new System.Windows.Forms.ComboBox();
+            this.button_clearFiles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_myReq)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,9 +93,9 @@
             // button_file
             // 
             this.button_file.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button_file.Location = new System.Drawing.Point(427, 740);
+            this.button_file.Location = new System.Drawing.Point(813, 740);
             this.button_file.Name = "button_file";
-            this.button_file.Size = new System.Drawing.Size(174, 42);
+            this.button_file.Size = new System.Drawing.Size(111, 42);
             this.button_file.TabIndex = 5;
             this.button_file.Text = "Attach file";
             this.button_file.UseVisualStyleBackColor = false;
@@ -157,11 +159,32 @@
             this.dataGridView_myReq.Size = new System.Drawing.Size(1565, 564);
             this.dataGridView_myReq.TabIndex = 13;
             // 
+            // comboBox_files
+            // 
+            this.comboBox_files.FormattingEnabled = true;
+            this.comboBox_files.Location = new System.Drawing.Point(619, 746);
+            this.comboBox_files.Name = "comboBox_files";
+            this.comboBox_files.Size = new System.Drawing.Size(188, 28);
+            this.comboBox_files.TabIndex = 14;
+            // 
+            // button_clearFiles
+            // 
+            this.button_clearFiles.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_clearFiles.Location = new System.Drawing.Point(930, 744);
+            this.button_clearFiles.Name = "button_clearFiles";
+            this.button_clearFiles.Size = new System.Drawing.Size(80, 35);
+            this.button_clearFiles.TabIndex = 15;
+            this.button_clearFiles.Text = "Clear";
+            this.button_clearFiles.UseVisualStyleBackColor = false;
+            this.button_clearFiles.Click += new System.EventHandler(this.button_clearFiles_Click);
+            // 
             // RequestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1590, 994);
+            this.Controls.Add(this.button_clearFiles);
+            this.Controls.Add(this.comboBox_files);
             this.Controls.Add(this.dataGridView_myReq);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox_content);
@@ -195,5 +218,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buton_clear;
         private System.Windows.Forms.DataGridView dataGridView_myReq;
+        private System.Windows.Forms.ComboBox comboBox_files;
+        private System.Windows.Forms.Button button_clearFiles;
     }
 }

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox_ver = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker_exp = new System.Windows.Forms.DateTimePicker();
@@ -45,33 +43,17 @@
             this.textBox_name = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.checkBox_dl = new System.Windows.Forms.CheckBox();
+            this.comboBox_public = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(477, 368);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 20);
-            this.label9.TabIndex = 107;
-            this.label9.Text = "Version";
-            // 
-            // textBox_ver
-            // 
-            this.textBox_ver.Location = new System.Drawing.Point(549, 363);
-            this.textBox_ver.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_ver.Name = "textBox_ver";
-            this.textBox_ver.Size = new System.Drawing.Size(118, 26);
-            this.textBox_ver.TabIndex = 106;
-            this.textBox_ver.Text = "1";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(480, 315);
+            this.label1.Location = new System.Drawing.Point(480, 389);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 20);
@@ -81,7 +63,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(496, 314);
+            this.label7.Location = new System.Drawing.Point(496, 388);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 20);
@@ -89,7 +71,7 @@
             // 
             // dateTimePicker_exp
             // 
-            this.dateTimePicker_exp.Location = new System.Drawing.Point(549, 305);
+            this.dateTimePicker_exp.Location = new System.Drawing.Point(549, 379);
             this.dateTimePicker_exp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_exp.Name = "dateTimePicker_exp";
             this.dateTimePicker_exp.Size = new System.Drawing.Size(408, 26);
@@ -98,7 +80,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(501, 254);
+            this.label6.Location = new System.Drawing.Point(501, 328);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 20);
@@ -107,7 +89,7 @@
             // 
             // dateTimePicker_end
             // 
-            this.dateTimePicker_end.Location = new System.Drawing.Point(549, 245);
+            this.dateTimePicker_end.Location = new System.Drawing.Point(549, 319);
             this.dateTimePicker_end.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_end.Name = "dateTimePicker_end";
             this.dateTimePicker_end.Size = new System.Drawing.Size(408, 26);
@@ -116,7 +98,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(496, 189);
+            this.label5.Location = new System.Drawing.Point(496, 263);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
@@ -125,7 +107,7 @@
             // 
             // dateTimePicker_start
             // 
-            this.dateTimePicker_start.Location = new System.Drawing.Point(549, 180);
+            this.dateTimePicker_start.Location = new System.Drawing.Point(549, 254);
             this.dateTimePicker_start.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_start.Name = "dateTimePicker_start";
             this.dateTimePicker_start.Size = new System.Drawing.Size(408, 26);
@@ -135,7 +117,7 @@
             // 
             this.button_addProject.BackColor = System.Drawing.Color.IndianRed;
             this.button_addProject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_addProject.Location = new System.Drawing.Point(1044, 600);
+            this.button_addProject.Location = new System.Drawing.Point(1018, 619);
             this.button_addProject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_addProject.Name = "button_addProject";
             this.button_addProject.Size = new System.Drawing.Size(126, 60);
@@ -147,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(399, 428);
+            this.label3.Location = new System.Drawing.Point(399, 451);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 20);
@@ -156,7 +138,7 @@
             // 
             // textBox_desc
             // 
-            this.textBox_desc.Location = new System.Drawing.Point(549, 423);
+            this.textBox_desc.Location = new System.Drawing.Point(549, 446);
             this.textBox_desc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_desc.Multiline = true;
             this.textBox_desc.Name = "textBox_desc";
@@ -190,14 +172,47 @@
             // 
             this.errorProvider2.ContainerControl = this;
             // 
+            // checkBox_dl
+            // 
+            this.checkBox_dl.AutoSize = true;
+            this.checkBox_dl.Location = new System.Drawing.Point(549, 192);
+            this.checkBox_dl.Name = "checkBox_dl";
+            this.checkBox_dl.Size = new System.Drawing.Size(124, 24);
+            this.checkBox_dl.TabIndex = 108;
+            this.checkBox_dl.Text = "Set deadline";
+            this.checkBox_dl.UseVisualStyleBackColor = true;
+            this.checkBox_dl.CheckedChanged += new System.EventHandler(this.checkBox_dl_CheckedChanged);
+            // 
+            // comboBox_public
+            // 
+            this.comboBox_public.FormattingEnabled = true;
+            this.comboBox_public.Items.AddRange(new object[] {
+            "Public",
+            "Private"});
+            this.comboBox_public.Location = new System.Drawing.Point(836, 188);
+            this.comboBox_public.Name = "comboBox_public";
+            this.comboBox_public.Size = new System.Drawing.Size(121, 28);
+            this.comboBox_public.TabIndex = 109;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(780, 191);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.TabIndex = 110;
+            this.label4.Text = "Scale";
+            // 
             // AddProjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1566, 851);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox_ver);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox_public);
+            this.Controls.Add(this.checkBox_dl);
             this.Controls.Add(this.textBox_desc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_name);
@@ -222,8 +237,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox_ver;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker_exp;
@@ -238,5 +251,8 @@
         private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.CheckBox checkBox_dl;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox_public;
     }
 }

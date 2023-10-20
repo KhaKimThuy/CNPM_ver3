@@ -55,6 +55,7 @@ namespace CNPM_ver3
             textBox_toUser.Clear();
             textBox_content.Clear();
             files.Clear();
+            comboBox_files.Items.Clear();
         }
 
         private void bt_Request_Click(object sender, EventArgs e)
@@ -81,6 +82,9 @@ namespace CNPM_ver3
             {
                 foreach (string file in openFileDialog.FileNames)
                 {
+                    string file_name = System.IO.Path.GetFileName(file);
+                    comboBox_files.Items.Add(file_name);
+
                     files.Add(file);
                 }
                 MessageBox.Show("Uploaded " + files.Count + " successfully");
@@ -96,6 +100,12 @@ namespace CNPM_ver3
         {
             dataGridView_myReq.ReadOnly = true;
             dataGridView_myReq.DataSource = reqBll.GetMyRequest(Users.PK);
+        }
+
+        private void button_clearFiles_Click(object sender, EventArgs e)
+        {
+            files.Clear();
+            comboBox_files.Items.Clear();
         }
     }
 }

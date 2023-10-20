@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_search = new System.Windows.Forms.Button();
@@ -41,8 +42,6 @@
             this.button_addMember = new System.Windows.Forms.Button();
             this.button_addGroup = new System.Windows.Forms.Button();
             this.button_update = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox_ver = new System.Windows.Forms.TextBox();
             this.textBox_desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_name = new System.Windows.Forms.TextBox();
@@ -55,11 +54,21 @@
             this.dateTimePicker_start = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView_project = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.comboBox_public = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox_ver = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.panel_cover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_project)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,14 +127,14 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 69);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1590, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1590, 30);
             this.toolStrip1.TabIndex = 69;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel_addProject
             // 
             this.toolStripLabel_addProject.Name = "toolStripLabel_addProject";
-            this.toolStripLabel_addProject.Size = new System.Drawing.Size(106, 33);
+            this.toolStripLabel_addProject.Size = new System.Drawing.Size(106, 25);
             this.toolStripLabel_addProject.Text = "Add project";
             this.toolStripLabel_addProject.Click += new System.EventHandler(this.toolStripLabel_addProject_Click);
             // 
@@ -134,7 +143,7 @@
             this.toolStripLabel_back.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel_back.ForeColor = System.Drawing.Color.Red;
             this.toolStripLabel_back.Name = "toolStripLabel_back";
-            this.toolStripLabel_back.Size = new System.Drawing.Size(53, 33);
+            this.toolStripLabel_back.Size = new System.Drawing.Size(53, 25);
             this.toolStripLabel_back.Text = "Back";
             this.toolStripLabel_back.Click += new System.EventHandler(this.toolStripLabel_back_Click);
             // 
@@ -142,15 +151,17 @@
             // 
             this.panel_main.Controls.Add(this.panel_cover);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(0, 107);
+            this.panel_main.Location = new System.Drawing.Point(0, 99);
             this.panel_main.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1590, 911);
+            this.panel_main.Size = new System.Drawing.Size(1590, 919);
             this.panel_main.TabIndex = 70;
             // 
             // panel_cover
             // 
             this.panel_cover.AutoScroll = true;
+            this.panel_cover.Controls.Add(this.label8);
+            this.panel_cover.Controls.Add(this.comboBox_public);
             this.panel_cover.Controls.Add(this.button_del);
             this.panel_cover.Controls.Add(this.button_addMember);
             this.panel_cover.Controls.Add(this.button_addGroup);
@@ -173,7 +184,7 @@
             this.panel_cover.Location = new System.Drawing.Point(0, 0);
             this.panel_cover.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(1590, 911);
+            this.panel_cover.Size = new System.Drawing.Size(1590, 919);
             this.panel_cover.TabIndex = 0;
             // 
             // button_del
@@ -226,25 +237,6 @@
             this.button_update.Text = "Update";
             this.button_update.UseVisualStyleBackColor = false;
             this.button_update.Click += new System.EventHandler(this.button_update_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(298, 672);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 20);
-            this.label9.TabIndex = 120;
-            this.label9.Text = "Version";
-            // 
-            // textBox_ver
-            // 
-            this.textBox_ver.Location = new System.Drawing.Point(370, 668);
-            this.textBox_ver.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_ver.Name = "textBox_ver";
-            this.textBox_ver.Size = new System.Drawing.Size(378, 26);
-            this.textBox_ver.TabIndex = 119;
-            this.textBox_ver.Text = "1";
             // 
             // textBox_desc
             // 
@@ -299,6 +291,7 @@
             this.dateTimePicker_exp.Name = "dateTimePicker_exp";
             this.dateTimePicker_exp.Size = new System.Drawing.Size(292, 26);
             this.dateTimePicker_exp.TabIndex = 116;
+            this.dateTimePicker_exp.ValueChanged += new System.EventHandler(this.dateTimePicker_exp_ValueChanged);
             // 
             // label4
             // 
@@ -327,6 +320,7 @@
             this.dateTimePicker_end.Name = "dateTimePicker_end";
             this.dateTimePicker_end.Size = new System.Drawing.Size(292, 26);
             this.dateTimePicker_end.TabIndex = 114;
+            this.dateTimePicker_end.ValueChanged += new System.EventHandler(this.dateTimePicker_end_ValueChanged);
             // 
             // dateTimePicker_start
             // 
@@ -335,6 +329,7 @@
             this.dateTimePicker_start.Name = "dateTimePicker_start";
             this.dateTimePicker_start.Size = new System.Drawing.Size(292, 26);
             this.dateTimePicker_start.TabIndex = 112;
+            this.dateTimePicker_start.ValueChanged += new System.EventHandler(this.dateTimePicker_start_ValueChanged);
             // 
             // label5
             // 
@@ -358,6 +353,58 @@
             this.dataGridView_project.ClientSizeChanged += new System.EventHandler(this.toolStripLabel_addProject_Click);
             this.dataGridView_project.Click += new System.EventHandler(this.DataGridView_Project_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // comboBox_public
+            // 
+            this.comboBox_public.FormattingEnabled = true;
+            this.comboBox_public.Items.AddRange(new object[] {
+            "Public",
+            "Private"});
+            this.comboBox_public.Location = new System.Drawing.Point(370, 677);
+            this.comboBox_public.Name = "comboBox_public";
+            this.comboBox_public.Size = new System.Drawing.Size(121, 28);
+            this.comboBox_public.TabIndex = 125;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(311, 680);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(49, 20);
+            this.label8.TabIndex = 126;
+            this.label8.Text = "Scale";
+            // 
+            // textBox_ver
+            // 
+            this.textBox_ver.Location = new System.Drawing.Point(370, 857);
+            this.textBox_ver.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_ver.Name = "textBox_ver";
+            this.textBox_ver.Size = new System.Drawing.Size(378, 26);
+            this.textBox_ver.TabIndex = 119;
+            this.textBox_ver.Text = "1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(298, 861);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 20);
+            this.label9.TabIndex = 120;
+            this.label9.Text = "Version";
+            // 
             // ManageProjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -378,6 +425,9 @@
             this.panel_cover.ResumeLayout(false);
             this.panel_cover.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_project)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,8 +443,6 @@
         private System.Windows.Forms.DataGridView dataGridView_project;
         private System.Windows.Forms.Button button_addGroup;
         private System.Windows.Forms.Button button_update;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox_ver;
         private System.Windows.Forms.TextBox textBox_desc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_name;
@@ -411,5 +459,12 @@
         private System.Windows.Forms.Button button_del;
         private System.Windows.Forms.Button button_search;
         private System.Windows.Forms.TextBox textBox_search;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox_public;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox_ver;
     }
 }

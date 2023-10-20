@@ -99,6 +99,7 @@
     <Compile Include="ProjectAccessDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestAccessDAL.cs" />
+    <Compile Include="TaskAccessDAL.cs" />
     <Compile Include="TypeAccessDAL.cs" />
     <Compile Include="UserAccessDAL.cs" />
   </ItemGroup>

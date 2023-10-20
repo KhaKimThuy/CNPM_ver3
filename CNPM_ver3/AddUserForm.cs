@@ -150,13 +150,13 @@ namespace CNPM_ver3
         private void textBox_email_Validating(object sender, CancelEventArgs e)
         {
             errorProvider4.Clear();
-            var email_form = new EmailAddressAttribute();
-            if (!email_form.IsValid(textBox_email.Text))
+            if (!IsValidEmail(textBox_email.Text))
             {
                 e.Cancel = true;
                 textBox_email.Focus();
-                errorProvider4.SetError(textBox_email, "Email is invalid");
+                errorProvider4.SetError(textBox_email, "Email address is invalid");
             }
+            
         }
 
         private void textBox_cccd_Validating(object sender, CancelEventArgs e)

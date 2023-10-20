@@ -13,7 +13,6 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DALL
 {
-
     //git fetch && git checkout FETCH_HEAD -- DALL/UserAccessDAL.cs
     public class ProjectAccessDAL : DataAccessDAL
     {
@@ -45,9 +44,9 @@ namespace DALL
             return table;
         }
 
-        public bool InsertPJ(string name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string pk)
+        public bool InsertPJ(string name, string desc, DateTime? exp, DateTime? start, DateTime? end, string ver, string isPublic, string pk)
         {
-            MySqlCommand command = new MySqlCommand("SELECT ADD_PJ (@name, @desc, @exp, @start, @end, @ver, @u_id) as Result", con);
+            MySqlCommand command = new MySqlCommand("SELECT ADD_PJ (@name, @desc, @exp, @start, @end, @ver, @isPublic, @u_id) as Result", con);
 
             command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name;
             command.Parameters.Add("@desc", MySqlDbType.VarChar).Value = desc;
@@ -55,6 +54,7 @@ namespace DALL
             command.Parameters.Add("@start", MySqlDbType.Date).Value = start;
             command.Parameters.Add("@end", MySqlDbType.Date).Value = end;
             command.Parameters.Add("@ver", MySqlDbType.Int32).Value = Int32.Parse(ver);
+            command.Parameters.Add("@isPublic", MySqlDbType.Int32).Value = Int32.Parse(isPublic);
             command.Parameters.Add("@u_id", MySqlDbType.VarChar).Value = pk;
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -165,9 +165,9 @@ namespace DALL
             }
         }
 
-        public bool UpdateProject(string pj_id, string pj_name, string desc, DateTime exp, DateTime start, DateTime end, string ver, string u_pk)
+        public bool UpdateProject(string pj_id, string pj_name, string desc, DateTime? exp, DateTime? start, DateTime? end, string ver, string isPublic, string u_pk)
         {
-            MySqlCommand command = new MySqlCommand("SELECT UPDATE_PJ (@pj_id, @pj_name, @desc, @exp, @start, @end, @ver, @u_pk) as Result", con);
+            MySqlCommand command = new MySqlCommand("SELECT UPDATE_PJ (@pj_id, @pj_name, @desc, @exp, @start, @end, @ver, @isPublic, @u_pk) as Result", con);
 
             command.Parameters.Add("@pj_id", MySqlDbType.VarChar).Value = pj_id;
             command.Parameters.Add("@pj_name", MySqlDbType.VarChar).Value = pj_name;
@@ -176,6 +176,7 @@ namespace DALL
             command.Parameters.Add("@start", MySqlDbType.Date).Value = start;
             command.Parameters.Add("@end", MySqlDbType.Date).Value = end;
             command.Parameters.Add("@ver", MySqlDbType.Int32).Value = Int32.Parse(ver);
+            command.Parameters.Add("@isPublic", MySqlDbType.Int32).Value = Int32.Parse(isPublic);
             command.Parameters.Add("@u_pk", MySqlDbType.VarChar).Value = u_pk;
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);

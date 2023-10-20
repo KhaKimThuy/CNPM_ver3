@@ -53,9 +53,31 @@ namespace CNPM_ver3
 
             textBox_name.Text = dataGridView_project.CurrentRow.Cells["PJ_NAME"].Value.ToString();
             textBox_desc.Text = dataGridView_project.CurrentRow.Cells["PJ_DES"].Value.ToString();
-            dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
-            dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
-            dateTimePicker_end.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_FINISH"].Value;
+            if (dataGridView_project.CurrentRow.Cells["PJ_PUBLIC"].Value.ToString() == "1")
+            {
+                comboBox_public.Text = "Public";
+            }
+            else
+            {
+                comboBox_public.Text = "Private";
+            }
+
+            try
+            {
+                dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
+                dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
+                dateTimePicker_end.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_FINISH"].Value;
+            }
+            catch
+            {
+                dateTimePicker_exp.CustomFormat = " ";
+                dateTimePicker_exp.Format = DateTimePickerFormat.Custom;
+                dateTimePicker_start.CustomFormat = " ";
+                dateTimePicker_start.Format = DateTimePickerFormat.Custom;
+                dateTimePicker_end.CustomFormat = " ";
+                dateTimePicker_end.Format = DateTimePickerFormat.Custom;
+            }
+
             textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
         }
 
@@ -83,12 +105,32 @@ namespace CNPM_ver3
 
                 string pj_name = textBox_name.Text;
                 string desc = textBox_desc.Text;
-                DateTime exp = dateTimePicker_exp.Value;
-                DateTime start = dateTimePicker_start.Value;
-                DateTime end = dateTimePicker_end.Value;
+                DateTime? exp = null;
+                DateTime? start = null;
+                DateTime? end = null;
+                string isPublic = comboBox_public.Text;
                 string ver = textBox_ver.Text;
 
-                if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, Users.PK))
+                if (!dateTimePicker_start.CustomFormat.Equals(" ") && !dateTimePicker_exp.CustomFormat.Equals(" ") && !dateTimePicker_end.CustomFormat.Equals(" "))
+                {
+                    MessageBox.Show("OKKO");
+
+                    if (!pj.ValidateDeadline((DateTime)start, (DateTime)end, (DateTime)exp))
+                    {
+                        errorProvider1.SetError(dateTimePicker_start, "Invalid deadline");
+                        errorProvider2.SetError(dateTimePicker_exp, "Invalid deadline");
+                        errorProvider3.SetError(dateTimePicker_end, "Invalid deadline");
+                        return;
+                    }
+                    else
+                    {
+                        exp = dateTimePicker_exp.Value;
+                        start = dateTimePicker_start.Value;
+                        end = dateTimePicker_end.Value;
+                    }
+                }
+
+                if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, isPublic, Users.PK))
                 {
                     MessageBox.Show("Update project information successfully");
                     showTable();
@@ -96,6 +138,9 @@ namespace CNPM_ver3
                 else
                 {
                     MessageBox.Show("Fail to update project information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    errorProvider1.Clear();
+                    errorProvider2.Clear();
+                    errorProvider3.Clear();
                 }
             }
             else
@@ -114,6 +159,21 @@ namespace CNPM_ver3
             {
                 MessageBox.Show("Search without any hint error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dateTimePicker_start_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker_start.Format = DateTimePickerFormat.Long;
+        }
+
+        private void dateTimePicker_end_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker_end.Format = DateTimePickerFormat.Long;
+        }
+
+        private void dateTimePicker_exp_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker_exp.Format = DateTimePickerFormat.Long;
         }
     }
 }

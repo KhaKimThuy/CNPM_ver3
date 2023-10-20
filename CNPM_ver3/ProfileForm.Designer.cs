@@ -217,12 +217,12 @@
             // comboBox_gender
             // 
             this.comboBox_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
             this.comboBox_gender.FormattingEnabled = true;
             this.comboBox_gender.Items.AddRange(new object[] {
             resources.GetString("comboBox_gender.Items"),
             resources.GetString("comboBox_gender.Items1"),
             resources.GetString("comboBox_gender.Items2")});
-            resources.ApplyResources(this.comboBox_gender, "comboBox_gender");
             this.comboBox_gender.Name = "comboBox_gender";
             // 
             // label1

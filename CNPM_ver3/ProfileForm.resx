@@ -117,18 +117,57 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel_header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel_header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_header.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="panel_header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1590, 88</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel_header.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Name" xml:space="preserve">
+    <value>panel_header</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_header.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>695, 9</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
@@ -152,33 +191,6 @@
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="panel_header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel_header.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_header.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="panel_header.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1590, 88</value>
-  </data>
-  <data name="panel_header.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="&gt;&gt;panel_header.Name" xml:space="preserve">
-    <value>panel_header</value>
-  </data>
-  <data name="&gt;&gt;panel_header.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_header.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="textBox_dp.Location" type="System.Drawing.Point, System.Drawing">
     <value>1095, 569</value>
@@ -755,6 +767,9 @@
   </data>
   <data name="&gt;&gt;textBox_address.ZOrder" xml:space="preserve">
     <value>19</value>
+  </data>
+  <data name="comboBox_gender.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBox_gender.Items" xml:space="preserve">
     <value>Female</value>
