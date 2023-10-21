@@ -334,7 +334,7 @@
             this.dataGridView_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dataGridView_user, "dataGridView_user");
             this.dataGridView_user.Name = "dataGridView_user";
-            this.dataGridView_user.Click += new System.EventHandler(this.dataGridView_user_Click_1);
+            this.dataGridView_user.Click += new System.EventHandler(this.ManageMemberForm_Load);
             // 
             // ManageMemberForm
             // 

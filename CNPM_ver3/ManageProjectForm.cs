@@ -18,6 +18,7 @@ namespace CNPM_ver3
     public partial class ManageProjectForm : Form
     {
         ProjectBLL pj = new ProjectBLL();
+        TaskBLL task = new TaskBLL();
         OverwriteForm ovf = new OverwriteForm();
         string curr_pj_id = null;
 
@@ -37,6 +38,12 @@ namespace CNPM_ver3
             dataGridView_project.DataSource = pj.GetProjectInfoAllOfMan(Users.PK);
         }
 
+        public void showTask()
+        {
+            dataGridView_task.ReadOnly = true;
+            dataGridView_task.DataSource = task.GetTaskOfProject(curr_pj_id);
+        }
+
         private void toolStripLabel_addProject_Click(object sender, EventArgs e)
         {
             ovf.openChildForm(new AddProjectForm(), ref panel_main);
@@ -53,6 +60,7 @@ namespace CNPM_ver3
 
             textBox_name.Text = dataGridView_project.CurrentRow.Cells["PJ_NAME"].Value.ToString();
             textBox_desc.Text = dataGridView_project.CurrentRow.Cells["PJ_DES"].Value.ToString();
+
             if (dataGridView_project.CurrentRow.Cells["PJ_PUBLIC"].Value.ToString() == "1")
             {
                 comboBox_public.Text = "Public";
@@ -64,6 +72,10 @@ namespace CNPM_ver3
 
             try
             {
+                dateTimePicker_start.Format = DateTimePickerFormat.Long;
+                dateTimePicker_end.Format = DateTimePickerFormat.Long;
+                dateTimePicker_exp.Format = DateTimePickerFormat.Long;
+
                 dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
                 dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
                 dateTimePicker_end.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_FINISH"].Value;
@@ -79,6 +91,7 @@ namespace CNPM_ver3
             }
 
             textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
+            showTask();
         }
 
         private void button_addMember_Click(object sender, EventArgs e)
@@ -175,5 +188,31 @@ namespace CNPM_ver3
         {
             dateTimePicker_exp.Format = DateTimePickerFormat.Long;
         }
+
+        private void button_addTask_Click(object sender, EventArgs e)
+        {
+            if (curr_pj_id != null)
+            {
+                ovf.openChildForm(new AddTaskForm(curr_pj_id), ref panel_main);
+            }
+            else
+            {
+                MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void button_addTask_Click_1(object sender, EventArgs e)
+        {
+            if (curr_pj_id != null)
+            {
+                ovf.openChildForm(new AddTaskForm(curr_pj_id), ref panel_main);
+            }
+            else
+            {
+                MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

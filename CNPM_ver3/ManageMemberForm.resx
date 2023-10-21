@@ -529,7 +529,7 @@
     <value>9</value>
   </data>
   <data name="comboBox_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 672</value>
+    <value>523, 650</value>
   </data>
   <data name="comboBox_type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 8, 6, 8</value>
@@ -559,7 +559,7 @@
     <value>1</value>
   </data>
   <data name="comboBox_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 672</value>
+    <value>820, 650</value>
   </data>
   <data name="comboBox_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 8, 6, 8</value>
@@ -589,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>691, 679</value>
+    <value>754, 657</value>
   </data>
   <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 6, 0</value>
@@ -622,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 678</value>
+    <value>461, 656</value>
   </data>
   <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -649,7 +649,7 @@
     <value>13</value>
   </data>
   <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 672</value>
+    <value>176, 640</value>
   </data>
   <data name="textBox_pass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -679,7 +679,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 678</value>
+    <value>92, 646</value>
   </data>
   <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -772,7 +772,7 @@
     <value>17</value>
   </data>
   <data name="textBox_email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 838</value>
+    <value>166, 806</value>
   </data>
   <data name="textBox_email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -802,7 +802,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 843</value>
+    <value>106, 811</value>
   </data>
   <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -831,7 +831,7 @@
   <data name="pictureBox_user.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAT5dJREFUeF7tvX+ktueZLjwiIl5REVERVVVVVRUVNSpqVFT1j3StGDVqVH3GVjXG
+        vgAADr4B6kKxwAAAT5dJREFUeF7tvX+ktueZLjwiIl5REVERVVVVVRUVNSpqVFT1j3StGDVqVH3GVjXG
         GFvV2GrYPp8aNUZV1dhqG1U1KmqrqPhEjahRW9WoiqqIbYtRUVUVEa/Y+zyf8z7W+eO6rvu+n/WuH8/9
         PMfB4fx9neu9r+s6n7Xetdaz/oggCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg
         CIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg
@@ -1205,7 +1205,7 @@
     <value>20</value>
   </data>
   <data name="textBox_cccd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 750</value>
+    <value>176, 718</value>
   </data>
   <data name="textBox_cccd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -1235,7 +1235,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 757</value>
+    <value>116, 725</value>
   </data>
   <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1262,7 +1262,7 @@
     <value>22</value>
   </data>
   <data name="textBox_addr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 726</value>
+    <value>523, 704</value>
   </data>
   <data name="textBox_addr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -1271,7 +1271,7 @@
     <value>True</value>
   </data>
   <data name="textBox_addr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>667, 148</value>
+    <value>499, 148</value>
   </data>
   <data name="textBox_addr.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -1295,7 +1295,7 @@
     <value>NoControl</value>
   </data>
   <data name="label_address.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 761</value>
+    <value>440, 739</value>
   </data>
   <data name="label_address.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1328,7 +1328,7 @@
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 612</value>
+    <value>513, 590</value>
   </data>
   <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 6, 0</value>
@@ -1355,7 +1355,7 @@
     <value>25</value>
   </data>
   <data name="dateTimePicker_birthdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 606</value>
+    <value>623, 584</value>
   </data>
   <data name="dateTimePicker_birthdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 8, 6, 8</value>
@@ -1379,7 +1379,7 @@
     <value>26</value>
   </data>
   <data name="textBox_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 604</value>
+    <value>191, 572</value>
   </data>
   <data name="textBox_username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -1409,7 +1409,7 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 610</value>
+    <value>104, 578</value>
   </data>
   <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>

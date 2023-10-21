@@ -1,15 +1,8 @@
 ﻿using BLL;
 using BLLL;
-using DTOO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CNPM_ver3
@@ -27,7 +20,6 @@ namespace CNPM_ver3
             InitializeComponent();
             btDisable.Text = "Disable";
             button_update.Visible = true;
-
         }
 
         private void ManageMemberForm_Load(object sender, EventArgs e)
@@ -102,36 +94,6 @@ namespace CNPM_ver3
             {
                 MessageBox.Show("Fail to update user information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void dataGridView_user_Click_1(object sender, EventArgs e)
-        {
-            
-            curr_pk = dataGridView_user.CurrentRow.Cells["USER_ID"].Value.ToString();
-            textBox_username.Text = dataGridView_user.CurrentRow.Cells["USER_NAME"].Value.ToString();
-            dateTimePicker_birthdate.Value = (DateTime)dataGridView_user.CurrentRow.Cells["USER_BIRTH"].Value;
-            textBox_email.Text = dataGridView_user.CurrentRow.Cells["USER_EMAIL"].Value.ToString();
-            textBox_cccd.Text = dataGridView_user.CurrentRow.Cells["USER_CCCD"].Value.ToString();
-
-            try
-            {
-                byte[] img = (byte[])dataGridView_user.CurrentRow.Cells["USER_IMAGE"].Value;
-                MemoryStream ms = new MemoryStream(img);
-                pictureBox_user.Image = Image.FromStream(ms);
-            }
-            catch
-            {
-
-            }
-            comboBox_gender.Text = dataGridView_user.CurrentRow.Cells["USER_GENDER"].Value.ToString();
-            comboBox_enable.Text = dataGridView_user.CurrentRow.Cells["U_EN"].Value.ToString();
-            textBox_pass.Text = dataGridView_user.CurrentRow.Cells["U_PASS"].Value.ToString();
-            comboBox_type.Text = dataGridView_user.CurrentRow.Cells["VT_NAME"].Value.ToString();
-            comboBox_lv.Text = dataGridView_user.CurrentRow.Cells["LV_NAME"].Value.ToString();
-            comboBox_dp.Text = dataGridView_user.CurrentRow.Cells["PB_NAME"].Value.ToString();
-            textBox_addr.Text = dataGridView_user.CurrentRow.Cells["USER_ADDRESS"].Value.ToString();
-            textBox_phone.Text = dataGridView_user.CurrentRow.Cells["USER_PHONE"].Value.ToString();
         }
 
         private void button_upload_Click(object sender, EventArgs e)
@@ -144,7 +106,6 @@ namespace CNPM_ver3
 
         private void btDisable_Click(object sender, EventArgs e)
         {
-
 
             if (curr_pk.Equals("")) return;
 
@@ -259,9 +220,6 @@ namespace CNPM_ver3
                 return;
 
             }
-
-            
-
         }
     }
 }

@@ -10,6 +10,26 @@ namespace DALL
 {
     public class TaskAccessDAL : DataAccessDAL
     {
+        public DataTable GetTaskOfProject(String pjID)
+        {
+            String query = String.Format("call GET_J_OF_PJ(@pjID)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@pjID", MySqlDbType.VarChar).Value = pjID;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public bool InsertTask(string name, string desc, DateTime? exp, DateTime? start, DateTime? end, string isHL, string status, string pjID)
         {
             MySqlCommand command = new MySqlCommand("SELECT ADD_JOB (@name, @desc, @exp, @start, @end, @isHL, @status, @pjID) as Result", con);
