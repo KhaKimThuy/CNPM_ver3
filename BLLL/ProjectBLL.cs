@@ -91,5 +91,13 @@ namespace BLLL
             }
             return pj_access.UpdateProject(pj_id, pj_name, desc, exp, start, end, ver, isPublic, u_pk);
         }
+
+        // fuction to get all project of user 
+
+        public DataTable getProjectOfUser(string pk)
+        {
+            return pj_access.getProjectOfUser(pk);
+        }
+
     }
 }

@@ -66,6 +66,9 @@
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView_user = new System.Windows.Forms.DataGridView();
+            this.button_search_user = new System.Windows.Forms.Button();
+            this.tb_search_user = new System.Windows.Forms.TextBox();
+            this.button_see_project = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel_main.SuspendLayout();
@@ -77,6 +80,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Firebrick;
+            this.panel1.Controls.Add(this.button_search_user);
+            this.panel1.Controls.Add(this.tb_search_user);
             this.panel1.Controls.Add(this.label1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
@@ -116,6 +121,7 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.Controls.Add(this.button_see_project);
             this.panel_cover.Controls.Add(this.btDisableList);
             this.panel_cover.Controls.Add(this.btDisable);
             this.panel_cover.Controls.Add(this.comboBox_lv);
@@ -336,6 +342,29 @@
             this.dataGridView_user.Name = "dataGridView_user";
             this.dataGridView_user.Click += new System.EventHandler(this.dataGridView_user_Click);
             // 
+            // button_search_user
+            // 
+            this.button_search_user.BackColor = System.Drawing.Color.Silver;
+            this.button_search_user.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.button_search_user, "button_search_user");
+            this.button_search_user.Name = "button_search_user";
+            this.button_search_user.UseVisualStyleBackColor = false;
+            this.button_search_user.Click += new System.EventHandler(this.button_search_user_Click);
+            // 
+            // tb_search_user
+            // 
+            resources.ApplyResources(this.tb_search_user, "tb_search_user");
+            this.tb_search_user.Name = "tb_search_user";
+            // 
+            // button_see_project
+            // 
+            this.button_see_project.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.button_see_project, "button_see_project");
+            this.button_see_project.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button_see_project.Name = "button_see_project";
+            this.button_see_project.UseVisualStyleBackColor = false;
+            this.button_see_project.Click += new System.EventHandler(this.button_see_project_Click);
+            // 
             // ManageMemberForm
             // 
             resources.ApplyResources(this, "$this");
@@ -398,5 +427,8 @@
         private System.Windows.Forms.TextBox textBox_phone;
         private System.Windows.Forms.Button btDisable;
         private System.Windows.Forms.Button btDisableList;
+        private System.Windows.Forms.Button button_search_user;
+        private System.Windows.Forms.TextBox tb_search_user;
+        private System.Windows.Forms.Button button_see_project;
     }
 }

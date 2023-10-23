@@ -155,6 +155,13 @@ namespace BLL
             return user_access.getUserInfoDis();
         }
 
+        // function to get user info from search
+
+        public DataTable getUserFromSearch(string description)
+        {
+            return user_access.getUserFromSearch(description);
+        }
+
 
     }
 }

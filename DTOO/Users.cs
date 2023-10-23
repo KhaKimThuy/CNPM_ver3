@@ -26,6 +26,8 @@ namespace DTOO
         public static string USER_PHONE;
         public static string F_USER;
         public static string F_EMAIL;
+        public static bool SPU;
+        public static string CSU;
     }
 }
 

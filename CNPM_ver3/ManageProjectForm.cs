@@ -25,6 +25,29 @@ namespace CNPM_ver3
         public ManageProjectForm()
         {
             InitializeComponent();
+            if (Users.SPU == true)
+            {
+                button_update.Visible = false;
+                button_del.Visible = false;
+                button_addMember.Visible = false;
+                button_addGroup.Visible = false;
+                button_search.Visible = false;
+                textBox_search.Visible = false;
+                toolStripLabel_addProject.Visible = false;
+                toolStripLabel_addProject.Enabled = false;
+                ovf.HomeForm(ref panel_main, ref panel_cover);
+            }
+            else
+            {
+                button_update.Visible = true;
+                button_del.Visible = true;
+                button_addMember.Visible = true;
+                button_addGroup.Visible = true;
+                button_search.Visible = true;
+                textBox_search.Visible = true;
+                toolStripLabel_addProject.Visible = true;
+                toolStripLabel_addProject.Enabled = true;
+            }
         }
 
         private void ManageProjectForm_Load(object sender, EventArgs e)
@@ -35,7 +58,16 @@ namespace CNPM_ver3
         public void showPj()
         {
             dataGridView_project.ReadOnly = true;
-            dataGridView_project.DataSource = pj.GetProjectInfoAllOfMan(Users.PK);
+
+            if (Users.SPU == true)
+            {
+                dataGridView_project.DataSource = pj.getProjectOfUser(Users.CSU);
+                Users.SPU = false;
+            }
+            else
+            {
+                dataGridView_project.DataSource = pj.GetProjectInfoAllOfMan(Users.PK);
+            }
         }
 
         public void showTask()

@@ -468,5 +468,39 @@ namespace DALL
                 return null;
             }
         }
+
+        // function to get user from search
+
+        public DataTable getUserFromSearch(string description)
+        {
+            DataTable table = new DataTable();
+            DataTable resTable = new DataTable();
+            string queryFetch, value;
+            DataRow dr;
+
+
+            string query = string.Format("call SEARCH_URI('{0}')", description);
+            MySqlCommand command = new MySqlCommand(query, con);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+
+            adapter.Fill(table);
+
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                dr = table.Rows[i];
+                value = dr["USER_ID"].ToString();
+                queryFetch = string.Format("call GET_INFO_USER('{0}')", value);
+                command = new MySqlCommand(queryFetch, con);
+                adapter = new MySqlDataAdapter(command);
+                adapter.Fill(resTable);
+
+            }
+
+            return resTable;
+        }
+
+
     }
 }

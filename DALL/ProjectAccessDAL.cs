@@ -220,5 +220,41 @@ namespace DALL
                 return null;
             }
         }
+
+        // fuction to get all project of user
+
+        public DataTable getProjectOfUser(string pk)
+        {
+            String query = String.Format("call GET_PJ_USER_MANAGE(@pk)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@pk", MySqlDbType.VarChar).Value = pk;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            String query1 = String.Format("call GET_PJ_USER(@pk)");
+            MySqlCommand command1 = new MySqlCommand(query1, con);
+            command1.Parameters.Add("@pk", MySqlDbType.VarChar).Value = pk;
+
+            MySqlDataAdapter adapter1 = new MySqlDataAdapter(command1);
+            DataTable table1 = new DataTable();
+            adapter1.Fill(table1);
+
+            table.Merge(table1);
+
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
     }
 }

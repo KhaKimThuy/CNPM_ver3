@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BLLL;
+using DTOO;
 using System;
 using System.Drawing;
 using System.IO;
@@ -20,6 +21,7 @@ namespace CNPM_ver3
             InitializeComponent();
             btDisable.Text = "Disable";
             button_update.Visible = true;
+            Users.SPU = false;
         }
 
         private void ManageMemberForm_Load(object sender, EventArgs e)
@@ -248,6 +250,73 @@ namespace CNPM_ver3
             comboBox_dp.Text = dataGridView_user.CurrentRow.Cells["PB_NAME"].Value.ToString();
             textBox_addr.Text = dataGridView_user.CurrentRow.Cells["USER_ADDRESS"].Value.ToString();
             textBox_phone.Text = dataGridView_user.CurrentRow.Cells["USER_PHONE"].Value.ToString();
+        }
+
+        private void button_search_user_Click(object sender, EventArgs e)
+        {
+            String description = tb_search_user.Text;
+            if (description.Equals(""))
+            {
+                loadTable();
+                return;
+            }
+            loadTableSearch(description);
+        }
+
+
+
+
+
+
+
+        public void loadTableSearch(string description)
+        {
+            TypeBLL tl = new TypeBLL();
+            string[] types = tl.getUserType();
+            foreach (string t in types)
+            {
+                comboBox_type.Items.Add(t);
+            }
+
+            LevelBLL lv = new LevelBLL();
+            string[] levels = lv.GetUserLevel();
+            foreach (string t in levels)
+            {
+                comboBox_lv.Items.Add(t);
+            }
+
+            DepartmentBLL dp = new DepartmentBLL();
+            string[] dps = dp.GetUserDP();
+            foreach (string t in dps)
+            {
+                comboBox_dp.Items.Add(t);
+            }
+            showTableSearch(description);
+        }
+
+        public void showTableSearch(string description)
+        {
+            dataGridView_user.ReadOnly = true;
+            dataGridView_user.DataSource = ul.getUserFromSearch(description);
+            dataGridView_user.RowTemplate.Height = 80;
+
+            try
+            {
+                // Show image
+                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+                imageColumn = (DataGridViewImageColumn)dataGridView_user.Columns[7];
+                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            }
+            catch { }
+
+        }
+
+        private void button_see_project_Click(object sender, EventArgs e)
+        {
+            Users.SPU = true;
+            Users.CSU = curr_pk;
+            ManageProjectForm manageProjectForm = new ManageProjectForm();
+            manageProjectForm.Show();   
         }
     }
 }
