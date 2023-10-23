@@ -195,6 +195,21 @@
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="toolStripLabel_addUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 25</value>
+  </data>
+  <data name="toolStripLabel_addUser.Text" xml:space="preserve">
+    <value>Create account for user</value>
+  </data>
+  <data name="toolStripLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="toolStripLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 25</value>
+  </data>
+  <data name="toolStripLabel2.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 88</value>
   </data>
@@ -202,7 +217,7 @@
     <value>0, 0, 3, 0</value>
   </data>
   <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1592, 30</value>
+    <value>1592, 38</value>
   </data>
   <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -221,21 +236,6 @@
   </data>
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="toolStripLabel_addUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 25</value>
-  </data>
-  <data name="toolStripLabel_addUser.Text" xml:space="preserve">
-    <value>Create account for user</value>
-  </data>
-  <data name="toolStripLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="toolStripLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 25</value>
-  </data>
-  <data name="toolStripLabel2.Text" xml:space="preserve">
-    <value>Back</value>
   </data>
   <data name="btDisableList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -831,7 +831,7 @@
   <data name="pictureBox_user.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAT5dJREFUeF7tvX+ktueZLjwiIl5REVERVVVVVRUVNSpqVFT1j3StGDVqVH3GVjXG
+        vQAADr0BR/uQrQAAT5dJREFUeF7tvX+ktueZLjwiIl5REVERVVVVVRUVNSpqVFT1j3StGDVqVH3GVjXG
         GFvV2GrYPp8aNUZV1dhqG1U1KmqrqPhEjahRW9WoiqqIbYtRUVUVEa/Y+zyf8z7W+eO6rvu+n/WuH8/9
         PMfB4fx9neu9r+s6n7Xetdaz/oggCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg
         CIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg
@@ -1472,7 +1472,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="panel_cover.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1592, 911</value>
+    <value>1592, 903</value>
   </data>
   <data name="panel_cover.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1493,13 +1493,13 @@
     <value>Fill</value>
   </data>
   <data name="panel_main.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 118</value>
+    <value>0, 126</value>
   </data>
   <data name="panel_main.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1592, 911</value>
+    <value>1592, 903</value>
   </data>
   <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

@@ -221,5 +221,33 @@ namespace CNPM_ver3
 
             }
         }
+
+        private void dataGridView_user_Click(object sender, EventArgs e)
+        {
+            curr_pk = dataGridView_user.CurrentRow.Cells["USER_ID"].Value.ToString();
+            textBox_username.Text = dataGridView_user.CurrentRow.Cells["USER_NAME"].Value.ToString();
+            dateTimePicker_birthdate.Value = (DateTime)dataGridView_user.CurrentRow.Cells["USER_BIRTH"].Value;
+            textBox_email.Text = dataGridView_user.CurrentRow.Cells["USER_EMAIL"].Value.ToString();
+            textBox_cccd.Text = dataGridView_user.CurrentRow.Cells["USER_CCCD"].Value.ToString();
+
+            try
+            {
+                byte[] img = (byte[])dataGridView_user.CurrentRow.Cells["USER_IMAGE"].Value;
+                MemoryStream ms = new MemoryStream(img);
+                pictureBox_user.Image = Image.FromStream(ms);
+            }
+            catch
+            {
+
+            }
+            comboBox_gender.Text = dataGridView_user.CurrentRow.Cells["USER_GENDER"].Value.ToString();
+            comboBox_enable.Text = dataGridView_user.CurrentRow.Cells["U_EN"].Value.ToString();
+            textBox_pass.Text = dataGridView_user.CurrentRow.Cells["U_PASS"].Value.ToString();
+            comboBox_type.Text = dataGridView_user.CurrentRow.Cells["VT_NAME"].Value.ToString();
+            comboBox_lv.Text = dataGridView_user.CurrentRow.Cells["LV_NAME"].Value.ToString();
+            comboBox_dp.Text = dataGridView_user.CurrentRow.Cells["PB_NAME"].Value.ToString();
+            textBox_addr.Text = dataGridView_user.CurrentRow.Cells["USER_ADDRESS"].Value.ToString();
+            textBox_phone.Text = dataGridView_user.CurrentRow.Cells["USER_PHONE"].Value.ToString();
+        }
     }
 }

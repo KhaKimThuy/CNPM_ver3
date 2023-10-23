@@ -253,7 +253,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(861, 783);
+            this.label2.Location = new System.Drawing.Point(861, 755);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
@@ -354,7 +354,7 @@
             // 
             // dateTimePicker_exp
             // 
-            this.dateTimePicker_exp.Location = new System.Drawing.Point(927, 778);
+            this.dateTimePicker_exp.Location = new System.Drawing.Point(927, 750);
             this.dateTimePicker_exp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_exp.Name = "dateTimePicker_exp";
             this.dateTimePicker_exp.Size = new System.Drawing.Size(292, 26);
@@ -373,7 +373,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(881, 747);
+            this.label6.Location = new System.Drawing.Point(881, 801);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 20);
@@ -382,7 +382,7 @@
             // 
             // dateTimePicker_end
             // 
-            this.dateTimePicker_end.Location = new System.Drawing.Point(927, 742);
+            this.dateTimePicker_end.Location = new System.Drawing.Point(927, 796);
             this.dateTimePicker_end.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_end.Name = "dateTimePicker_end";
             this.dateTimePicker_end.Size = new System.Drawing.Size(292, 26);

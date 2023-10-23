@@ -56,44 +56,38 @@ namespace CNPM_ver3
 
         private void DataGridView_Project_Click(object sender, EventArgs e)
         {
-            curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
-
-            textBox_name.Text = dataGridView_project.CurrentRow.Cells["PJ_NAME"].Value.ToString();
-            textBox_desc.Text = dataGridView_project.CurrentRow.Cells["PJ_DES"].Value.ToString();
-
-            if (dataGridView_project.CurrentRow.Cells["PJ_PUBLIC"].Value.ToString() == "1")
+            if (dataGridView_project.CurrentRow != null)
             {
-                comboBox_public.Text = "Public";
-            }
-            else
-            {
-                comboBox_public.Text = "Private";
-            }
+                curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
 
-            try
-            {
-                checkBox_deadline.Checked = true;
-                /*dateTimePicker_start.Format = DateTimePickerFormat.Long;
-                dateTimePicker_end.Format = DateTimePickerFormat.Long;
-                dateTimePicker_exp.Format = DateTimePickerFormat.Long;*/
+                textBox_name.Text = dataGridView_project.CurrentRow.Cells["PJ_NAME"].Value.ToString();
+                textBox_desc.Text = dataGridView_project.CurrentRow.Cells["PJ_DES"].Value.ToString();
 
-                dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
-                dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
-                dateTimePicker_end.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_FINISH"].Value;
-            }
-            catch
-            {
-                checkBox_deadline.Checked = false;
-                /*dateTimePicker_exp.CustomFormat = " ";
-                dateTimePicker_exp.Format = DateTimePickerFormat.Custom;
-                dateTimePicker_start.CustomFormat = " ";
-                dateTimePicker_start.Format = DateTimePickerFormat.Custom;
-                dateTimePicker_end.CustomFormat = " ";
-                dateTimePicker_end.Format = DateTimePickerFormat.Custom;*/
-            }
+                if (dataGridView_project.CurrentRow.Cells["PJ_PUBLIC"].Value.ToString() == "1")
+                {
+                    comboBox_public.Text = "Public";
+                }
+                else
+                {
+                    comboBox_public.Text = "Private";
+                }
 
-            textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
-            showTask();
+                try
+                {
+                    checkBox_deadline.Checked = true;
+
+                    dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
+                    dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
+                    dateTimePicker_end.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_FINISH"].Value;
+                }
+                catch
+                {
+                    checkBox_deadline.Checked = false;
+                }
+
+                textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
+                showTask();
+            }
         }
 
         private void button_addMember_Click(object sender, EventArgs e)
@@ -112,14 +106,15 @@ namespace CNPM_ver3
         {
         }
 
+
         private void button_update_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
+            errorProvider2.Clear();
+            errorProvider3.Clear();
+
             if (curr_pj_id != null)
             {
-                errorProvider1.Clear();
-                errorProvider2.Clear();
-                errorProvider3.Clear();
-
                 string pj_name = textBox_name.Text;
                 string desc = textBox_desc.Text;
                 string isPublic = comboBox_public.Text;
@@ -134,33 +129,35 @@ namespace CNPM_ver3
                     exp = dateTimePicker_exp.Value;
                     start = dateTimePicker_start.Value;
                     end = dateTimePicker_end.Value;
-
-                    if (!pj.ValidateDeadline((DateTime)start, (DateTime)end, (DateTime)exp))
-                    {
-                        errorProvider1.SetError(dateTimePicker_start, "Invalid deadline");
-                        errorProvider2.SetError(dateTimePicker_exp, "Invalid deadline");
-                        errorProvider3.SetError(dateTimePicker_end, "Invalid deadline");
-                        return;
-                    }
-
                 }
 
-                if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, isPublic, Users.PK))
+                if (exp!=null && start!=null && end!=null && !pj.ValidateDeadline((DateTime)start, (DateTime)end, (DateTime)exp))
                 {
-                    MessageBox.Show("Update project information successfully");
-
-                    textBox_name.Clear();
-                    textBox_desc.Clear();
-                    comboBox_public.Text = string.Empty;
-                    textBox_ver.Clear();
-                    curr_pj_id = null;
-
-                    showPj();
+                    errorProvider1.SetError(dateTimePicker_start, "Invalid deadline");
+                    errorProvider2.SetError(dateTimePicker_exp, "Invalid deadline");
+                    errorProvider3.SetError(dateTimePicker_end, "Invalid deadline");
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Fail to update project information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, isPublic, Users.PK))
+                    {
+                        MessageBox.Show("Update project information successfully");
+
+                        textBox_name.Clear();
+                        textBox_desc.Clear();
+                        comboBox_public.Text = string.Empty;
+                        textBox_ver.Clear();
+                        curr_pj_id = null;
+
+                        showPj();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fail to update project information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+
             }
             else
             {
