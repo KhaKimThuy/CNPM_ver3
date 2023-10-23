@@ -45,6 +45,11 @@ namespace BLL
             return user_access.getUserInfoAll();
         }
 
+        public DataTable GetUserByLevel(int lv)
+        {
+            return user_access.GetUserByLevel(lv);
+        }
+
         public bool IsValidEmail(string email)
         {
             string emailPattern = @"^[a-zA-Z0-9_%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$";

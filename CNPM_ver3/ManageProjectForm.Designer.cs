@@ -49,6 +49,7 @@
             this.textBox_name = new System.Windows.Forms.TextBox();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.checkBox_deadline = new System.Windows.Forms.CheckBox();
             this.dataGridView_task = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -152,6 +153,7 @@
             this.button_del.TabIndex = 124;
             this.button_del.Text = "Delete";
             this.button_del.UseVisualStyleBackColor = false;
+            this.button_del.Click += new System.EventHandler(this.button_del_Click);
             // 
             // button_addMember
             // 
@@ -164,6 +166,7 @@
             this.button_addMember.TabIndex = 123;
             this.button_addMember.Text = "Add member";
             this.button_addMember.UseVisualStyleBackColor = false;
+            this.button_addMember.Click += new System.EventHandler(this.button_addMember_Click);
             // 
             // button_addGroup
             // 
@@ -188,6 +191,7 @@
             this.button_update.TabIndex = 121;
             this.button_update.Text = "Update";
             this.button_update.UseVisualStyleBackColor = false;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // label9
             // 
@@ -249,7 +253,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(861, 823);
+            this.label2.Location = new System.Drawing.Point(861, 783);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
@@ -277,6 +281,7 @@
             // panel_cover
             // 
             this.panel_cover.AutoScroll = true;
+            this.panel_cover.Controls.Add(this.checkBox_deadline);
             this.panel_cover.Controls.Add(this.dataGridView_task);
             this.panel_cover.Controls.Add(this.button_addTask);
             this.panel_cover.Controls.Add(this.label8);
@@ -306,6 +311,17 @@
             this.panel_cover.Size = new System.Drawing.Size(1590, 925);
             this.panel_cover.TabIndex = 0;
             // 
+            // checkBox_deadline
+            // 
+            this.checkBox_deadline.AutoSize = true;
+            this.checkBox_deadline.Location = new System.Drawing.Point(927, 663);
+            this.checkBox_deadline.Name = "checkBox_deadline";
+            this.checkBox_deadline.Size = new System.Drawing.Size(124, 24);
+            this.checkBox_deadline.TabIndex = 129;
+            this.checkBox_deadline.Text = "Set deadline";
+            this.checkBox_deadline.UseVisualStyleBackColor = true;
+            this.checkBox_deadline.CheckedChanged += new System.EventHandler(this.checkBox_deadline_CheckedChanged);
+            // 
             // dataGridView_task
             // 
             this.dataGridView_task.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -315,6 +331,7 @@
             this.dataGridView_task.RowTemplate.Height = 28;
             this.dataGridView_task.Size = new System.Drawing.Size(1565, 264);
             this.dataGridView_task.TabIndex = 128;
+            this.dataGridView_task.Click += new System.EventHandler(this.dataGridView_task_Click);
             // 
             // label7
             // 
@@ -337,7 +354,7 @@
             // 
             // dateTimePicker_exp
             // 
-            this.dateTimePicker_exp.Location = new System.Drawing.Point(927, 818);
+            this.dateTimePicker_exp.Location = new System.Drawing.Point(927, 778);
             this.dateTimePicker_exp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_exp.Name = "dateTimePicker_exp";
             this.dateTimePicker_exp.Size = new System.Drawing.Size(292, 26);
@@ -373,7 +390,7 @@
             // 
             // dateTimePicker_start
             // 
-            this.dateTimePicker_start.Location = new System.Drawing.Point(927, 653);
+            this.dateTimePicker_start.Location = new System.Drawing.Point(927, 706);
             this.dateTimePicker_start.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_start.Name = "dateTimePicker_start";
             this.dateTimePicker_start.Size = new System.Drawing.Size(292, 26);
@@ -382,7 +399,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(874, 657);
+            this.label5.Location = new System.Drawing.Point(874, 710);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
@@ -491,5 +508,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.DataGridView dataGridView_task;
+        private System.Windows.Forms.CheckBox checkBox_deadline;
     }
 }

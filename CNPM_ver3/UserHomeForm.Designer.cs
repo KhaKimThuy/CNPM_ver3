@@ -37,16 +37,15 @@
             this.label_username = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.button_manageReq = new System.Windows.Forms.Button();
             this.button_myJProject = new System.Windows.Forms.Button();
             this.button_manageProject = new System.Windows.Forms.Button();
             this.button_request = new System.Windows.Forms.Button();
-            this.button_assign = new System.Windows.Forms.Button();
             this.button_profile = new System.Windows.Forms.Button();
             this.button_4 = new System.Windows.Forms.Button();
             this.button_manageMember = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button_manageReq = new System.Windows.Forms.Button();
             this.panel_tool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_user)).BeginInit();
             this.panel_main.SuspendLayout();
@@ -113,13 +112,21 @@
             this.panel_cover.Controls.Add(this.button_myJProject);
             this.panel_cover.Controls.Add(this.button_manageProject);
             this.panel_cover.Controls.Add(this.button_request);
-            this.panel_cover.Controls.Add(this.button_assign);
             this.panel_cover.Controls.Add(this.button_profile);
             this.panel_cover.Controls.Add(this.button_4);
             this.panel_cover.Controls.Add(this.button_manageMember);
             this.panel_cover.Controls.Add(this.panel_header);
             resources.ApplyResources(this.panel_cover, "panel_cover");
             this.panel_cover.Name = "panel_cover";
+            // 
+            // button_manageReq
+            // 
+            this.button_manageReq.BackColor = System.Drawing.Color.Firebrick;
+            this.button_manageReq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            resources.ApplyResources(this.button_manageReq, "button_manageReq");
+            this.button_manageReq.Name = "button_manageReq";
+            this.button_manageReq.UseVisualStyleBackColor = false;
+            this.button_manageReq.Click += new System.EventHandler(this.button_manageReq_Click);
             // 
             // button_myJProject
             // 
@@ -147,14 +154,6 @@
             this.button_request.Name = "button_request";
             this.button_request.UseVisualStyleBackColor = false;
             this.button_request.Click += new System.EventHandler(this.button_manageRequest_Click);
-            // 
-            // button_assign
-            // 
-            this.button_assign.BackColor = System.Drawing.Color.IndianRed;
-            this.button_assign.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.button_assign, "button_assign");
-            this.button_assign.Name = "button_assign";
-            this.button_assign.UseVisualStyleBackColor = false;
             // 
             // button_profile
             // 
@@ -195,15 +194,6 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Name = "label1";
             // 
-            // button_manageReq
-            // 
-            this.button_manageReq.BackColor = System.Drawing.Color.Firebrick;
-            this.button_manageReq.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.button_manageReq, "button_manageReq");
-            this.button_manageReq.Name = "button_manageReq";
-            this.button_manageReq.UseVisualStyleBackColor = false;
-            this.button_manageReq.Click += new System.EventHandler(this.button_manageReq_Click);
-            // 
             // UserHomeForm
             // 
             resources.ApplyResources(this, "$this");
@@ -235,7 +225,6 @@
         private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button_assign;
         private System.Windows.Forms.Button button_profile;
         private System.Windows.Forms.Button button_4;
         private System.Windows.Forms.Button button_manageMember;

@@ -411,36 +411,6 @@
   <data name="&gt;&gt;button_request.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button_assign.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_assign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>964, 406</value>
-  </data>
-  <data name="button_assign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 208</value>
-  </data>
-  <data name="button_assign.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="button_assign.Text" xml:space="preserve">
-    <value>Assign Job</value>
-  </data>
-  <data name="button_assign.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;button_assign.Name" xml:space="preserve">
-    <value>button_assign</value>
-  </data>
-  <data name="&gt;&gt;button_assign.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_assign.Parent" xml:space="preserve">
-    <value>panel_cover</value>
-  </data>
-  <data name="&gt;&gt;button_assign.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="button_profile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -466,7 +436,7 @@
     <value>panel_cover</value>
   </data>
   <data name="&gt;&gt;button_profile.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="button_4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -496,7 +466,7 @@
     <value>panel_cover</value>
   </data>
   <data name="&gt;&gt;button_4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="button_manageMember.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -526,7 +496,7 @@
     <value>panel_cover</value>
   </data>
   <data name="&gt;&gt;button_manageMember.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -586,7 +556,7 @@
     <value>panel_cover</value>
   </data>
   <data name="&gt;&gt;panel_header.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="panel_cover.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

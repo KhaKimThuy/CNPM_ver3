@@ -30,11 +30,11 @@ namespace CNPM_ver3
         private void button_login_Click(object sender, EventArgs e)
         {
 
-            //            string username = textBox_userid.Text;
-            //          string password = textBox_pass.Text;
+            string username = textBox_userid.Text;
+            string password = textBox_pass.Text;
 
-            string username = "FT_96418_IT";
-            string password = "bikhi";
+//            string username = "FT_96418_IT";
+  //          string password = "bikhi";
 
             if (username == "" || password == "")
             {

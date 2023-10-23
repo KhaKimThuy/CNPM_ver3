@@ -101,6 +101,26 @@ namespace DALL
             }
         }
 
+        public DataTable GetUserByLevel(int lv)
+        {
+            String query = String.Format("call GET_INFO_USER_BY_LEVEL(@lv)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@lv", MySqlDbType.Int32).Value = lv;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public bool insertUser(string vt_name, string username, DateTime birthdate, string address, string cccd, byte[] image, string email, string gender, string dp, string lv, string phone)
         {
             MySqlCommand command = new MySqlCommand("SELECT ADD_USER (@vt_name, @uname, @bd, @addr, @cccd, @img, @email, @gd, @lv, @dp, @phone) as Result", con);

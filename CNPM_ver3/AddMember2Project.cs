@@ -32,7 +32,7 @@ namespace CNPM_ver3
         public void showTableOutPj()
         {
             dataGridView_user.ReadOnly = true;
-            dataGridView_user.DataSource = ul.getUserInfoAll();
+            dataGridView_user.DataSource = ul.GetUserByLevel(0);
             dataGridView_user.RowTemplate.Height = 80;
 
             // Show image

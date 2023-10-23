@@ -29,10 +29,10 @@ namespace CNPM_ver3
 
         private void ManageProjectForm_Load(object sender, EventArgs e)
         {
-            showTable();
+            showPj();
         }
 
-        public void showTable()
+        public void showPj()
         {
             dataGridView_project.ReadOnly = true;
             dataGridView_project.DataSource = pj.GetProjectInfoAllOfMan(Users.PK);
@@ -72,9 +72,10 @@ namespace CNPM_ver3
 
             try
             {
-                dateTimePicker_start.Format = DateTimePickerFormat.Long;
+                checkBox_deadline.Checked = true;
+                /*dateTimePicker_start.Format = DateTimePickerFormat.Long;
                 dateTimePicker_end.Format = DateTimePickerFormat.Long;
-                dateTimePicker_exp.Format = DateTimePickerFormat.Long;
+                dateTimePicker_exp.Format = DateTimePickerFormat.Long;*/
 
                 dateTimePicker_exp.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_EXPECT_FIN"].Value;
                 dateTimePicker_start.Value = (DateTime)dataGridView_project.CurrentRow.Cells["PJ_START"].Value;
@@ -82,12 +83,13 @@ namespace CNPM_ver3
             }
             catch
             {
-                dateTimePicker_exp.CustomFormat = " ";
+                checkBox_deadline.Checked = false;
+                /*dateTimePicker_exp.CustomFormat = " ";
                 dateTimePicker_exp.Format = DateTimePickerFormat.Custom;
                 dateTimePicker_start.CustomFormat = " ";
                 dateTimePicker_start.Format = DateTimePickerFormat.Custom;
                 dateTimePicker_end.CustomFormat = " ";
-                dateTimePicker_end.Format = DateTimePickerFormat.Custom;
+                dateTimePicker_end.Format = DateTimePickerFormat.Custom;*/
             }
 
             textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
@@ -114,19 +116,24 @@ namespace CNPM_ver3
         {
             if (curr_pj_id != null)
             {
-                curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
+                errorProvider1.Clear();
+                errorProvider2.Clear();
+                errorProvider3.Clear();
 
                 string pj_name = textBox_name.Text;
                 string desc = textBox_desc.Text;
+                string isPublic = comboBox_public.Text;
+                string ver = textBox_ver.Text;
                 DateTime? exp = null;
                 DateTime? start = null;
                 DateTime? end = null;
-                string isPublic = comboBox_public.Text;
-                string ver = textBox_ver.Text;
 
-                if (!dateTimePicker_start.CustomFormat.Equals(" ") && !dateTimePicker_exp.CustomFormat.Equals(" ") && !dateTimePicker_end.CustomFormat.Equals(" "))
+                // Validate date
+                if (dateTimePicker_start.Format==DateTimePickerFormat.Long)
                 {
-                    MessageBox.Show("OKKO");
+                    exp = dateTimePicker_exp.Value;
+                    start = dateTimePicker_start.Value;
+                    end = dateTimePicker_end.Value;
 
                     if (!pj.ValidateDeadline((DateTime)start, (DateTime)end, (DateTime)exp))
                     {
@@ -135,31 +142,32 @@ namespace CNPM_ver3
                         errorProvider3.SetError(dateTimePicker_end, "Invalid deadline");
                         return;
                     }
-                    else
-                    {
-                        exp = dateTimePicker_exp.Value;
-                        start = dateTimePicker_start.Value;
-                        end = dateTimePicker_end.Value;
-                    }
+
                 }
 
                 if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, isPublic, Users.PK))
                 {
                     MessageBox.Show("Update project information successfully");
-                    showTable();
+
+                    textBox_name.Clear();
+                    textBox_desc.Clear();
+                    comboBox_public.Text = string.Empty;
+                    textBox_ver.Clear();
+                    curr_pj_id = null;
+
+                    showPj();
                 }
                 else
                 {
                     MessageBox.Show("Fail to update project information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    errorProvider1.Clear();
-                    errorProvider2.Clear();
-                    errorProvider3.Clear();
                 }
             }
             else
             {
                 MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
         }
 
         private void button_search_Click(object sender, EventArgs e)
@@ -213,6 +221,34 @@ namespace CNPM_ver3
                 MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void dataGridView_task_Click(object sender, EventArgs e)
+        {
+            string task_id = dataGridView_task.CurrentRow.Cells["J_ID"].Value.ToString();
+            ovf.openChildForm(new AddUser2Task(curr_pj_id, task_id), ref panel_main);
+        }
+
+        private void checkBox_deadline_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBox_deadline.Checked)
+            {
+                dateTimePicker_start.CustomFormat = " ";
+                dateTimePicker_start.Format = DateTimePickerFormat.Custom;
+
+                dateTimePicker_end.CustomFormat = " ";
+                dateTimePicker_end.Format = DateTimePickerFormat.Custom;
+
+                dateTimePicker_exp.CustomFormat = " ";
+                dateTimePicker_exp.Format = DateTimePickerFormat.Custom;
+            }
+            else
+            {
+                dateTimePicker_start.Format = DateTimePickerFormat.Long;
+                dateTimePicker_end.Format = DateTimePickerFormat.Long;
+                dateTimePicker_exp.Format = DateTimePickerFormat.Long;
+            }
+        }
+
 
     }
 }
