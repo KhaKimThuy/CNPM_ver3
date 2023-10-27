@@ -33,10 +33,11 @@
             this.bt_n2_FPF = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -85,21 +86,13 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(382, 88);
+            this.panel3.Size = new System.Drawing.Size(382, 103);
             this.panel3.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Check your email to get OTP";
             // 
             // button2
             // 
@@ -134,6 +127,24 @@
             this.button1.Text = "FORGOT PASSWORD";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(78, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(234, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "(Your OTP will be expired in 2 minutes)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(102, 51);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(177, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Check your email to get OTP";
+            // 
             // ForgetPassForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -159,9 +170,10 @@
         private System.Windows.Forms.Button bt_n2_FPF;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

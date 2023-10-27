@@ -22,19 +22,17 @@ namespace CNPM_ver3
         public ForgetPassForm()
         {
             InitializeComponent();
-            tbCCCD.Text = string.Empty;
-            tbEmail.Text = string.Empty;
+            tb_email_form.Text = string.Empty;
   
         }
 
-        private void bt_n1_FPF_Click(object sender, EventArgs e)
+        private void bt_next_forget0_Click(object sender, EventArgs e)
         {
-
             myUser = verifyValues();
             if (myUser.Equals("")) return;
 
             Users.F_USER = myUser;
-            Users.F_EMAIL = tbEmail.Text.ToString();
+            Users.F_EMAIL = tb_email_form.Text.ToString();
 
             int OTP = gerenateOTP();
 
@@ -50,18 +48,17 @@ namespace CNPM_ver3
             ForgetPassForm1 forgetPassForm1 = new ForgetPassForm1();
             forgetPassForm1.Closed += (s, args) => this.Close();
             forgetPassForm1.Show();
-
-
         }
 
 
-        // get the pk of user
+
+    
 
         private string verifyValues()
         {
-            string cccd = tbCCCD.Text.ToString();
             
-            string email = tbEmail.Text.ToString();
+            string email = tb_email_form.Text.ToString();
+            string cccd = "1";
 
             if(cccd.Equals("") || email.Equals(""))
             {
@@ -91,5 +88,6 @@ namespace CNPM_ver3
             return random.Next(100000, 999999);
         }
 
+        
     }
 }

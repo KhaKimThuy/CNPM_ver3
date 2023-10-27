@@ -91,6 +91,7 @@ namespace CNPM_ver3
             if (ul.UpdateUserInfo(curr_pk, u_name, bd, cccd, addr, gd, email, vt_name, u_pass, lv_name, dp_name, u_phone, img))
             {
                 MessageBox.Show("Update user information successfully");
+                loadTable();
             }
             else
             {
@@ -110,6 +111,11 @@ namespace CNPM_ver3
         {
 
             if (curr_pk.Equals("")) return;
+            if (curr_pk.Equals(Users.PK))
+            {
+                MessageBox.Show("Cannot disable yourself", "Error Disable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             if(flag == 0)
             {

@@ -389,7 +389,7 @@ namespace DALL
             
             DataRow dr = table.Rows[0];
 
-            if (!dr["USER_CCCD"].Equals(cccd)) return "";
+            //if (!dr["USER_CCCD"].Equals(cccd)) return "";
             return dr["USER_ID"].ToString();
             
         }
