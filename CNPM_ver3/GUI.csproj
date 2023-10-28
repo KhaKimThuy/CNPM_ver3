@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C285BAC-5E85-4682-BB07-9C6F529EBDB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CNPM_ver3</RootNamespace>
+    <AssemblyName>CNPM_ver3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMember2Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember2Project.Designer.cs">
+      <DependentUpon>AddMember2Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProjectForm.Designer.cs">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTaskForm.Designer.cs">
+      <DependentUpon>AddTaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser2Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser2Task.Designer.cs">
+      <DependentUpon>AddUser2Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLanguageClass.cs" />
+    <Compile Include="ForgetPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm.Designer.cs">
+      <DependentUpon>ForgetPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm1.Designer.cs">
+      <DependentUpon>ForgetPassForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassForm2.Designer.cs">
+      <DependentUpon>ForgetPassForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageJoinedProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageJoinedProjectForm.Designer.cs">
+      <DependentUpon>ManageJoinedProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMemberForm.Designer.cs">
+      <DependentUpon>ManageMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProjectForm.Designer.cs">
+      <DependentUpon>ManageProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRequestForm.Designer.cs">
+      <DependentUpon>ManageRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwriteForm.cs" />
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDetailForm.Designer.cs">
+      <DependentUpon>ProjectDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm.Designer.cs">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassForm.Designer.cs">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TxtBox1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHomeForm.Designer.cs">
+      <DependentUpon>UserHomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddMember2Project.resx">
+      <DependentUpon>AddMember2Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProjectForm.resx">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTaskForm.resx">
+      <DependentUpon>AddTaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser2Task.resx">
+      <DependentUpon>AddUser2Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm.resx">
+      <DependentUpon>ForgetPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm1.resx">
+      <DependentUpon>ForgetPassForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassForm2.resx">
+      <DependentUpon>ForgetPassForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.vi-VN.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageJoinedProjectForm.resx">
+      <DependentUpon>ManageJoinedProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMemberForm.resx">
+      <DependentUpon>ManageMemberForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMemberForm.vi-VN.resx">
+      <DependentUpon>ManageMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProjectForm.resx">
+      <DependentUpon>ManageProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRequestForm.resx">
+      <DependentUpon>ManageRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.vi-VN.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDetailForm.resx">
+      <DependentUpon>ProjectDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.vi-VN.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequestForm.resx">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassForm.resx">
+      <DependentUpon>ResetPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHomeForm.resx">
+      <DependentUpon>UserHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHomeForm.vi-VN.resx">
+      <DependentUpon>UserHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLL\BLL.csproj">
+      <Project>{a3fe20f4-9008-4a30-bd59-593fe9f86256}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOO\DTO.csproj">
+      <Project>{b04bc166-6216-41c1-847c-240645c09164}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-e1645110820608-1024x10242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-e1645110820608-1024x102411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.4.0.2\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.4.0.2\build\Fody.targets'))" />
+  </Target>
+</Project>
