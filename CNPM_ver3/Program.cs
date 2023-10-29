@@ -24,8 +24,8 @@ namespace CNPM_ver3
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
-            Application.Run(new Timeline.Timeline("BE94AF37AD"));
+            Application.Run(new LoginForm());
+            //Application.Run(new Timeline.Timeline("BE94AF37AD"));
         }
     }
 }
