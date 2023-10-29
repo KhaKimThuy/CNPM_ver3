@@ -154,3 +154,42 @@ C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver2.4\BLLL\obj\D
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver2.4\BLLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver2.4\BLLL\obj\Debug\BLLL.dll
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver2.4\BLLL\obj\Debug\BLLL.pdb
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\BLLL.dll.config
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\BLLL.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\BLLL.pdb
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\DALL.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\DTOO.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\MySql.Data.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\Google.Protobuf.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\ZstdSharp.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\BouncyCastle.Crypto.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Memory.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Buffers.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Compression.LZ4.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.IO.Pipelines.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Hash.xxHash.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Numerics.Vectors.dll
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\DALL.pdb
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\DALL.dll.config
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\DTOO.pdb
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\MySql.Data.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\Google.Protobuf.pdb
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\Google.Protobuf.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\BouncyCastle.Crypto.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Memory.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Buffers.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Compression.LZ4.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.IO.Pipelines.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\K4os.Hash.xxHash.xml
+D:\New folder\CNPM_ver3\BLLL\bin\Debug\System.Numerics.Vectors.xml
+D:\New folder\CNPM_ver3\BLLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\New folder\CNPM_ver3\BLLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\New folder\CNPM_ver3\BLLL\obj\Debug\BLL.csproj.CopyComplete
+D:\New folder\CNPM_ver3\BLLL\obj\Debug\BLLL.dll
+D:\New folder\CNPM_ver3\BLLL\obj\Debug\BLLL.pdb
