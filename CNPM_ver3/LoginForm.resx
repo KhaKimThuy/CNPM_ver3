@@ -118,142 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1305, 80</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 16</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>e-PDCS</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1412, 102</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 16</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Ver0</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1197, 207</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 46</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Welcome Back!</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1203, 266</value>
-  </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 16</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Please enter your account</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="checkBox_remember.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox_remember.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1201, 448</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBox_remember.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
   </data>
-  <data name="checkBox_remember.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="checkBox_remember.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 376</value>
   </data>
   <data name="checkBox_remember.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 20</value>
+    <value>98, 17</value>
   </data>
   <data name="checkBox_remember.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -271,102 +147,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkBox_remember.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
-  <data name="button_login.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="comboBox_language.AutoCompleteCustomSource" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1201, 498</value>
-  </data>
-  <data name="button_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 44</value>
-  </data>
-  <data name="button_login.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="button_login.Text" xml:space="preserve">
-    <value>Log in</value>
-  </data>
-  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
-    <value>button_login</value>
-  </data>
-  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="button_forget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1443, 447</value>
-  </data>
-  <data name="button_forget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button_forget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 28</value>
-  </data>
-  <data name="button_forget.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="button_forget.Text" xml:space="preserve">
-    <value>Forget password?</value>
-  </data>
-  <data name="&gt;&gt;button_forget.Name" xml:space="preserve">
-    <value>button_forget</value>
-  </data>
-  <data name="&gt;&gt;button_forget.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_forget.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_forget.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1279, 714</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 96</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>BCMP Co., Ltd. 
-#1902, Daeryung Techno Town 15th Bldg., 401 Simindaero,
-Dongan-gu, Anyang-si, Gyeonggi-do, 14057, Korea
-TEL: +82-31-463-3570
-FAX: +82-31-463-3580
-E-mail: info@bcmpkorea.com</value>
-  </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="comboBox_language.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Tiếng Việt</value>
   </data>
   <data name="comboBox_language.Items" xml:space="preserve">
     <value>English</value>
@@ -375,19 +162,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>Tiếng Việt</value>
   </data>
   <data name="comboBox_language.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1513, 22</value>
-  </data>
-  <data name="comboBox_language.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>1056, 18</value>
   </data>
   <data name="comboBox_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
+    <value>85, 21</value>
   </data>
   <data name="comboBox_language.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
-  </data>
-  <data name="comboBox_language.Text" xml:space="preserve">
-    <value>English</value>
   </data>
   <data name="&gt;&gt;comboBox_language.Name" xml:space="preserve">
     <value>comboBox_language</value>
@@ -399,19 +180,16 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox_language.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="label_remember.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label_remember.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1229, 449</value>
-  </data>
-  <data name="label_remember.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>843, 365</value>
   </data>
   <data name="label_remember.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 16</value>
+    <value>75, 13</value>
   </data>
   <data name="label_remember.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -429,7 +207,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label_remember.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -765,14 +543,12 @@ E-mail: info@bcmpkorea.com</value>
 </value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1635, 15</value>
-  </data>
-  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>1147, 12</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 39</value>
+    <value>26, 32</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -789,44 +565,7 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="button_showPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0AAADdABEGw9BwAAAZJJREFUSEvtlb8uBUEUh5fGv4KKguiodZQIbyDRKlVU9xF4AB09iYaGSss70HsA
-        FCTi3/fd7NnMXbuycilucn/Jl7lzZubM7Jlz5mZ99azGYBW2oZW3K6C9ay3BKbzAZwXaHXferzUL56Cj
-        N7iCXViGhby1r/0dnHcGrmukTXiADziGOVDjsAE7eWtfzcMJON91rq/VAOyDp7qHNQh5B08QYRL72kPr
-        4DrH9kB/HRqEI3DCNUxCSEfab2ELjL/tHWhPN5qCG9CuP/0WOgAHLmBEQy5D4ondIMITsu9Gj/nvkOsv
-        QX/6bcsYa/AShzQkMvaOefIqaXfceamGQX+O6b99Wa8wbaekOEBdimovHJU0A/rV/798iX46vkTFnRjL
-        pncyAXV34t3qr7gTZbpFdpkdZkkoskuHnvyn7DIrzU7th/Atjct1Yt6HdFSuE78g3cC6cp1FWVknqdKK
-        t5KtaGVIjL0xto0Q+SL4MjSq+FTp2+Xb5CX+6duVyvj7yj5DGqpAu+OL0LVGoer/RHtfPacs+wJ0TYd0
-        9csbgQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="button_showPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1629, 353</value>
-  </data>
-  <data name="button_showPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="button_showPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 25</value>
-  </data>
-  <data name="button_showPass.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;button_showPass.Name" xml:space="preserve">
-    <value>button_showPass</value>
-  </data>
-  <data name="&gt;&gt;button_showPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_showPass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_showPass.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="pictureBox1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4042,13 +3781,10 @@ E-mail: info@bcmpkorea.com</value>
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 102</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>28, 83</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1019, 583</value>
+    <value>764, 474</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -4068,62 +3804,11 @@ E-mail: info@bcmpkorea.com</value>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1203, 361</value>
-  </data>
-  <data name="textBox_pass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="textBox_pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 15</value>
-  </data>
-  <data name="textBox_pass.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Name" xml:space="preserve">
-    <value>textBox_pass</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Type" xml:space="preserve">
-    <value>CNPM_ver3.TxtBox1, CNPM_ver3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox_pass.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBox_userid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1203, 313</value>
-  </data>
-  <data name="textBox_userid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="textBox_userid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 15</value>
-  </data>
-  <data name="textBox_userid.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;textBox_userid.Name" xml:space="preserve">
-    <value>textBox_userid</value>
-  </data>
-  <data name="&gt;&gt;textBox_userid.Type" xml:space="preserve">
-    <value>CNPM_ver3.TxtBox1, CNPM_ver3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;textBox_userid.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox_userid.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="button_addUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1395, 562</value>
-  </data>
-  <data name="button_addUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>977, 478</value>
   </data>
   <data name="button_addUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 52</value>
+    <value>147, 42</value>
   </data>
   <data name="button_addUser.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -4141,19 +3826,202 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button_addUser.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
+  </data>
+  <data name="pro_name4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="pro_name4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pro_name4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="pro_name4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1049, 156</value>
+  </data>
+  <data name="pro_name4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="pro_name4.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="pro_name4.Text" xml:space="preserve">
+    <value>Ver.0</value>
+  </data>
+  <data name="&gt;&gt;pro_name4.Name" xml:space="preserve">
+    <value>pro_name4</value>
+  </data>
+  <data name="&gt;&gt;pro_name4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pro_name4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pro_name4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="pro_name2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pro_name2.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pro_name2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 48pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="pro_name2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 48pt</value>
+  </data>
+  <data name="pro_name2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>923, 83</value>
+  </data>
+  <data name="pro_name2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="pro_name2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 86</value>
+  </data>
+  <data name="pro_name2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="pro_name2.Text" xml:space="preserve">
+    <value>PDCS</value>
+  </data>
+  <data name="&gt;&gt;pro_name2.Name" xml:space="preserve">
+    <value>pro_name2</value>
+  </data>
+  <data name="&gt;&gt;pro_name2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms.BunifuLabel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;pro_name2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pro_name2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="pro_name1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pro_name1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 48pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(128, 128, 128); text-align: left; }</value>
+  </data>
+  <data name="pro_name1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 48pt</value>
+  </data>
+  <data name="pro_name1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>867, 83</value>
+  </data>
+  <data name="pro_name1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="pro_name1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 86</value>
+  </data>
+  <data name="pro_name1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="pro_name1.Text" xml:space="preserve">
+    <value>e-</value>
+  </data>
+  <data name="&gt;&gt;pro_name1.Name" xml:space="preserve">
+    <value>pro_name1</value>
+  </data>
+  <data name="&gt;&gt;pro_name1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms.BunifuLabel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;pro_name1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pro_name1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textBox_userid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Italic</value>
+  </data>
+  <data name="textBox_userid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 275</value>
+  </data>
+  <data name="textBox_userid.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_userid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 35</value>
+  </data>
+  <data name="textBox_userid.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="textBox_userid.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;textBox_userid.Name" xml:space="preserve">
+    <value>textBox_userid</value>
+  </data>
+  <data name="&gt;&gt;textBox_userid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_userid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_userid.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBox_pass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Italic</value>
+  </data>
+  <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 335</value>
+  </data>
+  <data name="textBox_pass.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox_pass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 35</value>
+  </data>
+  <data name="textBox_pass.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="textBox_pass.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Name" xml:space="preserve">
+    <value>textBox_pass</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_pass.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btForget.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btForget.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt, style=Underline</value>
+  </data>
+  <data name="btForget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btForget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1476, 412</value>
+    <value>1014, 373</value>
+  </data>
+  <data name="btForget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="btForget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 28</value>
+    <value>110, 23</value>
   </data>
   <data name="btForget.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>29</value>
   </data>
   <data name="btForget.Text" xml:space="preserve">
-    <value>Forget_Test</value>
+    <value>Forget password?</value>
+  </data>
+  <data name="btForget.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;btForget.Name" xml:space="preserve">
     <value>btForget</value>
@@ -4165,19 +4033,232 @@ E-mail: info@bcmpkorea.com</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btForget.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_login.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAS4AAAAnCAYAAACxOKU/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEdSURBVHhe7dgxSgRBEIbRDjfcI2xo6EmMPYKJZxE8g1cw
+        NfUIGxuIoIis4Aoa6D8iomvlUwuv4CXfVKdNM2NnjuMqHuIDYGbTXXQdJ/FvljF93ER1GGBOL7GOVfzM
+        dGlVywCd3MQixmk8R7UE0MlrnIfXFrBXbmNsfwWAfVBGgM7KCNBZGQE6KyNAZ2UE6KyMAJ2VEaCzMgJ0
+        VkaAzsoI0FkZATorI0BnZQTorIwAnZURoLMyAnRWRoDOygjQWRkBOisjQGdlBOisjACdlRGgszICdFZG
+        gM7KCNBZGQE6G+87AaC7sd4JAJ1tYpyFVxewLy5jLOLuOwB09hSr+JrDuI+3qJYB5vYYR/FnlnER26gO
+        Acxh+pV1FQeRGeMTHGi5v4S1qmAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button_login.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 412</value>
+  </data>
+  <data name="button_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 39</value>
+  </data>
+  <data name="button_login.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
+    <value>button_login</value>
+  </data>
+  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_namecomp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_namecomp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold, Italic</value>
+  </data>
+  <data name="txt_namecomp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1082, 591</value>
+  </data>
+  <data name="txt_namecomp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="txt_namecomp.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="txt_namecomp.Text" xml:space="preserve">
+    <value>BCMP Co., Ltd. </value>
+  </data>
+  <data name="&gt;&gt;txt_namecomp.Name" xml:space="preserve">
+    <value>txt_namecomp</value>
+  </data>
+  <data name="&gt;&gt;txt_namecomp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_namecomp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_namecomp.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_infocomp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_infocomp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>885, 608</value>
+  </data>
+  <data name="txt_infocomp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 65</value>
+  </data>
+  <data name="txt_infocomp.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="txt_infocomp.Text" xml:space="preserve">
+    <value>#1902, Daeryung Techno Town 15th Bldg., 401 Simindaero,
+Dongan-gu, Anyang-si, Gyeonggi-do, 14057, Korea
+TEL: +82-31-463-3570
+FAX: +82-31-463-3580
+E-mail: info@bcmpkorea.com</value>
+  </data>
+  <data name="txt_infocomp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;txt_infocomp.Name" xml:space="preserve">
+    <value>txt_infocomp</value>
+  </data>
+  <data name="&gt;&gt;txt_infocomp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_infocomp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_infocomp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>867, 162</value>
+  </data>
+  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 2</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="text_welcome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="text_welcome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 15.75pt, style=Bold</value>
+  </data>
+  <data name="text_welcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>817, 212</value>
+  </data>
+  <data name="text_welcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 30</value>
+  </data>
+  <data name="text_welcome.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="text_welcome.Text" xml:space="preserve">
+    <value>Welcome Back!</value>
+  </data>
+  <data name="&gt;&gt;text_welcome.Name" xml:space="preserve">
+    <value>text_welcome</value>
+  </data>
+  <data name="&gt;&gt;text_welcome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;text_welcome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;text_welcome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="text_suggest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="text_suggest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="text_suggest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 246</value>
+  </data>
+  <data name="text_suggest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="text_suggest.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="text_suggest.Text" xml:space="preserve">
+    <value>Please enter your account</value>
+  </data>
+  <data name="&gt;&gt;text_suggest.Name" xml:space="preserve">
+    <value>text_suggest</value>
+  </data>
+  <data name="&gt;&gt;text_suggest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;text_suggest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;text_suggest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_show.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1085, 339</value>
+  </data>
+  <data name="button_show.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button_show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 27</value>
+  </data>
+  <data name="button_show.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;button_show.Name" xml:space="preserve">
+    <value>button_show</value>
+  </data>
+  <data name="&gt;&gt;button_show.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_show.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_show.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1712, 714</value>
+    <value>1184, 681</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 83</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login</value>

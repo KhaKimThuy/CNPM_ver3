@@ -11,13 +11,15 @@ using System.Windows.Forms;
 using System.Resources;
 using System.Reflection;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using CNPM_ver3.Properties;
+using DTOO;
 
 namespace CNPM_ver3
 {
     public partial class LoginForm : Form
     {
         UserBLL ul = new UserBLL();
-
+        
         public LoginForm()
         {
             InitializeComponent();
@@ -25,11 +27,14 @@ namespace CNPM_ver3
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            
+            //btForget.FlatAppearance.MouseOverBackColor = Color.White;
+            //btForget.FlatAppearance.MouseDownBackColor = Color.White;
+            //button_show.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+            //button_show.FlatAppearance.MouseDownBackColor = Color.WhiteSmoke;
         }
+
         private void button_login_Click(object sender, EventArgs e)
         {
-
             string username = textBox_userid.Text;
             string password = textBox_pass.Text;
 
@@ -64,10 +69,6 @@ namespace CNPM_ver3
                 else
                 {
                     MessageBox.Show(Properties.Resources.login_notexist, Properties.Resources.login_fail_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox_userid.Clear();
-                    textBox_pass.Clear();
-
-                    // focus
                     textBox_userid.Focus();
                 }
             }
@@ -86,28 +87,28 @@ namespace CNPM_ver3
             Application.Restart();
         }
 
-        private void button_forget_Click(object sender, EventArgs e)
-        {
-            string value = "";
-            if (InputBox(Properties.Resources.get_password, Properties.Resources.ask_email, ref value) == DialogResult.OK)
-            {
-                if (ul.IsValidEmail(value))
-                {
-                    string[] id_pass = ul.GetAccountByEmail(value);
-                    string id = id_pass[0];
-                    string pass = id_pass[1];
-                    string message = String.Format("Your USER ID: {0}\nYour PASSWORD: {1}", id, pass);
-                    string title = "Your SK account have just been created";
-                    ul.verifyEmail(value, title, message);
+        //private void button_forget_Click(object sender, EventArgs e)
+        //{
+        //    string value = "";
+        //    if (InputBox(Properties.Resources.get_password, Properties.Resources.ask_email, ref value) == DialogResult.OK)
+        //    {
+        //        if (ul.IsValidEmail(value))
+        //        {
+        //            string[] id_pass = ul.GetAccountByEmail(value);
+        //            string id = id_pass[0];
+        //            string pass = id_pass[1];
+        //            string message = String.Format("Your USER ID: {0}\nYour PASSWORD: {1}", id, pass);
+        //            string title = "Your SK account have just been created";
+        //            ul.verifyEmail(value, title, message);
 
-                    MessageBox.Show(Properties.Resources.check_email_4_ac, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show(Properties.Resources.login_notexist, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
+        //            MessageBox.Show(Properties.Resources.check_email_4_ac, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show(Properties.Resources.login_notexist, Properties.Resources.get_password, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+        //    }
+        //}
 
         public static DialogResult InputBox(string title, string promptText, ref string value)
         {
@@ -155,8 +156,147 @@ namespace CNPM_ver3
 
         private void btForget_Click(object sender, EventArgs e)
         {
+            btForget.FlatStyle = FlatStyle.Flat;
+            btForget.FlatAppearance.BorderSize = 0;
             ForgetPassForm forgetPassForm = new ForgetPassForm();
             forgetPassForm.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        bool holder_us = true;
+        private void textBox_userid_Click(object sender, EventArgs e)
+        {
+            if (holder_us)
+            {
+                holder_us = false;
+                textBox_userid.Text = "";
+            }
+        }
+
+        bool holder_pw = true;
+        private void textBox_pass_Click(object sender, EventArgs e)
+        {
+            if (holder_pw)
+            {
+                holder_pw = false;
+                textBox_pass.Text = "";
+            }
+        }
+
+        private void textBox_userid_Leave(object sender, EventArgs e)
+        {
+            if (textBox_userid.Text == "")
+            {
+                textBox_userid.Text = "Username";
+                textBox_userid.ForeColor = Color.Gray;
+                holder_us = true;
+            }
+        }
+
+        private void textBox_pass_Leave(object sender, EventArgs e)
+        {
+            if (textBox_pass.Text == String.Empty)
+            {
+                textBox_pass.Text = "Password";
+                textBox_pass.ForeColor = Color.Gray;
+                holder_pw = true;
+            }
+        }
+
+        private void textBox_userid_TextChanged(object sender, EventArgs e)
+        {
+            textBox_userid.ForeColor = Color.Black;
+        }
+
+        private void textBox_pass_TextChanged(object sender, EventArgs e)
+        {
+            textBox_pass.ForeColor = Color.Black;
+        }
+
+        private void textBox_userid_Enter(object sender, EventArgs e)
+        {
+            button_login_Click(sender, e);
+        }
+
+        private void textBox_userid_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button_login_Click(sender, e);
+        }
+
+        private void textBox_pass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button_login_Click(sender, e);
+        }
+
+        bool control_show = true;
+        private void button_show_Click(object sender, EventArgs e)
+        {
+            if (control_show)
+            {
+                button_show.Image = Properties.Resources.hide4;
+                control_show = false;
+            }
+            else
+            {
+                button_show.Image = Properties.Resources.view2;
+                control_show = true;
+            }
+        }
+
+        private void button_show_BackColorChanged(object sender, EventArgs e)
+        {
+            button_show.ForeColor = Color.White;
+        }
+
+        private void button_show_ForeColorChanged(object sender, EventArgs e)
+        {
+            button_show.ForeColor = Color.White;
+        }
+
+        private void btForget_MouseHover(object sender, EventArgs e)
+        {
+            btForget.Cursor = Cursors.Hand;
+        }
+
+        private void button_login_MouseHover(object sender, EventArgs e)
+        {
+            button_login.Cursor = Cursors.Hand;
+        }
+
+        private void checkBox_remember_MouseHover(object sender, EventArgs e)
+        {
+            checkBox_remember.Cursor = Cursors.Hand;
+        }
+
+        private void pro_name2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

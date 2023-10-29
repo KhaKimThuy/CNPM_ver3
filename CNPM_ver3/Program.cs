@@ -18,6 +18,7 @@ namespace CNPM_ver3
         {
             var language = ConfigurationManager.AppSettings["language"];
 
+            
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
 

@@ -131,17 +131,11 @@
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>359, 37</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Chào mừng quay trở lại!</value>
-  </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 13</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Nhập tài khoản của bạn</value>
   </data>
   <data name="checkBox_remember.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -149,14 +143,8 @@
   <data name="button_login.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button_login.Text" xml:space="preserve">
-    <value>Đăng nhập</value>
-  </data>
   <data name="button_forget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="button_forget.Text" xml:space="preserve">
-    <value>Quên mật khẩu?</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3735,10 +3723,19 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="empty_field" xml:space="preserve">
-    <value>Vui lòng điền đầy đủ thông tin</value>
+  <data name="btForget.Text" xml:space="preserve">
+    <value>Quên mật khẩu?</value>
   </data>
-  <data name="login_success" xml:space="preserve">
-    <value>Đăng nhập thành công</value>
+  <data name="button_login.Text" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="checkBox_remember.Text" xml:space="preserve">
+    <value>Ghi nhớ đăng nhập</value>
+  </data>
+  <data name="text_suggest.Text" xml:space="preserve">
+    <value>Vui lòng nhập tài khoản</value>
+  </data>
+  <data name="text_welcome.Text" xml:space="preserve">
+    <value>Chào mừng trở lại!</value>
   </data>
 </root>
