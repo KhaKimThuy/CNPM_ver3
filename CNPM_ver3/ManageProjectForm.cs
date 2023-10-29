@@ -278,6 +278,15 @@ namespace CNPM_ver3
             }
         }
 
+        private void button_see_timeline_Click(object sender, EventArgs e)
+        {
 
+            if(curr_pj_id != null)
+            {
+                Timeline.Timeline timeline = new Timeline.Timeline(curr_pj_id);
+                timeline.Show();
+            }
+            
+        }
     }
 }

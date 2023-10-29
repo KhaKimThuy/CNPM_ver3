@@ -99,5 +99,12 @@ namespace BLLL
             return pj_access.getProjectOfUser(pk);
         }
 
+
+        // fuction to get job of project
+        public DataTable getJobOfProject(string pj_id)
+        {
+            return pj_access.getJobOfProject(pj_id);
+        }
+
     }
 }

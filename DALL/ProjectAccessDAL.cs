@@ -254,6 +254,27 @@ namespace DALL
             }
         }
 
+        // get Job of Project
+        public DataTable getJobOfProject(string pj_id)
+        {
+            String query = String.Format("call GET_J_OF_PJ(@pj_id)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@pj_id", MySqlDbType.VarChar).Value = pj_id;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
 
 
     }
